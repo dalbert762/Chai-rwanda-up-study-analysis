@@ -1,0 +1,3086 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prescription pilot2 - basic analysis</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.5;
+       color: #000; background: #fff; margin: 0; padding: 24px; max-width: 1100px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 34px 0 4px; border-bottom: 2px solid #000; padding-bottom: 4px; }
+h3 { font-size: 14px; margin: 22px 0 6px; }
+p.meta, p.grain, p.note { font-size: 12px; color: #444; margin: 4px 0; }
+p.note { margin: 6px 0 0; }
+table { border-collapse: collapse; margin: 6px 0 0; font-size: 13px; }
+th, td { border: 1px solid #999; padding: 4px 8px; text-align: left; vertical-align: top; }
+th { background: #eee; font-weight: bold; }
+td.num { text-align: right; }
+tr.total td { font-weight: bold; background: #f4f4f4; }
+ul { margin: 6px 0; padding-left: 20px; font-size: 13px; }
+a { color: #00c; }
+.chartwrap { margin: 10px 0 4px; max-width: 100%; overflow-x: auto; }
+.chartwrap svg { max-width: 100%; height: auto; display: block; }
+p.caption { font-size: 12px; font-weight: bold; margin: 10px 0 2px; }
+@media print { body { padding: 0; } h2 { page-break-after: avoid; } table { page-break-inside: avoid; } }
+</style></head><body>
+<h1>Prescription pilot2 - basic analysis</h1>
+<p class="meta">Source: Prescription pilot2.xlsx (3 sheets, 129 / 179 / 353 rows). Generated 2026-09-11 by export_prescription_pilot2_outputs.py (openpyxl + Python standard library).</p>
+<p class="meta">Sheet 3 figures take facility, district, date, prescriber and patient ID from the parent prescription - that sheet's own copies of those eight columns are misaligned (see Data quality). Patient / Prescription IDs are masked.</p>
+<h3>Contents</h3><ul>
+<li><a href="#Overview">Overview</a></li>
+<li><a href="#Sheet-1---facility-visits">Sheet 1 - facility visits</a></li>
+<li><a href="#Sheet-2---prescriptions">Sheet 2 - prescriptions</a></li>
+<li><a href="#Sheet-3---medicine-items">Sheet 3 - medicine items</a></li>
+<li><a href="#Data-quality">Data quality</a></li>
+<li><a href="#Findings">Findings</a></li>
+</ul>
+<h2 id="Overview">Overview</h2>
+<h3>Dataset</h3>
+<table><thead><tr>
+<th>Item</th>
+<th>Value</th>
+</tr></thead><tbody>
+<tr>
+<td>Source workbook</td>
+<td>Prescription pilot2.xlsx</td>
+</tr>
+<tr>
+<td>Sheets</td>
+<td>3 (nested: facility visit &gt; prescription &gt; medicine item)</td>
+</tr>
+<tr>
+<td>Sheet 1 rows x cols</td>
+<td>129 x 17</td>
+</tr>
+<tr>
+<td>Sheet 2 rows x cols</td>
+<td>179 x 28</td>
+</tr>
+<tr>
+<td>Sheet 3 rows x cols</td>
+<td>353 x 38</td>
+</tr>
+<tr>
+<td>Kobo submission dates</td>
+<td>2026-09-10 (all rows)</td>
+</tr>
+<tr>
+<td>Prescription dates</td>
+<td>2026-07-31 .. 2026-09-10</td>
+</tr>
+<tr>
+<td>Facilities</td>
+<td class="num">6</td>
+</tr>
+<tr>
+<td>Districts</td>
+<td class="num">3</td>
+</tr>
+<tr>
+<td>Report generated</td>
+<td>2026-09-11</td>
+</tr>
+</tbody></table>
+<h3>Key figures</h3>
+<table><thead><tr>
+<th>Measure</th>
+<th>Value</th>
+</tr></thead><tbody>
+<tr>
+<td>Facility visits (submissions)</td>
+<td class="num">129</td>
+</tr>
+<tr>
+<td>Prescriptions</td>
+<td class="num">179</td>
+</tr>
+<tr>
+<td>Medicine items</td>
+<td class="num">353</td>
+</tr>
+<tr>
+<td>Prescriptions per submission (mean)</td>
+<td class="num">1.39</td>
+</tr>
+<tr>
+<td>Medicine items per prescription (mean)</td>
+<td class="num">1.97</td>
+</tr>
+<tr>
+<td>Items unserved</td>
+<td class="num">3</td>
+</tr>
+<tr>
+<td>Item-level unserved rate</td>
+<td>0.8%</td>
+</tr>
+<tr>
+<td>Total value of unserved medicines (RWF)</td>
+<td class="num">3,270</td>
+</tr>
+</tbody></table>
+<p class="note">Unserved figures are recomputed from medicine_item. The prescription sheet&#x27;s own n_items_available / n_items_unavailable / pct_items_unserved fields are stale - see the Data quality section.</p>
+<h2 id="Sheet-1---facility-visits">Sheet 1 - facility visits</h2>
+<p class="grain">129 rows x 17 columns - one row = one submission (a facility visit)</p>
+<h3>Visits by district</h3>
+<table><thead><tr>
+<th>District</th>
+<th>Visits</th>
+<th>% of visits</th>
+</tr></thead><tbody>
+<tr>
+<td>Kicukiro</td>
+<td class="num">55</td>
+<td class="num">42.6%</td>
+</tr>
+<tr>
+<td>Nyarugenge</td>
+<td class="num">53</td>
+<td class="num">41.1%</td>
+</tr>
+<tr>
+<td>Gasabo</td>
+<td class="num">21</td>
+<td class="num">16.3%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">129</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>Visits by facility type</h3>
+<table><thead><tr>
+<th>Facility type</th>
+<th>Visits</th>
+<th>% of visits</th>
+</tr></thead><tbody>
+<tr>
+<td>HC</td>
+<td class="num">78</td>
+<td class="num">60.5%</td>
+</tr>
+<tr>
+<td>District Hospital</td>
+<td class="num">31</td>
+<td class="num">24.0%</td>
+</tr>
+<tr>
+<td>MHC</td>
+<td class="num">20</td>
+<td class="num">15.5%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">129</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>Visits by facility</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>Visits</th>
+<th>% of visits</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td class="num">31</td>
+<td class="num">24.0%</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td class="num">27</td>
+<td class="num">20.9%</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td class="num">26</td>
+<td class="num">20.2%</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td class="num">24</td>
+<td class="num">18.6%</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td class="num">20</td>
+<td class="num">15.5%</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td class="num">1</td>
+<td class="num">0.8%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">129</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Visits by facility</p><svg class="chart" viewBox="0 0 880 304" width="880" height="304" role="img" aria-label="Visits" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="304" fill="#ffffff"/>
+<line x1="54" y1="230.0" x2="864" y2="230.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="233.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="54" y1="177.5" x2="864" y2="177.5" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="181.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">10</text>
+<line x1="54" y1="125.0" x2="864" y2="125.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="128.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<line x1="54" y1="72.5" x2="864" y2="72.5" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="76.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">30</text>
+<line x1="54" y1="20.0" x2="864" y2="20.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="23.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">40</text>
+<text x="10" y="125" font-size="10" font-family="Arial, sans-serif" fill="#333333" transform="rotate(-90 10 125)" text-anchor="middle">Visits</text>
+<rect x="93.5" y="67.2" width="56.0" height="162.8" fill="#2f6fba"><title>Masaka DH: 31</title></rect>
+<text x="121.5" y="63.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">31</text>
+<text x="121.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 121.5 242)">Masaka DH</text>
+<rect x="228.5" y="88.2" width="56.0" height="141.8" fill="#2f6fba"><title>Kabusunzu CS: 27</title></rect>
+<text x="256.5" y="84.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">27</text>
+<text x="256.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 256.5 242)">Kabusunzu CS</text>
+<rect x="363.5" y="93.5" width="56.0" height="136.5" fill="#2f6fba"><title>Rwampara CS: 26</title></rect>
+<text x="391.5" y="89.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">26</text>
+<text x="391.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 391.5 242)">Rwampara CS</text>
+<rect x="498.5" y="104.0" width="56.0" height="126.0" fill="#2f6fba"><title>Gikondo CS: 24</title></rect>
+<text x="526.5" y="100.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">24</text>
+<text x="526.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 526.5 242)">Gikondo CS</text>
+<rect x="633.5" y="125.0" width="56.0" height="105.0" fill="#2f6fba"><title>Remera (Gasabo) MHC: 20</title></rect>
+<text x="661.5" y="121.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">20</text>
+<text x="661.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 661.5 242)">Remera (Gasabo) MHC</text>
+<rect x="768.5" y="224.8" width="56.0" height="5.2" fill="#2f6fba"><title>Solace Ministries CS: 1</title></rect>
+<text x="796.5" y="220.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="796.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 796.5 242)">Solace Ministries CS</text>
+<line x1="54" y1="230" x2="864" y2="230" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Visits by sector</h3>
+<table><thead><tr>
+<th>Sector</th>
+<th>Visits</th>
+<th>% of visits</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka__Kicukiro</td>
+<td class="num">31</td>
+<td class="num">24.0%</td>
+</tr>
+<tr>
+<td>Nyakabanda__Nyarugenge</td>
+<td class="num">27</td>
+<td class="num">20.9%</td>
+</tr>
+<tr>
+<td>Nyarugenge__Nyarugenge</td>
+<td class="num">26</td>
+<td class="num">20.2%</td>
+</tr>
+<tr>
+<td>Gikondo__Kicukiro</td>
+<td class="num">24</td>
+<td class="num">18.6%</td>
+</tr>
+<tr>
+<td>Remera__Gasabo</td>
+<td class="num">20</td>
+<td class="num">15.5%</td>
+</tr>
+<tr>
+<td>Rusororo__Gasabo</td>
+<td class="num">1</td>
+<td class="num">0.8%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">129</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<p class="note">Sector maps one-to-one onto Facility - the two variables carry identical information. Use one of them, not both.</p>
+<h3>Submission timestamps</h3>
+<table><thead><tr>
+<th>Date</th>
+<th>Submissions</th>
+</tr></thead><tbody>
+<tr>
+<td>2026-09-10</td>
+<td class="num">129</td>
+</tr>
+</tbody></table>
+<h3>Keys and review state</h3>
+<table><thead><tr>
+<th>Check</th>
+<th>Result</th>
+</tr></thead><tbody>
+<tr>
+<td>_uuid distinct</td>
+<td>129 / 129</td>
+</tr>
+<tr>
+<td>_id distinct</td>
+<td>129 / 129</td>
+</tr>
+<tr>
+<td>Rows with a validation status</td>
+<td class="num">0</td>
+</tr>
+</tbody></table>
+<p class="note">No row carries a validation status - nothing in this export has been reviewed in Kobo.</p>
+<h3>Missingness</h3>
+<table><thead><tr>
+<th>Column</th>
+<th>Missing</th>
+<th>% missing</th>
+<th>Read</th>
+</tr></thead><tbody>
+<tr>
+<td>District</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Sector</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Facility</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>facility_type</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+</tbody></table>
+<p class="note">Province sits in an unnamed header cell and reads &#x27;Kigali City&#x27; on all rows.</p>
+<h2 id="Sheet-2---prescriptions">Sheet 2 - prescriptions</h2>
+<p class="grain">179 rows x 28 columns - one row = one prescription</p>
+<h3>Prescriptions per submission</h3>
+<table><thead><tr>
+<th>Prescriptions in the submission</th>
+<th>Submissions</th>
+</tr></thead><tbody>
+<tr>
+<td class="num">1</td>
+<td class="num">125</td>
+</tr>
+<tr>
+<td class="num">5</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td class="num">9</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td class="num">10</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td class="num">1</td>
+</tr>
+</tbody></table>
+<p class="note">Mean 1.39. 125 submissions carry exactly one prescription; four carry the rest.</p>
+<h3>Submissions holding more than one prescription</h3>
+<table><thead><tr>
+<th>Prescriptions</th>
+<th>Facility</th>
+</tr></thead><tbody>
+<tr>
+<td class="num">30</td>
+<td>Solace Ministries CS</td>
+</tr>
+<tr>
+<td class="num">10</td>
+<td>Remera (Gasabo) MHC</td>
+</tr>
+<tr>
+<td class="num">9</td>
+<td>Masaka DH</td>
+</tr>
+<tr>
+<td class="num">5</td>
+<td>Rwampara CS</td>
+</tr>
+</tbody></table>
+<p class="note">Solace Ministries CS entered all 30 of its prescriptions inside a single submission, which is why it shows 1 visit but 30 prescriptions.</p>
+<h3>Prescriptions by district</h3>
+<table><thead><tr>
+<th>District</th>
+<th>Prescriptions</th>
+<th>%</th>
+<th>Mean items</th>
+</tr></thead><tbody>
+<tr>
+<td>Kicukiro</td>
+<td class="num">63</td>
+<td class="num">35.2%</td>
+<td class="num">1.87</td>
+</tr>
+<tr>
+<td>Gasabo</td>
+<td class="num">59</td>
+<td class="num">33.0%</td>
+<td class="num">1.85</td>
+</tr>
+<tr>
+<td>Nyarugenge</td>
+<td class="num">57</td>
+<td class="num">31.8%</td>
+<td class="num">2.21</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+<td class="num">1.97</td>
+</tr>
+</tbody></table>
+<h3>Prescriptions by facility type</h3>
+<table><thead><tr>
+<th>Facility type</th>
+<th>Prescriptions</th>
+<th>%</th>
+<th>Mean items</th>
+</tr></thead><tbody>
+<tr>
+<td>HC</td>
+<td class="num">111</td>
+<td class="num">62.0%</td>
+<td class="num">1.96</td>
+</tr>
+<tr>
+<td>District Hospital</td>
+<td class="num">39</td>
+<td class="num">21.8%</td>
+<td class="num">1.79</td>
+</tr>
+<tr>
+<td>MHC</td>
+<td class="num">29</td>
+<td class="num">16.2%</td>
+<td class="num">2.24</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+<td class="num">1.97</td>
+</tr>
+</tbody></table>
+<h3>Prescriptions by facility</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>Prescriptions</th>
+<th>%</th>
+<th>Mean items</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td class="num">39</td>
+<td class="num">21.8%</td>
+<td class="num">1.79</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td class="num">30</td>
+<td class="num">16.8%</td>
+<td class="num">2.03</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td class="num">30</td>
+<td class="num">16.8%</td>
+<td class="num">1.47</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td class="num">29</td>
+<td class="num">16.2%</td>
+<td class="num">2.24</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td class="num">27</td>
+<td class="num">15.1%</td>
+<td class="num">2.41</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td class="num">24</td>
+<td class="num">13.4%</td>
+<td class="num">2</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+<td class="num">1.97</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Prescriptions by facility</p><svg class="chart" viewBox="0 0 880 304" width="880" height="304" role="img" aria-label="Prescriptions" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="304" fill="#ffffff"/>
+<line x1="54" y1="230.0" x2="864" y2="230.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="233.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="54" y1="177.5" x2="864" y2="177.5" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="181.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">10</text>
+<line x1="54" y1="125.0" x2="864" y2="125.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="128.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<line x1="54" y1="72.5" x2="864" y2="72.5" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="76.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">30</text>
+<line x1="54" y1="20.0" x2="864" y2="20.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="23.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">40</text>
+<text x="10" y="125" font-size="10" font-family="Arial, sans-serif" fill="#333333" transform="rotate(-90 10 125)" text-anchor="middle">Prescriptions</text>
+<rect x="93.5" y="25.2" width="56.0" height="204.8" fill="#2f6fba"><title>Masaka DH: 39</title></rect>
+<text x="121.5" y="21.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">39</text>
+<text x="121.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 121.5 242)">Masaka DH</text>
+<rect x="228.5" y="72.5" width="56.0" height="157.5" fill="#2f6fba"><title>Rwampara CS: 30</title></rect>
+<text x="256.5" y="68.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">30</text>
+<text x="256.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 256.5 242)">Rwampara CS</text>
+<rect x="363.5" y="72.5" width="56.0" height="157.5" fill="#2f6fba"><title>Solace Ministries CS: 30</title></rect>
+<text x="391.5" y="68.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">30</text>
+<text x="391.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 391.5 242)">Solace Ministries CS</text>
+<rect x="498.5" y="77.8" width="56.0" height="152.2" fill="#2f6fba"><title>Remera (Gasabo) MHC: 29</title></rect>
+<text x="526.5" y="73.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">29</text>
+<text x="526.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 526.5 242)">Remera (Gasabo) MHC</text>
+<rect x="633.5" y="88.2" width="56.0" height="141.8" fill="#2f6fba"><title>Kabusunzu CS: 27</title></rect>
+<text x="661.5" y="84.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">27</text>
+<text x="661.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 661.5 242)">Kabusunzu CS</text>
+<rect x="768.5" y="104.0" width="56.0" height="126.0" fill="#2f6fba"><title>Gikondo CS: 24</title></rect>
+<text x="796.5" y="100.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">24</text>
+<text x="796.5" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 796.5 242)">Gikondo CS</text>
+<line x1="54" y1="230" x2="864" y2="230" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Prescriptions by prescriber category</h3>
+<table><thead><tr>
+<th>Prescriber category</th>
+<th>Prescriptions</th>
+<th>%</th>
+<th>Mean items</th>
+</tr></thead><tbody>
+<tr>
+<td>Nurse</td>
+<td class="num">138</td>
+<td class="num">77.1%</td>
+<td class="num">2.03</td>
+</tr>
+<tr>
+<td>General Practioner</td>
+<td class="num">27</td>
+<td class="num">15.1%</td>
+<td class="num">1.81</td>
+</tr>
+<tr>
+<td>Specialist</td>
+<td class="num">9</td>
+<td class="num">5.0%</td>
+<td class="num">1.67</td>
+</tr>
+<tr>
+<td>Midwife</td>
+<td class="num">2</td>
+<td class="num">1.1%</td>
+<td class="num">2</td>
+</tr>
+<tr>
+<td>Dental Surgeon</td>
+<td class="num">2</td>
+<td class="num">1.1%</td>
+<td class="num">1.5</td>
+</tr>
+<tr>
+<td>Allied Health Professional</td>
+<td class="num">1</td>
+<td class="num">0.6%</td>
+<td class="num">2</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+<td class="num">1.97</td>
+</tr>
+</tbody></table>
+<p class="note">&#x27;General Practioner&#x27; is the form&#x27;s own spelling.</p>
+<div class="chartwrap"><p class="caption">Chart: Prescriptions by prescriber category</p><svg class="chart" viewBox="0 0 880 176" width="880" height="176" role="img" aria-label="Prescriptions" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="176" fill="#ffffff"/>
+<line x1="158.2" y1="16" x2="158.2" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="158.2" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="381.5" y1="16" x2="381.5" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="381.5" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<line x1="604.7" y1="16" x2="604.7" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="604.7" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">100</text>
+<line x1="828.0" y1="16" x2="828.0" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="828.0" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">150</text>
+<text x="493" y="170" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">Prescriptions</text>
+<text x="150.20000000000002" y="29.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Nurse</text>
+<rect x="158.20000000000002" y="16.0" width="616.2" height="14" fill="#2f6fba"><title>Nurse: 138</title></rect>
+<text x="780.4" y="29.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">138</text>
+<text x="150.20000000000002" y="50.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">General Practioner</text>
+<rect x="158.20000000000002" y="37.0" width="120.6" height="14" fill="#2f6fba"><title>General Practioner: 27</title></rect>
+<text x="284.8" y="50.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">27</text>
+<text x="150.20000000000002" y="71.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Specialist</text>
+<rect x="158.20000000000002" y="58.0" width="40.2" height="14" fill="#2f6fba"><title>Specialist: 9</title></rect>
+<text x="204.4" y="71.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="150.20000000000002" y="92.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Midwife</text>
+<rect x="158.20000000000002" y="79.0" width="8.9" height="14" fill="#2f6fba"><title>Midwife: 2</title></rect>
+<text x="173.1" y="92.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="150.20000000000002" y="113.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Dental Surgeon</text>
+<rect x="158.20000000000002" y="100.0" width="8.9" height="14" fill="#2f6fba"><title>Dental Surgeon: 2</title></rect>
+<text x="173.1" y="113.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="150.20000000000002" y="134.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Allied Health Professional</text>
+<rect x="158.20000000000002" y="121.0" width="4.5" height="14" fill="#2f6fba"><title>Allied Health Professional: 1</title></rect>
+<text x="168.7" y="134.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">1</text>
+<line x1="158.20000000000002" y1="16" x2="158.20000000000002" y2="142" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Prescriptions by date of prescription</h3>
+<table><thead><tr>
+<th>Date</th>
+<th>Prescriptions</th>
+<th>% of 179</th>
+</tr></thead><tbody>
+<tr>
+<td>2026-07-31</td>
+<td class="num">1</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>2026-08-31</td>
+<td class="num">7</td>
+<td class="num">3.9%</td>
+</tr>
+<tr>
+<td>2026-09-01</td>
+<td class="num">12</td>
+<td class="num">6.7%</td>
+</tr>
+<tr>
+<td>2026-09-02</td>
+<td class="num">12</td>
+<td class="num">6.7%</td>
+</tr>
+<tr>
+<td>2026-09-03</td>
+<td class="num">11</td>
+<td class="num">6.1%</td>
+</tr>
+<tr>
+<td>2026-09-04</td>
+<td class="num">22</td>
+<td class="num">12.3%</td>
+</tr>
+<tr>
+<td>2026-09-05</td>
+<td class="num">9</td>
+<td class="num">5.0%</td>
+</tr>
+<tr>
+<td>2026-09-06</td>
+<td class="num">8</td>
+<td class="num">4.5%</td>
+</tr>
+<tr>
+<td>2026-09-07</td>
+<td class="num">12</td>
+<td class="num">6.7%</td>
+</tr>
+<tr>
+<td>2026-09-08</td>
+<td class="num">18</td>
+<td class="num">10.1%</td>
+</tr>
+<tr>
+<td>2026-09-09</td>
+<td class="num">11</td>
+<td class="num">6.1%</td>
+</tr>
+<tr>
+<td>2026-09-10</td>
+<td class="num">56</td>
+<td class="num">31.3%</td>
+</tr>
+</tbody></table>
+<p class="note">56 of 179 (31%) are dated the final day, which is also the single upload day. Five of six facilities recorded exactly 10 that day - a collection quota, not a prescribing surge. Exclude 10 September from any time trend.</p>
+<div class="chartwrap"><p class="caption">Chart: Prescriptions by date of prescription</p><svg class="chart" viewBox="0 0 880 304" width="880" height="304" role="img" aria-label="Prescriptions" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="304" fill="#ffffff"/>
+<line x1="54" y1="230.0" x2="864" y2="230.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="233.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="54" y1="160.0" x2="864" y2="160.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="163.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<line x1="54" y1="90.0" x2="864" y2="90.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="93.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">40</text>
+<line x1="54" y1="20.0" x2="864" y2="20.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="23.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">60</text>
+<text x="10" y="125" font-size="10" font-family="Arial, sans-serif" fill="#333333" transform="rotate(-90 10 125)" text-anchor="middle">Prescriptions</text>
+<rect x="64.8" y="226.5" width="45.9" height="3.5" fill="#2f6fba"><title>2026-07-31: 1</title></rect>
+<text x="87.8" y="222.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="87.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 87.8 242)">2026-07-31</text>
+<rect x="132.3" y="205.5" width="45.9" height="24.5" fill="#2f6fba"><title>2026-08-31: 7</title></rect>
+<text x="155.2" y="201.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">7</text>
+<text x="155.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 155.2 242)">2026-08-31</text>
+<rect x="199.8" y="188.0" width="45.9" height="42.0" fill="#2f6fba"><title>2026-09-01: 12</title></rect>
+<text x="222.8" y="184.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">12</text>
+<text x="222.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 222.8 242)">2026-09-01</text>
+<rect x="267.3" y="188.0" width="45.9" height="42.0" fill="#2f6fba"><title>2026-09-02: 12</title></rect>
+<text x="290.2" y="184.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">12</text>
+<text x="290.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 290.2 242)">2026-09-02</text>
+<rect x="334.8" y="191.5" width="45.9" height="38.5" fill="#2f6fba"><title>2026-09-03: 11</title></rect>
+<text x="357.8" y="187.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="357.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 357.8 242)">2026-09-03</text>
+<rect x="402.3" y="153.0" width="45.9" height="77.0" fill="#2f6fba"><title>2026-09-04: 22</title></rect>
+<text x="425.2" y="149.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">22</text>
+<text x="425.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 425.2 242)">2026-09-04</text>
+<rect x="469.8" y="198.5" width="45.9" height="31.5" fill="#2f6fba"><title>2026-09-05: 9</title></rect>
+<text x="492.8" y="194.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="492.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 492.8 242)">2026-09-05</text>
+<rect x="537.3" y="202.0" width="45.9" height="28.0" fill="#2f6fba"><title>2026-09-06: 8</title></rect>
+<text x="560.2" y="198.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">8</text>
+<text x="560.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 560.2 242)">2026-09-06</text>
+<rect x="604.8" y="188.0" width="45.9" height="42.0" fill="#2f6fba"><title>2026-09-07: 12</title></rect>
+<text x="627.8" y="184.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">12</text>
+<text x="627.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 627.8 242)">2026-09-07</text>
+<rect x="672.3" y="167.0" width="45.9" height="63.0" fill="#2f6fba"><title>2026-09-08: 18</title></rect>
+<text x="695.2" y="163.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">18</text>
+<text x="695.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 695.2 242)">2026-09-08</text>
+<rect x="739.8" y="191.5" width="45.9" height="38.5" fill="#2f6fba"><title>2026-09-09: 11</title></rect>
+<text x="762.8" y="187.5" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="762.8" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 762.8 242)">2026-09-09</text>
+<rect x="807.3" y="34.0" width="45.9" height="196.0" fill="#2f6fba"><title>2026-09-10: 56</title></rect>
+<text x="830.2" y="30.0" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">56</text>
+<text x="830.2" y="242" font-size="9.5" font-family="Arial, sans-serif" fill="#333333" text-anchor="end" transform="rotate(-45 830.2 242)">2026-09-10</text>
+<line x1="54" y1="230" x2="864" y2="230" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Prescriptions per day, per facility</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>31 Jul</th>
+<th>31 Aug</th>
+<th>01 Sep</th>
+<th>02 Sep</th>
+<th>03 Sep</th>
+<th>04 Sep</th>
+<th>05 Sep</th>
+<th>06 Sep</th>
+<th>07 Sep</th>
+<th>08 Sep</th>
+<th>09 Sep</th>
+<th>10 Sep</th>
+<th>Total</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">4</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">3</td>
+<td class="num">3</td>
+<td class="num">2</td>
+<td class="num">4</td>
+<td class="num">4</td>
+<td class="num">10</td>
+<td class="num">39</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td class="num">0</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">4</td>
+<td class="num">2</td>
+<td class="num">1</td>
+<td class="num">10</td>
+<td class="num">30</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">9</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">8</td>
+<td class="num">2</td>
+<td class="num">10</td>
+<td class="num">30</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">3</td>
+<td class="num">4</td>
+<td class="num">3</td>
+<td class="num">4</td>
+<td class="num">3</td>
+<td class="num">1</td>
+<td class="num">1</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">10</td>
+<td class="num">29</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">3</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">6</td>
+<td class="num">27</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">2</td>
+<td class="num">10</td>
+<td class="num">24</td>
+</tr>
+</tbody></table>
+<h3>Medicines per prescription - distribution</h3>
+<table><thead><tr>
+<th>Medicines prescribed</th>
+<th>Prescriptions</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td class="num">63</td>
+<td class="num">35.2%</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="num">71</td>
+<td class="num">39.7%</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="num">34</td>
+<td class="num">19.0%</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="num">9</td>
+<td class="num">5.0%</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="num">2</td>
+<td class="num">1.1%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Medicines per prescription - distribution</p><svg class="chart" viewBox="0 0 880 272" width="880" height="272" role="img" aria-label="Prescriptions" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="272" fill="#ffffff"/>
+<line x1="54" y1="230.0" x2="864" y2="230.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="233.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="54" y1="160.0" x2="864" y2="160.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="163.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">25</text>
+<line x1="54" y1="90.0" x2="864" y2="90.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="93.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<line x1="54" y1="20.0" x2="864" y2="20.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="23.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">75</text>
+<text x="10" y="125" font-size="10" font-family="Arial, sans-serif" fill="#333333" transform="rotate(-90 10 125)" text-anchor="middle">Prescriptions</text>
+<rect x="107.0" y="53.6" width="56.0" height="176.4" fill="#2f6fba"><title>1: 63</title></rect>
+<text x="135.0" y="49.6" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">63</text>
+<text x="135.0" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<rect x="269.0" y="31.2" width="56.0" height="198.8" fill="#2f6fba"><title>2: 71</title></rect>
+<text x="297.0" y="27.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">71</text>
+<text x="297.0" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<rect x="431.0" y="134.8" width="56.0" height="95.2" fill="#2f6fba"><title>3: 34</title></rect>
+<text x="459.0" y="130.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">34</text>
+<text x="459.0" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">3</text>
+<rect x="593.0" y="204.8" width="56.0" height="25.2" fill="#2f6fba"><title>4: 9</title></rect>
+<text x="621.0" y="200.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="621.0" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">4</text>
+<rect x="755.0" y="224.4" width="56.0" height="5.6" fill="#2f6fba"><title>5: 2</title></rect>
+<text x="783.0" y="220.4" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="783.0" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">5</text>
+<line x1="54" y1="230" x2="864" y2="230" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Medicines per prescription - summary statistics</h3>
+<table><thead><tr>
+<th>Field</th>
+<th>n</th>
+<th>Missing</th>
+<th>Sum</th>
+<th>Mean</th>
+<th>Min</th>
+<th>P25</th>
+<th>Median</th>
+<th>P75</th>
+<th>Max</th>
+</tr></thead><tbody>
+<tr>
+<td>Number of medicines prescribed</td>
+<td class="num">179</td>
+<td class="num">0</td>
+<td class="num">353</td>
+<td class="num">1.97</td>
+<td class="num">1</td>
+<td class="num">1</td>
+<td class="num">2</td>
+<td class="num">2.5</td>
+<td class="num">5</td>
+</tr>
+</tbody></table>
+<h3>Kobo roll-up fields as exported</h3>
+<table><thead><tr>
+<th>Field</th>
+<th>n</th>
+<th>Missing</th>
+<th>Sum</th>
+<th>Mean</th>
+<th>Min</th>
+<th>P25</th>
+<th>Median</th>
+<th>P75</th>
+<th>Max</th>
+</tr></thead><tbody>
+<tr>
+<td>n_items_available</td>
+<td class="num">179</td>
+<td class="num">0</td>
+<td class="num">92</td>
+<td class="num">0.51</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">5</td>
+</tr>
+<tr>
+<td>n_items_unavailable</td>
+<td class="num">179</td>
+<td class="num">0</td>
+<td class="num">1</td>
+<td class="num">0.01</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>pct_items_unserved</td>
+<td class="num">179</td>
+<td class="num">0</td>
+<td class="num">50</td>
+<td class="num">0.28</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">0</td>
+<td class="num">50</td>
+</tr>
+</tbody></table>
+<p class="note">Reported for completeness only - all three are stale. See Data quality.</p>
+<h3>Duplicate Patient / Prescription IDs</h3>
+<table><thead><tr>
+<th>ID (masked)</th>
+<th>Facility</th>
+<th>Date</th>
+<th>Prescriber</th>
+<th>Items</th>
+</tr></thead><tbody>
+<tr>
+<td>2504...1423</td>
+<td>Solace Ministries CS</td>
+<td>2026-09-10</td>
+<td>Nurse</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>2504...1423</td>
+<td>Solace Ministries CS</td>
+<td>2026-09-10</td>
+<td>Nurse</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>2609...4866</td>
+<td>Solace Ministries CS</td>
+<td>2026-09-10</td>
+<td>Nurse</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>2609...4866</td>
+<td>Solace Ministries CS</td>
+<td>2026-09-10</td>
+<td>Nurse</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>2508...1605</td>
+<td>Gikondo CS</td>
+<td>2026-09-04</td>
+<td>Nurse</td>
+<td class="num">2</td>
+</tr>
+<tr>
+<td>2508...1605</td>
+<td>Gikondo CS</td>
+<td>2026-09-04</td>
+<td>Nurse</td>
+<td class="num">2</td>
+</tr>
+</tbody></table>
+<p class="note">176 distinct IDs across 179 prescriptions; 3 IDs used twice. Each repeat matches its twin on facility, date, cadre and item count - consistent with double entry.</p>
+<h3>Missingness</h3>
+<table><thead><tr>
+<th>Column</th>
+<th>Missing</th>
+<th>% missing</th>
+<th>Read</th>
+</tr></thead><tbody>
+<tr>
+<td>Province</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>District</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Sector</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Facility</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>facility_type</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Date of prescription</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Patient / Prescription ID</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Prescriber category</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Please specify the allied health professional type</td>
+<td class="num">178</td>
+<td class="num">99.4%</td>
+<td>expected - conditional</td>
+</tr>
+<tr>
+<td>Number of medicines prescribed</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>n_items_unavailable</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but stale</td>
+</tr>
+<tr>
+<td>n_items_available</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but stale</td>
+</tr>
+<tr>
+<td>pct_items_unserved</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but stale</td>
+</tr>
+</tbody></table>
+<h2 id="Sheet-3---medicine-items">Sheet 3 - medicine items</h2>
+<p class="grain">353 rows x 38 columns - one row = one medicine on one prescription</p>
+<h3>Rows per parent prescription</h3>
+<table><thead><tr>
+<th>Check</th>
+<th>Result</th>
+</tr></thead><tbody>
+<tr>
+<td>Parents with items</td>
+<td>179 / 179</td>
+</tr>
+<tr>
+<td>Items per prescription (mean)</td>
+<td class="num">1.97</td>
+</tr>
+<tr>
+<td>Rows where the count != the parent&#x27;s stated number</td>
+<td class="num">0</td>
+</tr>
+</tbody></table>
+<h3>On the EML?</h3>
+<table><thead><tr>
+<th>Response</th>
+<th>Items</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>Yes</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+</tr>
+<tr>
+<td>No</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>Name type recorded</h3>
+<table><thead><tr>
+<th>Name type</th>
+<th>Items</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>INN</td>
+<td class="num">307</td>
+<td class="num">87.0%</td>
+</tr>
+<tr>
+<td>Brand</td>
+<td class="num">46</td>
+<td class="num">13.0%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<p class="note">45 of the 46 &#x27;Brand&#x27; rows carry an INN name picked from the EML list, and 44 of those 46 come from one facility - see Findings.</p>
+<h3>Position within the prescription</h3>
+<table><thead><tr>
+<th>item_number</th>
+<th>Items</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td class="num">179</td>
+<td class="num">50.7%</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="num">116</td>
+<td class="num">32.9%</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="num">45</td>
+<td class="num">12.7%</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="num">11</td>
+<td class="num">3.1%</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>Medicines selected from the EML picklist - all distinct entries</h3>
+<table><thead><tr>
+<th>Medicine</th>
+<th>Items</th>
+<th>% of 353</th>
+</tr></thead><tbody>
+<tr>
+<td>paracetamol_tab_500_mg</td>
+<td class="num">43</td>
+<td class="num">12.2%</td>
+</tr>
+<tr>
+<td>ibuprofen_tab_400_mg</td>
+<td class="num">42</td>
+<td class="num">11.9%</td>
+</tr>
+<tr>
+<td>chlorpheniramine_tab_4_mg</td>
+<td class="num">19</td>
+<td class="num">5.4%</td>
+</tr>
+<tr>
+<td>amoxicillin_caps_250_mg_500_mg</td>
+<td class="num">18</td>
+<td class="num">5.1%</td>
+</tr>
+<tr>
+<td>sodium_chloride_solution_inj_isotonic_0_9</td>
+<td class="num">15</td>
+<td class="num">4.2%</td>
+</tr>
+<tr>
+<td>metronidazole_tab_250_mg</td>
+<td class="num">12</td>
+<td class="num">3.4%</td>
+</tr>
+<tr>
+<td>ciprofloxacin_tab_250mg_500mg</td>
+<td class="num">12</td>
+<td class="num">3.4%</td>
+</tr>
+<tr>
+<td>ceftriaxone_powder_for_inj_250_mg_1g</td>
+<td class="num">11</td>
+<td class="num">3.1%</td>
+</tr>
+<tr>
+<td>ascorbic_acid_tab_500_mg</td>
+<td class="num">10</td>
+<td class="num">2.8%</td>
+</tr>
+<tr>
+<td>diclofenac_inj_75_mg_3_ml</td>
+<td class="num">9</td>
+<td class="num">2.5%</td>
+</tr>
+<tr>
+<td>misoprostol_tab_200_g</td>
+<td class="num">9</td>
+<td class="num">2.5%</td>
+</tr>
+<tr>
+<td>diclofenac_suppository_100_mg</td>
+<td class="num">9</td>
+<td class="num">2.5%</td>
+</tr>
+<tr>
+<td>doxycycline_tab_100_mg</td>
+<td class="num">8</td>
+<td class="num">2.3%</td>
+</tr>
+<tr>
+<td>hyocine_butylbromide_tab_10_mg</td>
+<td class="num">7</td>
+<td class="num">2.0%</td>
+</tr>
+<tr>
+<td>water_for_injections_inj_bottleof2ml_5ml_10ml</td>
+<td class="num">7</td>
+<td class="num">2.0%</td>
+</tr>
+<tr>
+<td>nystatin_tab_500_000_ui</td>
+<td class="num">6</td>
+<td class="num">1.7%</td>
+</tr>
+<tr>
+<td>omeprazole_caps_20_mg</td>
+<td class="num">6</td>
+<td class="num">1.7%</td>
+</tr>
+<tr>
+<td>ibuprofen_tab_200_mg_400_mg</td>
+<td class="num">6</td>
+<td class="num">1.7%</td>
+</tr>
+<tr>
+<td>nitrofurantoin_tab_100_mg</td>
+<td class="num">6</td>
+<td class="num">1.7%</td>
+</tr>
+<tr>
+<td>vitamin_b_complex_tab</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>thiamine_tab_50_mg_100mg</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>sulfamethoxazole_trimethoprim_tab_400_mg_80_mg</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>oxytocin_inj_10_iu_ml</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>amlodipine_tab_5_mg_10_mg</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>diclofenac_tab_50_mg</td>
+<td class="num">5</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>cloxacillin_caps_250_mg</td>
+<td class="num">4</td>
+<td class="num">1.1%</td>
+</tr>
+<tr>
+<td>tinidazole_tab_500_mg</td>
+<td class="num">4</td>
+<td class="num">1.1%</td>
+</tr>
+<tr>
+<td>paracetamol_inj_10_mg_ml</td>
+<td class="num">4</td>
+<td class="num">1.1%</td>
+</tr>
+<tr>
+<td>phenoxy_methyl_penicillin_tab_250_mg</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr>
+<td>ringer_lactate_sodium_lactate_inj_0_9_nacl_5_glucose</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr>
+<td>amitriptyline_tab_25_mg</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>fer_salts_folic_acid_tab_60_mg_400_g</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>oral_rehydration_salts_2_5_g_l_sachets_for_dilution</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>metronidazole_inj_500_mg_100_ml</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>nystatin_tab_500000_ui</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>hyoscine_butylbromide_inj_20_mg_ml</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>clotrimazole_vaginal_tab_100_mg_500_mg</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>azithromycin_tab_500_mg</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>promethazine_tab_25_mg</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>mebendazole_tab_100mg_500mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>paracetamol_suppository250_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>paracetamol_tab_300_500_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>zinc_tab_10_20_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>multivitamin_tab</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>cloxacillin_powder_for_inj_500_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>phytomenadione_vit_k_inj_10_mg_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>furosemide_inj_10_mg_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>metoclopramide_inj_5_mg_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>metformin_tab_500_mg_850_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>gliclazide_tab_60_80_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>nifedipine_tab_10_mg_20_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>losartan_tab_50_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>nifedipine_tab_20mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>tramadol_hydrochloride_inj_50_mg_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>potassium_chloride_solution_10</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>glucose_solution_inj_5_10_50</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>cimetidine_inj_200_g_2_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>haloperidol_inj_5mg_ml_50mg_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>diloxanide_metronidazole_syrup_250mg_320mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>zinc_sulphate_tab_10_mg_20_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>chlorpheniramine_sol_2_mg_5_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>chlorphenamine_syrup_5_mg_5_ml</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>betamethasone_valerate_cream_ointment_0_1</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>hydrocortisone_vial_50_mg_100_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>nystatin_vaginaltab_100000iu</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>hydrochlorothiazide_tab_25_mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>hydrochlorothiazide_tab_25_mg_50mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>metformin_vildagliptin_tab_850_mg_50mg</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+</tbody></table>
+<p class="note">350 of 353 items. Near-duplicate entries to merge before any consumption analysis: nystatin_tab_500_000_ui / nystatin_tab_500000_ui, ibuprofen_tab_400_mg / ibuprofen_tab_200_mg_400_mg, hydrochlorothiazide_tab_25_mg / ..._25_mg_50mg, nifedipine_tab_10_mg_20_mg / nifedipine_tab_20mg, plus hyocine/hyoscine and chlorpheniramine/chlorphenamine spellings.</p>
+<div class="chartwrap"><p class="caption">Chart: Medicines selected from the EML picklist - all distinct entries - top 15</p><svg class="chart" viewBox="0 0 880 365" width="880" height="365" role="img" aria-label="Items" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="365" fill="#ffffff"/>
+<line x1="266.5" y1="16" x2="266.5" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="266.5" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="378.8" y1="16" x2="378.8" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="378.8" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">10</text>
+<line x1="491.1" y1="16" x2="491.1" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="491.1" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<line x1="603.4" y1="16" x2="603.4" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="603.4" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">30</text>
+<line x1="715.7" y1="16" x2="715.7" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="715.7" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">40</text>
+<line x1="828.0" y1="16" x2="828.0" y2="331" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="828.0" y="345" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<text x="547" y="359" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">Items</text>
+<text x="258.5" y="29.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">paracetamol_tab_500_mg</text>
+<rect x="266.5" y="16.0" width="482.9" height="14" fill="#2f6fba"><title>paracetamol_tab_500_mg: 43</title></rect>
+<text x="755.4" y="29.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">43</text>
+<text x="258.5" y="50.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ibuprofen_tab_400_mg</text>
+<rect x="266.5" y="37.0" width="471.7" height="14" fill="#2f6fba"><title>ibuprofen_tab_400_mg: 42</title></rect>
+<text x="744.2" y="50.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">42</text>
+<text x="258.5" y="71.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">chlorpheniramine_tab_4_mg</text>
+<rect x="266.5" y="58.0" width="213.4" height="14" fill="#2f6fba"><title>chlorpheniramine_tab_4_mg: 19</title></rect>
+<text x="485.9" y="71.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">19</text>
+<text x="258.5" y="92.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">amoxicillin_caps_250_mg_500_mg</text>
+<rect x="266.5" y="79.0" width="202.1" height="14" fill="#2f6fba"><title>amoxicillin_caps_250_mg_500_mg: 18</title></rect>
+<text x="474.6" y="92.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">18</text>
+<text x="258.5" y="113.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">sodium_chloride_solution_inj_isotonic_0_9</text>
+<rect x="266.5" y="100.0" width="168.4" height="14" fill="#2f6fba"><title>sodium_chloride_solution_inj_isotonic_0_9: 15</title></rect>
+<text x="440.9" y="113.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">15</text>
+<text x="258.5" y="134.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">metronidazole_tab_250_mg</text>
+<rect x="266.5" y="121.0" width="134.8" height="14" fill="#2f6fba"><title>metronidazole_tab_250_mg: 12</title></rect>
+<text x="407.3" y="134.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">12</text>
+<text x="258.5" y="155.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ciprofloxacin_tab_250mg_500mg</text>
+<rect x="266.5" y="142.0" width="134.8" height="14" fill="#2f6fba"><title>ciprofloxacin_tab_250mg_500mg: 12</title></rect>
+<text x="407.3" y="155.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">12</text>
+<text x="258.5" y="176.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ceftriaxone_powder_for_inj_250_mg_1g</text>
+<rect x="266.5" y="163.0" width="123.5" height="14" fill="#2f6fba"><title>ceftriaxone_powder_for_inj_250_mg_1g: 11</title></rect>
+<text x="396.0" y="176.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="258.5" y="197.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ascorbic_acid_tab_500_mg</text>
+<rect x="266.5" y="184.0" width="112.3" height="14" fill="#2f6fba"><title>ascorbic_acid_tab_500_mg: 10</title></rect>
+<text x="384.8" y="197.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">10</text>
+<text x="258.5" y="218.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">diclofenac_inj_75_mg_3_ml</text>
+<rect x="266.5" y="205.0" width="101.1" height="14" fill="#2f6fba"><title>diclofenac_inj_75_mg_3_ml: 9</title></rect>
+<text x="373.6" y="218.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="258.5" y="239.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">misoprostol_tab_200_g</text>
+<rect x="266.5" y="226.0" width="101.1" height="14" fill="#2f6fba"><title>misoprostol_tab_200_g: 9</title></rect>
+<text x="373.6" y="239.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="258.5" y="260.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">diclofenac_suppository_100_mg</text>
+<rect x="266.5" y="247.0" width="101.1" height="14" fill="#2f6fba"><title>diclofenac_suppository_100_mg: 9</title></rect>
+<text x="373.6" y="260.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="258.5" y="281.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">doxycycline_tab_100_mg</text>
+<rect x="266.5" y="268.0" width="89.8" height="14" fill="#2f6fba"><title>doxycycline_tab_100_mg: 8</title></rect>
+<text x="362.3" y="281.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">8</text>
+<text x="258.5" y="302.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">hyocine_butylbromide_tab_10_mg</text>
+<rect x="266.5" y="289.0" width="78.6" height="14" fill="#2f6fba"><title>hyocine_butylbromide_tab_10_mg: 7</title></rect>
+<text x="351.1" y="302.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">7</text>
+<text x="258.5" y="323.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">water_for_injections_inj_bottleof2ml_5ml_10ml</text>
+<rect x="266.5" y="310.0" width="78.6" height="14" fill="#2f6fba"><title>water_for_injections_inj_bottleof2ml_5ml_10ml: 7</title></rect>
+<text x="351.1" y="323.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">7</text>
+<line x1="266.5" y1="16" x2="266.5" y2="331" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Medicines typed free-text (off-EML)</h3>
+<table><thead><tr>
+<th>Entry</th>
+<th>Items</th>
+</tr></thead><tbody>
+<tr>
+<td>FLEXDOL TABLET</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Ibuprofen 100ml syrup</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Paracetamol Syrup</td>
+<td class="num">1</td>
+</tr>
+</tbody></table>
+<p class="note">Two of the three are syrup formulations of medicines already on the EML in tablet form - the picklist appears to carry only the tablet forms.</p>
+<h3>Drug class typed free-text (off-EML)</h3>
+<table><thead><tr>
+<th>Entry</th>
+<th>Items</th>
+</tr></thead><tbody>
+<tr>
+<td>PAIN KILLER</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Antibiotics</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Analgesics and antipyretics</td>
+<td class="num">1</td>
+</tr>
+</tbody></table>
+<p class="note">Both free-text fields are only reachable when EML = No, so these are the same three items.</p>
+<h3>Drug class - all values, EML numbering stripped</h3>
+<table><thead><tr>
+<th>Drug class</th>
+<th>Items</th>
+<th>% of 353</th>
+</tr></thead><tbody>
+<tr>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">77</td>
+<td class="num">21.8%</td>
+</tr>
+<tr>
+<td>Other Anti-bacterials</td>
+<td class="num">52</td>
+<td class="num">14.7%</td>
+</tr>
+<tr>
+<td>Not specified in EML source</td>
+<td class="num">45</td>
+<td class="num">12.7%</td>
+</tr>
+<tr>
+<td>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs)</td>
+<td class="num">42</td>
+<td class="num">11.9%</td>
+</tr>
+<tr>
+<td>Beta-lactam medicines</td>
+<td class="num">37</td>
+<td class="num">10.5%</td>
+</tr>
+<tr>
+<td>PARENTERAL ROUTE</td>
+<td class="num">20</td>
+<td class="num">5.7%</td>
+</tr>
+<tr>
+<td>OXYTOCICS</td>
+<td class="num">14</td>
+<td class="num">4.0%</td>
+</tr>
+<tr>
+<td>Antifungal medicines</td>
+<td class="num">11</td>
+<td class="num">3.1%</td>
+</tr>
+<tr>
+<td>ANTIHYPERTENSIVE MEDICINES</td>
+<td class="num">8</td>
+<td class="num">2.3%</td>
+</tr>
+<tr>
+<td>ANTACID AND OTHER ANTIULCER MEDICINES</td>
+<td class="num">7</td>
+<td class="num">2.0%</td>
+</tr>
+<tr>
+<td>ANTISPASMODIC MEDICINES</td>
+<td class="num">7</td>
+<td class="num">2.0%</td>
+</tr>
+<tr>
+<td>MISCELLANEOUS</td>
+<td class="num">7</td>
+<td class="num">2.0%</td>
+</tr>
+<tr>
+<td>Medicines for other common symptoms in palliative care</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr>
+<td>INSULINS AND OTHER MEDICINES USED FOR DIABETES</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr>
+<td>(blank)</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr>
+<td>Medicines used in depressive disorders</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>ANTI-ANAEMIA MEDICINES</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>ORAL REHYDRATION</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>MEDICINES USED IN HEART FAILURE</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td>Intestinal anthelminthics</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>FOR TREATMENT OF ACUTE ATTACK</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>MEDICINES AFFECTING BLOOD COAGULATION</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>ANTI-OXYTOCICS (TOCOLYTICS)</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>OPIOID ANALGESICS</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>MEDICINES USED IN PSYCHOTIC DISORDERS</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>MEDICINES FOR DIARRHOEA</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>Steroid Anti-inflammatory medicines</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td>ANTI-CANCER AGENTS</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Drug class - all values, EML numbering stripped - top 12</p><svg class="chart" viewBox="0 0 880 302" width="880" height="302" role="img" aria-label="Items" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="302" fill="#ffffff"/>
+<line x1="300.0" y1="16" x2="300.0" y2="268" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="300.0" y="282" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="432.0" y1="16" x2="432.0" y2="268" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="432.0" y="282" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<line x1="564.0" y1="16" x2="564.0" y2="268" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="564.0" y="282" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">40</text>
+<line x1="696.0" y1="16" x2="696.0" y2="268" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="696.0" y="282" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">60</text>
+<line x1="828.0" y1="16" x2="828.0" y2="268" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="828.0" y="282" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">80</text>
+<text x="564" y="296" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">Items</text>
+<text x="292" y="29.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INF</text>
+<rect x="300" y="16.0" width="508.2" height="14" fill="#2f6fba"><title>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES: 77</title></rect>
+<text x="814.2" y="29.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">77</text>
+<text x="292" y="50.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Other Anti-bacterials</text>
+<rect x="300" y="37.0" width="343.2" height="14" fill="#2f6fba"><title>Other Anti-bacterials: 52</title></rect>
+<text x="649.2" y="50.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">52</text>
+<text x="292" y="71.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Not specified in EML source</text>
+<rect x="300" y="58.0" width="297.0" height="14" fill="#2f6fba"><title>Not specified in EML source: 45</title></rect>
+<text x="603.0" y="71.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">45</text>
+<text x="292" y="92.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Non-opioids and non-steroidal Anti-Inflammatory medi</text>
+<rect x="300" y="79.0" width="277.2" height="14" fill="#2f6fba"><title>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs): 42</title></rect>
+<text x="583.2" y="92.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">42</text>
+<text x="292" y="113.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Beta-lactam medicines</text>
+<rect x="300" y="100.0" width="244.2" height="14" fill="#2f6fba"><title>Beta-lactam medicines: 37</title></rect>
+<text x="550.2" y="113.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">37</text>
+<text x="292" y="134.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">PARENTERAL ROUTE</text>
+<rect x="300" y="121.0" width="132.0" height="14" fill="#2f6fba"><title>PARENTERAL ROUTE: 20</title></rect>
+<text x="438.0" y="134.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">20</text>
+<text x="292" y="155.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">OXYTOCICS</text>
+<rect x="300" y="142.0" width="92.4" height="14" fill="#2f6fba"><title>OXYTOCICS: 14</title></rect>
+<text x="398.4" y="155.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">14</text>
+<text x="292" y="176.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Antifungal medicines</text>
+<rect x="300" y="163.0" width="72.6" height="14" fill="#2f6fba"><title>Antifungal medicines: 11</title></rect>
+<text x="378.6" y="176.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="292" y="197.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ANTIHYPERTENSIVE MEDICINES</text>
+<rect x="300" y="184.0" width="52.8" height="14" fill="#2f6fba"><title>ANTIHYPERTENSIVE MEDICINES: 8</title></rect>
+<text x="358.8" y="197.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">8</text>
+<text x="292" y="218.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ANTACID AND OTHER ANTIULCER MEDICINES</text>
+<rect x="300" y="205.0" width="46.2" height="14" fill="#2f6fba"><title>ANTACID AND OTHER ANTIULCER MEDICINES: 7</title></rect>
+<text x="352.2" y="218.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">7</text>
+<text x="292" y="239.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">ANTISPASMODIC MEDICINES</text>
+<rect x="300" y="226.0" width="46.2" height="14" fill="#2f6fba"><title>ANTISPASMODIC MEDICINES: 7</title></rect>
+<text x="352.2" y="239.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">7</text>
+<text x="292" y="260.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">MISCELLANEOUS</text>
+<rect x="300" y="247.0" width="46.2" height="14" fill="#2f6fba"><title>MISCELLANEOUS: 7</title></rect>
+<text x="352.2" y="260.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">7</text>
+<line x1="300" y1="16" x2="300" y2="268" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Top five drug classes at each facility</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>Drug class</th>
+<th>Items</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">17</td>
+</tr>
+<tr>
+<td>Masaka DH</td>
+<td>PARENTERAL ROUTE</td>
+<td class="num">15</td>
+</tr>
+<tr>
+<td>Masaka DH</td>
+<td>OXYTOCICS</td>
+<td class="num">14</td>
+</tr>
+<tr>
+<td>Masaka DH</td>
+<td>Beta-lactam medicines</td>
+<td class="num">7</td>
+</tr>
+<tr>
+<td>Masaka DH</td>
+<td>Other Anti-bacterials</td>
+<td class="num">4</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td>Other Anti-bacterials</td>
+<td class="num">16</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">14</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td>Not specified in EML source</td>
+<td class="num">11</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td>Beta-lactam medicines</td>
+<td class="num">7</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs)</td>
+<td class="num">6</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td>Other Anti-bacterials</td>
+<td class="num">18</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">17</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td>Beta-lactam medicines</td>
+<td class="num">6</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td>Not specified in EML source</td>
+<td class="num">6</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td>PARENTERAL ROUTE</td>
+<td class="num">4</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td>Not specified in EML source</td>
+<td class="num">14</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">12</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs)</td>
+<td class="num">11</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td>Beta-lactam medicines</td>
+<td class="num">7</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td>Other Anti-bacterials</td>
+<td class="num">5</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs)</td>
+<td class="num">11</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>Not specified in EML source</td>
+<td class="num">9</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">6</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>Beta-lactam medicines</td>
+<td class="num">5</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>Other Anti-bacterials</td>
+<td class="num">4</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td>Non-opioids and non-steroidal Anti-Inflammatory medicines (NSAIMs)</td>
+<td class="num">11</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td>NON-OPIOIDS, ANTIPYRETICS AND NON-STEROIDAL ANTI-INFLAMMATORY MEDICINES</td>
+<td class="num">11</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td>Beta-lactam medicines</td>
+<td class="num">5</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td>Not specified in EML source</td>
+<td class="num">5</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td>Other Anti-bacterials</td>
+<td class="num">5</td>
+</tr>
+</tbody></table>
+<p class="note">Masaka DH is the only facility where oxytocics and parenteral products lead, consistent with a district hospital running maternity and inpatient services.</p>
+<h3>Quantity prescribed - full distribution</h3>
+<table><thead><tr>
+<th>Qty prescribed</th>
+<th>Items</th>
+<th>% of 353</th>
+</tr></thead><tbody>
+<tr>
+<td class="num">1</td>
+<td class="num">47</td>
+<td class="num">13.3%</td>
+</tr>
+<tr>
+<td class="num">2</td>
+<td class="num">23</td>
+<td class="num">6.5%</td>
+</tr>
+<tr>
+<td class="num">3</td>
+<td class="num">8</td>
+<td class="num">2.3%</td>
+</tr>
+<tr>
+<td class="num">4</td>
+<td class="num">11</td>
+<td class="num">3.1%</td>
+</tr>
+<tr>
+<td class="num">5</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td class="num">6</td>
+<td class="num">16</td>
+<td class="num">4.5%</td>
+</tr>
+<tr>
+<td class="num">8</td>
+<td class="num">9</td>
+<td class="num">2.5%</td>
+</tr>
+<tr>
+<td class="num">9</td>
+<td class="num">44</td>
+<td class="num">12.5%</td>
+</tr>
+<tr>
+<td class="num">10</td>
+<td class="num">51</td>
+<td class="num">14.4%</td>
+</tr>
+<tr>
+<td class="num">12</td>
+<td class="num">21</td>
+<td class="num">5.9%</td>
+</tr>
+<tr>
+<td class="num">14</td>
+<td class="num">11</td>
+<td class="num">3.1%</td>
+</tr>
+<tr>
+<td class="num">15</td>
+<td class="num">61</td>
+<td class="num">17.3%</td>
+</tr>
+<tr>
+<td class="num">16</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">18</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td class="num">20</td>
+<td class="num">13</td>
+<td class="num">3.7%</td>
+</tr>
+<tr>
+<td class="num">23</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">28</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td class="num">24</td>
+<td class="num">6.8%</td>
+</tr>
+<tr>
+<td class="num">36</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">40</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">42</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">60</td>
+<td class="num">2</td>
+<td class="num">0.6%</td>
+</tr>
+<tr>
+<td class="num">90</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr>
+<td class="num">180</td>
+<td class="num">1</td>
+<td class="num">0.3%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Quantity prescribed - full distribution</p><svg class="chart" viewBox="0 0 880 272" width="880" height="272" role="img" aria-label="Items" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="272" fill="#ffffff"/>
+<line x1="54" y1="230.0" x2="864" y2="230.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="233.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="54" y1="160.0" x2="864" y2="160.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="163.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">25</text>
+<line x1="54" y1="90.0" x2="864" y2="90.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="93.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<line x1="54" y1="20.0" x2="864" y2="20.0" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="46" y="23.5" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">75</text>
+<text x="10" y="125" font-size="10" font-family="Arial, sans-serif" fill="#333333" transform="rotate(-90 10 125)" text-anchor="middle">Items</text>
+<rect x="59.4" y="98.4" width="23.0" height="131.6" fill="#2f6fba"><title>1: 47</title></rect>
+<text x="70.9" y="94.4" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">47</text>
+<text x="70.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<rect x="93.2" y="165.6" width="23.0" height="64.4" fill="#2f6fba"><title>2: 23</title></rect>
+<text x="104.6" y="161.6" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">23</text>
+<text x="104.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<rect x="126.9" y="207.6" width="23.0" height="22.4" fill="#2f6fba"><title>3: 8</title></rect>
+<text x="138.4" y="203.6" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">8</text>
+<text x="138.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">3</text>
+<rect x="160.7" y="199.2" width="23.0" height="30.8" fill="#2f6fba"><title>4: 11</title></rect>
+<text x="172.1" y="195.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="172.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">4</text>
+<rect x="194.4" y="224.4" width="23.0" height="5.6" fill="#2f6fba"><title>5: 2</title></rect>
+<text x="205.9" y="220.4" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="205.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">5</text>
+<rect x="228.2" y="185.2" width="23.0" height="44.8" fill="#2f6fba"><title>6: 16</title></rect>
+<text x="239.6" y="181.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">16</text>
+<text x="239.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">6</text>
+<rect x="261.9" y="204.8" width="23.0" height="25.2" fill="#2f6fba"><title>8: 9</title></rect>
+<text x="273.4" y="200.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">9</text>
+<text x="273.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">8</text>
+<rect x="295.6" y="106.8" width="23.0" height="123.2" fill="#2f6fba"><title>9: 44</title></rect>
+<text x="307.1" y="102.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">44</text>
+<text x="307.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">9</text>
+<rect x="329.4" y="87.2" width="23.0" height="142.8" fill="#2f6fba"><title>10: 51</title></rect>
+<text x="340.9" y="83.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">51</text>
+<text x="340.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">10</text>
+<rect x="363.1" y="171.2" width="23.0" height="58.8" fill="#2f6fba"><title>12: 21</title></rect>
+<text x="374.6" y="167.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">21</text>
+<text x="374.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">12</text>
+<rect x="396.9" y="199.2" width="23.0" height="30.8" fill="#2f6fba"><title>14: 11</title></rect>
+<text x="408.4" y="195.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">11</text>
+<text x="408.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">14</text>
+<rect x="430.6" y="59.2" width="23.0" height="170.8" fill="#2f6fba"><title>15: 61</title></rect>
+<text x="442.1" y="55.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">61</text>
+<text x="442.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">15</text>
+<rect x="464.4" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>16: 1</title></rect>
+<text x="475.9" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="475.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">16</text>
+<rect x="498.1" y="224.4" width="23.0" height="5.6" fill="#2f6fba"><title>18: 2</title></rect>
+<text x="509.6" y="220.4" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="509.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">18</text>
+<rect x="531.9" y="193.6" width="23.0" height="36.4" fill="#2f6fba"><title>20: 13</title></rect>
+<text x="543.4" y="189.6" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">13</text>
+<text x="543.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">20</text>
+<rect x="565.6" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>23: 1</title></rect>
+<text x="577.1" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="577.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">23</text>
+<rect x="599.4" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>28: 1</title></rect>
+<text x="610.9" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="610.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">28</text>
+<rect x="633.1" y="162.8" width="23.0" height="67.2" fill="#2f6fba"><title>30: 24</title></rect>
+<text x="644.6" y="158.8" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">24</text>
+<text x="644.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">30</text>
+<rect x="666.9" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>36: 1</title></rect>
+<text x="678.4" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="678.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">36</text>
+<rect x="700.6" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>40: 1</title></rect>
+<text x="712.1" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="712.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">40</text>
+<rect x="734.4" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>42: 1</title></rect>
+<text x="745.9" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="745.9" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">42</text>
+<rect x="768.1" y="224.4" width="23.0" height="5.6" fill="#2f6fba"><title>60: 2</title></rect>
+<text x="779.6" y="220.4" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="779.6" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">60</text>
+<rect x="801.9" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>90: 1</title></rect>
+<text x="813.4" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="813.4" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">90</text>
+<rect x="835.6" y="227.2" width="23.0" height="2.8" fill="#2f6fba"><title>180: 1</title></rect>
+<text x="847.1" y="223.2" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">1</text>
+<text x="847.1" y="244" text-anchor="middle" font-size="9.5" font-family="Arial, sans-serif" fill="#333333">180</text>
+<line x1="54" y1="230" x2="864" y2="230" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Quantity prescribed - summary statistics</h3>
+<table><thead><tr>
+<th>Field</th>
+<th>n</th>
+<th>Missing</th>
+<th>Sum</th>
+<th>Mean</th>
+<th>Min</th>
+<th>P25</th>
+<th>Median</th>
+<th>P75</th>
+<th>Max</th>
+</tr></thead><tbody>
+<tr>
+<td>Qty prescribed</td>
+<td class="num">353</td>
+<td class="num">0</td>
+<td class="num">4,157</td>
+<td class="num">11.78</td>
+<td class="num">1</td>
+<td class="num">4</td>
+<td class="num">10</td>
+<td class="num">15</td>
+<td class="num">180</td>
+</tr>
+</tbody></table>
+<h3>The 15 largest quantities</h3>
+<table><thead><tr>
+<th>Qty</th>
+<th>Medicine</th>
+<th>Facility</th>
+</tr></thead><tbody>
+<tr>
+<td class="num">180</td>
+<td>fer_salts_folic_acid_tab_60_mg_400_g</td>
+<td>Solace Ministries CS</td>
+</tr>
+<tr>
+<td class="num">90</td>
+<td>amitriptyline_tab_25_mg</td>
+<td>Solace Ministries CS</td>
+</tr>
+<tr>
+<td class="num">60</td>
+<td>metformin_tab_500_mg_850_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">60</td>
+<td>nifedipine_tab_10_mg_20_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">42</td>
+<td>phenoxy_methyl_penicillin_tab_250_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">40</td>
+<td>amlodipine_tab_5_mg_10_mg</td>
+<td>Kabusunzu CS</td>
+</tr>
+<tr>
+<td class="num">36</td>
+<td>metronidazole_tab_250_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>phenoxy_methyl_penicillin_tab_250_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>metronidazole_tab_250_mg</td>
+<td>Solace Ministries CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>amoxicillin_caps_250_mg_500_mg</td>
+<td>Gikondo CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>cloxacillin_caps_250_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>paracetamol_tab_500_mg</td>
+<td>Masaka DH</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>paracetamol_tab_500_mg</td>
+<td>Masaka DH</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>gliclazide_tab_60_80_mg</td>
+<td>Rwampara CS</td>
+</tr>
+<tr>
+<td class="num">30</td>
+<td>amlodipine_tab_5_mg_10_mg</td>
+<td>Rwampara CS</td>
+</tr>
+</tbody></table>
+<h3>Availability at the facility on the prescription date</h3>
+<table><thead><tr>
+<th>Response</th>
+<th>Items</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>Yes</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+</tr>
+<tr>
+<td>No</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>The unserved items in full</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>Type</th>
+<th>District</th>
+<th>Date</th>
+<th>Prescriber</th>
+<th>Medicine</th>
+<th>On EML</th>
+<th>Qty</th>
+<th>Ordered this month</th>
+<th>Supplied</th>
+<th>RMS Regional</th>
+<th>RMS Central</th>
+<th>Flag</th>
+<th>Unit price (RWF)</th>
+<th>Value unserved (RWF)</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td>District Hospital</td>
+<td>Kicukiro</td>
+<td>2026-09-10</td>
+<td>Specialist</td>
+<td>FLEXDOL TABLET</td>
+<td>No</td>
+<td class="num">15</td>
+<td>No</td>
+<td>Not at all</td>
+<td>No</td>
+<td>No</td>
+<td>Nationwide stock-out</td>
+<td class="num">150</td>
+<td class="num">2,250</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>HC</td>
+<td>Kicukiro</td>
+<td>2026-09-10</td>
+<td>Nurse</td>
+<td>phenoxy_methyl_penicillin_tab_250_mg</td>
+<td>Yes</td>
+<td class="num">30</td>
+<td>Yes</td>
+<td>Not at all</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Distribution issue</td>
+<td class="num">30</td>
+<td class="num">900</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td>HC</td>
+<td>Kicukiro</td>
+<td>2026-09-07</td>
+<td>Nurse</td>
+<td>diclofenac_tab_50_mg</td>
+<td>Yes</td>
+<td class="num">15</td>
+<td>No</td>
+<td>Not at all</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Distribution issue</td>
+<td class="num">8</td>
+<td class="num">120</td>
+</tr>
+</tbody></table>
+<p class="note">Two of the three were in stock at RMS but never reached the facility - one was ordered and not supplied, the other never ordered. On the pilot&#x27;s own evidence the bottleneck is facility-level ordering and last-mile distribution, not national availability.</p>
+<h3>Follow-up responses across the unserved rows</h3>
+<table><thead><tr>
+<th>Question</th>
+<th>Responses</th>
+</tr></thead><tbody>
+<tr>
+<td>Ordered during the month?</td>
+<td>No 2 | Yes 1</td>
+</tr>
+<tr>
+<td>Supplied fully / partially / not at all?</td>
+<td>Not at all 3</td>
+</tr>
+<tr>
+<td>Available at RMS Regional?</td>
+<td>Yes 2 | No 1</td>
+</tr>
+<tr>
+<td>Available at RMS Central?</td>
+<td>Yes 2 | No 1</td>
+</tr>
+<tr>
+<td>distribution_nationwide</td>
+<td>Distribution issue 2 | Nationwide stock-out 1</td>
+</tr>
+</tbody></table>
+<p class="note">Every follow-up question is conditional on &#x27;available = No&#x27;, so all are answered on exactly these rows and blank on the other 350. That is the form working as designed, not missing data.</p>
+<h3>Items and unserved rate by facility</h3>
+<table><thead><tr>
+<th>Type</th>
+<th>Facility</th>
+<th>Prescriptions</th>
+<th>Items</th>
+<th>Unserved</th>
+<th>Unserved rate</th>
+</tr></thead><tbody>
+<tr>
+<td>District Hospital</td>
+<td>Masaka DH</td>
+<td class="num">39</td>
+<td class="num">70</td>
+<td class="num">1</td>
+<td class="num">1.4%</td>
+</tr>
+<tr>
+<td>MHC</td>
+<td>Remera (Gasabo) MHC</td>
+<td class="num">29</td>
+<td class="num">65</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+</tr>
+<tr>
+<td>HC</td>
+<td>Kabusunzu CS</td>
+<td class="num">27</td>
+<td class="num">65</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+</tr>
+<tr>
+<td>HC</td>
+<td>Rwampara CS</td>
+<td class="num">30</td>
+<td class="num">61</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+</tr>
+<tr>
+<td>HC</td>
+<td>Gikondo CS</td>
+<td class="num">24</td>
+<td class="num">48</td>
+<td class="num">2</td>
+<td class="num">4.2%</td>
+</tr>
+<tr>
+<td>HC</td>
+<td>Solace Ministries CS</td>
+<td class="num">30</td>
+<td class="num">44</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td></td>
+<td class="num">179</td>
+<td class="num">353</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+</tr>
+</tbody></table>
+<p class="note">Geography taken from the parent prescription. Read off medicine_item&#x27;s own Facility column instead, the unserved items land at the wrong facilities.</p>
+<div class="chartwrap"><p class="caption">Chart: Items and unserved rate by facility</p><svg class="chart" viewBox="0 0 880 176" width="880" height="176" role="img" aria-label="Items" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="176" fill="#ffffff"/>
+<line x1="124.0" y1="16" x2="124.0" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="124.0" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="358.7" y1="16" x2="358.7" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="358.7" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">25</text>
+<line x1="593.3" y1="16" x2="593.3" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="593.3" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<line x1="828.0" y1="16" x2="828.0" y2="142" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="828.0" y="156" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">75</text>
+<text x="476" y="170" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">Items</text>
+<text x="116.0" y="29.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Masaka DH</text>
+<rect x="124.0" y="16.0" width="657.1" height="14" fill="#2f6fba"><title>Masaka DH: 70</title></rect>
+<text x="787.1" y="29.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">70</text>
+<text x="116.0" y="50.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Remera (Gasabo) MHC</text>
+<rect x="124.0" y="37.0" width="610.1" height="14" fill="#2f6fba"><title>Remera (Gasabo) MHC: 65</title></rect>
+<text x="740.1" y="50.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">65</text>
+<text x="116.0" y="71.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Kabusunzu CS</text>
+<rect x="124.0" y="58.0" width="610.1" height="14" fill="#2f6fba"><title>Kabusunzu CS: 65</title></rect>
+<text x="740.1" y="71.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">65</text>
+<text x="116.0" y="92.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Rwampara CS</text>
+<rect x="124.0" y="79.0" width="572.6" height="14" fill="#2f6fba"><title>Rwampara CS: 61</title></rect>
+<text x="702.6" y="92.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">61</text>
+<text x="116.0" y="113.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Gikondo CS</text>
+<rect x="124.0" y="100.0" width="450.6" height="14" fill="#2f6fba"><title>Gikondo CS: 48</title></rect>
+<text x="580.6" y="113.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">48</text>
+<text x="116.0" y="134.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Solace Ministries CS</text>
+<rect x="124.0" y="121.0" width="413.0" height="14" fill="#2f6fba"><title>Solace Ministries CS: 44</title></rect>
+<text x="543.0" y="134.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">44</text>
+<line x1="124.0" y1="16" x2="124.0" y2="142" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Items and unserved by prescriber category</h3>
+<table><thead><tr>
+<th>Prescriber category</th>
+<th>Items</th>
+<th>Unserved</th>
+</tr></thead><tbody>
+<tr>
+<td>Nurse</td>
+<td class="num">280</td>
+<td class="num">2</td>
+</tr>
+<tr>
+<td>General Practioner</td>
+<td class="num">49</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Specialist</td>
+<td class="num">15</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Midwife</td>
+<td class="num">4</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Dental Surgeon</td>
+<td class="num">3</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Allied Health Professional</td>
+<td class="num">2</td>
+<td class="num">0</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">353</td>
+<td class="num">3</td>
+</tr>
+</tbody></table>
+<h3>Items by district and facility type</h3>
+<table><thead><tr>
+<th>District</th>
+<th>Facility type</th>
+<th>Items</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>Nyarugenge</td>
+<td>HC</td>
+<td class="num">126</td>
+<td class="num">35.7%</td>
+</tr>
+<tr>
+<td>Kicukiro</td>
+<td>District Hospital</td>
+<td class="num">70</td>
+<td class="num">19.8%</td>
+</tr>
+<tr>
+<td>Gasabo</td>
+<td>MHC</td>
+<td class="num">65</td>
+<td class="num">18.4%</td>
+</tr>
+<tr>
+<td>Kicukiro</td>
+<td>HC</td>
+<td class="num">48</td>
+<td class="num">13.6%</td>
+</tr>
+<tr>
+<td>Gasabo</td>
+<td>HC</td>
+<td class="num">44</td>
+<td class="num">12.5%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td></td>
+<td class="num">353</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<h3>EML status and name type by facility</h3>
+<table><thead><tr>
+<th>Facility</th>
+<th>Items</th>
+<th>On EML</th>
+<th>Typed &#x27;Brand&#x27;</th>
+</tr></thead><tbody>
+<tr>
+<td>Masaka DH</td>
+<td class="num">70</td>
+<td class="num">69</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Remera (Gasabo) MHC</td>
+<td class="num">65</td>
+<td class="num">65</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Kabusunzu CS</td>
+<td class="num">65</td>
+<td class="num">65</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Rwampara CS</td>
+<td class="num">61</td>
+<td class="num">61</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Gikondo CS</td>
+<td class="num">48</td>
+<td class="num">46</td>
+<td class="num">1</td>
+</tr>
+<tr>
+<td>Solace Ministries CS</td>
+<td class="num">44</td>
+<td class="num">44</td>
+<td class="num">44</td>
+</tr>
+</tbody></table>
+<h3>Prescription-level service status, recomputed from medicine_item</h3>
+<table><thead><tr>
+<th>Status</th>
+<th>Prescriptions</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>Fully served</td>
+<td class="num">176</td>
+<td class="num">98.3%</td>
+</tr>
+<tr>
+<td>Partly unserved</td>
+<td class="num">2</td>
+<td class="num">1.1%</td>
+</tr>
+<tr>
+<td>Fully unserved</td>
+<td class="num">1</td>
+<td class="num">0.6%</td>
+</tr>
+<tr class="total">
+<td>Total</td>
+<td class="num">179</td>
+<td class="num">100.0%</td>
+</tr>
+</tbody></table>
+<div class="chartwrap"><p class="caption">Chart: Prescription-level service status, recomputed from medicine_item</p><svg class="chart" viewBox="0 0 880 113" width="880" height="113" role="img" aria-label="Prescriptions" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="880" height="113" fill="#ffffff"/>
+<line x1="95.5" y1="16" x2="95.5" y2="79" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="95.5" y="93" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">0</text>
+<line x1="278.6" y1="16" x2="278.6" y2="79" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="278.6" y="93" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">50</text>
+<line x1="461.8" y1="16" x2="461.8" y2="79" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="461.8" y="93" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">100</text>
+<line x1="644.9" y1="16" x2="644.9" y2="79" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="644.9" y="93" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">150</text>
+<line x1="828.0" y1="16" x2="828.0" y2="79" stroke="#d8d8d8" stroke-width="1" fill="none"/>
+<text x="828.0" y="93" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">200</text>
+<text x="462" y="107" text-anchor="middle" font-size="10" font-family="Arial, sans-serif" fill="#333333">Prescriptions</text>
+<text x="87.5" y="29.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Fully served</text>
+<rect x="95.5" y="16.0" width="644.6" height="14" fill="#2f6fba"><title>Fully served: 176</title></rect>
+<text x="746.1" y="29.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">176</text>
+<text x="87.5" y="50.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Partly unserved</text>
+<rect x="95.5" y="37.0" width="7.3" height="14" fill="#2f6fba"><title>Partly unserved: 2</title></rect>
+<text x="108.8" y="50.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">2</text>
+<text x="87.5" y="71.0" text-anchor="end" font-size="10" font-family="Arial, sans-serif" fill="#333333">Fully unserved</text>
+<rect x="95.5" y="58.0" width="3.7" height="14" fill="#2f6fba"><title>Fully unserved: 1</title></rect>
+<text x="105.2" y="71.0" font-size="10" font-family="Arial, sans-serif" fill="#333333">1</text>
+<line x1="95.5" y1="16" x2="95.5" y2="79" stroke="#888888" stroke-width="1" fill="none"/>
+</svg></div>
+<h3>Missingness</h3>
+<table><thead><tr>
+<th>Column</th>
+<th>Missing</th>
+<th>% missing</th>
+<th>Read</th>
+</tr></thead><tbody>
+<tr>
+<td>Province</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>District</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>Sector</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>Facility</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>facility_type</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>Prescriber category</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>Patient / Prescription ID</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>Date of prescription</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>populated but misaligned - Defect 1</td>
+</tr>
+<tr>
+<td>item_number</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Is this medicine on the EML (Essential Medicines List)?</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Medicine name (type the first letter and select)</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+<td>expected - the 3 off-EML rows</td>
+</tr>
+<tr>
+<td>Medicine name (not on EML list) - please specify</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional</td>
+</tr>
+<tr>
+<td>Drug class</td>
+<td class="num">3</td>
+<td class="num">0.8%</td>
+<td>expected - the 3 off-EML rows</td>
+</tr>
+<tr>
+<td>Drug class (not on EML list) - please specify</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional</td>
+</tr>
+<tr>
+<td>Name type</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Qty prescribed</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Was the medicine available at the health facility during the date of prescription?</td>
+<td class="num">0</td>
+<td class="num">0.0%</td>
+<td>complete</td>
+</tr>
+<tr>
+<td>Was the medicine ordered during the month the prescription was made?</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>Was it supplied fully, partially, or not at all?</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>Unit price for the medicine that was not available (RWF)</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>total_cost_unserved</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>Was the medicine available at RMS Regional during the date of prescription?</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>Was the medicine available at RMS Central during the date of prescription?</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+<tr>
+<td>distribution_nationwide</td>
+<td class="num">350</td>
+<td class="num">99.2%</td>
+<td>expected - conditional on unavailable</td>
+</tr>
+</tbody></table>
+<h2 id="Data-quality">Data quality</h2>
+<h3>Defect 1 - the first eight columns of medicine_item are misaligned</h3>
+<table><thead><tr>
+<th>Column</th>
+<th>Rows disagreeing with the parent</th>
+<th>of</th>
+<th>%</th>
+</tr></thead><tbody>
+<tr>
+<td>Patient / Prescription ID</td>
+<td class="num">335</td>
+<td class="num">353</td>
+<td class="num">94.9%</td>
+</tr>
+<tr>
+<td>Date of prescription</td>
+<td class="num">313</td>
+<td class="num">353</td>
+<td class="num">88.7%</td>
+</tr>
+<tr>
+<td>Facility</td>
+<td class="num">271</td>
+<td class="num">353</td>
+<td class="num">76.8%</td>
+</tr>
+<tr>
+<td>Prescriber category</td>
+<td class="num">197</td>
+<td class="num">353</td>
+<td class="num">55.8%</td>
+</tr>
+<tr>
+<td>Facility literally &#x27;#N/A&#x27;</td>
+<td class="num">41</td>
+<td class="num">353</td>
+<td class="num">11.6%</td>
+</tr>
+</tbody></table>
+<p class="note">Province, District, Sector, Facility, facility_type, Prescriber category, Patient / Prescription ID and Date of prescription were filled by a lookup that never resolved. FIX: drop these eight columns from the export, or join medicine_item to prescription on (_submission__uuid, _parent_index) -&gt; (_submission__uuid, _index) and take those fields from the parent. Read straight off the sheet, the three unserved medicines land at Masaka DH and Kabusunzu CS; joined correctly they are at Gikondo CS (2) and Masaka DH (1).</p>
+<h3>Defect 2 - the calculated fields on &#x27;prescription&#x27; are stale</h3>
+<table><thead><tr>
+<th>Field</th>
+<th>Exported sum</th>
+<th>Actual</th>
+<th>Rows wrong</th>
+<th>of</th>
+</tr></thead><tbody>
+<tr>
+<td>n_items_available</td>
+<td class="num">92</td>
+<td class="num">350</td>
+<td class="num">125</td>
+<td class="num">179</td>
+</tr>
+<tr>
+<td>n_items_unavailable</td>
+<td class="num">1</td>
+<td class="num">3</td>
+<td class="num">4</td>
+<td class="num">179</td>
+</tr>
+<tr>
+<td>available + unavailable = prescribed</td>
+<td>fails</td>
+<td></td>
+<td class="num">126</td>
+<td class="num">179</td>
+</tr>
+</tbody></table>
+<p class="note">The real item-level unserved rate is 0.8% (3 of 353). The exported pct_items_unserved averages 0.28 and implies a third of that. FIX: recompute all three from medicine_item before any analysis or dashboard.</p>
+<h3>Link integrity - sound</h3>
+<table><thead><tr>
+<th>Check</th>
+<th>Result</th>
+</tr></thead><tbody>
+<tr>
+<td>Prescription rows with an unknown submission uuid</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>medicine_item rows with no matching parent</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Submissions with no prescription rows</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>medicine_item counts matching the parent&#x27;s stated number</td>
+<td>179 / 179</td>
+</tr>
+</tbody></table>
+<h3>Other flags</h3>
+<table><thead><tr>
+<th>Flag</th>
+<th>Value</th>
+</tr></thead><tbody>
+<tr>
+<td>Items with drug class &#x27;Not specified in EML source&#x27;</td>
+<td class="num">45</td>
+</tr>
+<tr>
+<td>Duplicate Patient / Prescription IDs</td>
+<td class="num">3</td>
+</tr>
+<tr>
+<td>Rows with a Kobo validation status</td>
+<td class="num">0</td>
+</tr>
+<tr>
+<td>Upload days vs prescription date span</td>
+<td>all 129 submissions uploaded 2026-09-10; prescriptions span 2026-07-31 .. 2026-09-10</td>
+</tr>
+</tbody></table>
+<p class="note">Retrospective chart abstraction, not point-of-care capture.</p>
+<h2 id="Findings">Findings</h2>
+<h3>Findings and recommended actions</h3>
+<table><thead><tr>
+<th>Finding</th>
+<th>Evidence</th>
+<th>Action</th>
+</tr></thead><tbody>
+<tr>
+<td>Solace Ministries CS answered &#x27;Brand&#x27; on all 44 of its items</td>
+<td>44 of the 46 brand-typed rows in the dataset; every other facility answered &#x27;Brand&#x27; at most once. All 44 carry an INN name picked from the EML list and all 44 are flagged on-EML.</td>
+<td>One collector reading the question differently, not a brand-prescribing signal. Re-brief that collector; treat Name type as unusable for Solace until re-collected.</td>
+</tr>
+<tr>
+<td>The 10 September spike is a quota, not prescribing volume</td>
+<td>Five of six facilities recorded exactly 10 prescriptions on the final day (Kabusunzu 6); all 129 submissions uploaded that same day against prescription dates back to 31 July.</td>
+<td>Exclude 10 September from any time trend. Record the abstraction protocol alongside the data so later rounds are comparable.</td>
+</tr>
+<tr>
+<td>The EML reference list behind the form has gaps</td>
+<td>45 items (12.7%) carry drug class &#x27;Not specified in EML source&#x27;; two of the three free-text medicines are syrup forms of products already on the list; the picklist holds near-duplicates and two spelling variants.</td>
+<td>Reconcile the picklist against &#x27;List of essential medecines.xlsx&#x27; before the next round - fill missing classes, add paediatric/syrup forms, de-duplicate.</td>
+</tr>
+<tr>
+<td>Three unserved items cannot carry a comparison</td>
+<td>Every breakdown by facility, facility type or cadre is driven by single observations. Gikondo&#x27;s 4.2% is two items; Masaka&#x27;s 1.4% is one; the Specialist rate is one of fifteen.</td>
+<td>Report the count and the three case narratives, not rates or comparisons. The pilot succeeds as an instrument test; sample size must grow substantially before unserved rates mean anything.</td>
+</tr>
+<tr>
+<td>Sector duplicates Facility</td>
+<td>The six facilities map one-to-one onto six sectors.</td>
+<td>Use one of the two variables, not both.</td>
+</tr>
+</tbody></table>
+</body></html>

@@ -1,0 +1,2342 @@
+{
+ "weights": {
+  "District hospital": {
+   "population": 37,
+   "sampled": 24,
+   "weight": 1.54
+  },
+  "Health centre": {
+   "population": 516,
+   "sampled": 205,
+   "weight": 2.52
+  },
+  "Health post": {
+   "population": 1253,
+   "sampled": 25,
+   "weight": 50.12
+  },
+  "Level 2 teaching hospital": {
+   "population": 9,
+   "sampled": 10,
+   "weight": 1.0
+  },
+  "National referral hospital": {
+   "population": 5,
+   "sampled": 2,
+   "weight": 2.5
+  }
+ },
+ "setting_match": {
+  "rural": 171,
+  "urban": 69,
+  "rural (HP)": 25,
+  "unknown": 1
+ },
+ "estimates": [
+  {
+   "indicator": "Availability, expected medicines (M1)",
+   "unweighted": {
+    "est": 87.8,
+    "lo": 87.0,
+    "hi": 88.6,
+    "se": 0.00408421191230934,
+    "deff": 1.4751816346645947,
+    "n_rows": 9493,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 77.7,
+    "lo": 75.8,
+    "hi": 79.6,
+    "se": 0.009737246754874309,
+    "deff": 5.198632573394619,
+    "n_rows": 9493,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Availability, managed products (M2)",
+   "unweighted": {
+    "est": 93.7,
+    "lo": 92.9,
+    "hi": 94.4,
+    "se": 0.0037673182403073395,
+    "deff": 2.126742463876834,
+    "n_rows": 8897,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 93.0,
+    "lo": 90.8,
+    "hi": 95.3,
+    "se": 0.01155167547182316,
+    "deff": 18.333663172675706,
+    "n_rows": 8897,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Stock-out incidence, Jun-Aug",
+   "unweighted": {
+    "est": 9.7,
+    "lo": 8.6,
+    "hi": 10.8,
+    "se": 0.005640382126059044,
+    "deff": 3.500048561919572,
+    "n_rows": 9628,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 8.9,
+    "lo": 6.4,
+    "hi": 11.4,
+    "se": 0.012763633202994524,
+    "deff": 19.327557365267225,
+    "n_rows": 9628,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Stocked out on the visit day",
+   "unweighted": {
+    "est": 7.0,
+    "lo": 6.1,
+    "hi": 7.8,
+    "se": 0.00439357240966818,
+    "deff": 2.521285047278863,
+    "n_rows": 8474,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 8.0,
+    "lo": 5.1,
+    "hi": 10.9,
+    "se": 0.01457984010529285,
+    "deff": 24.460564260093403,
+    "n_rows": 8474,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Understocked (<1 month)",
+   "unweighted": {
+    "est": 22.3,
+    "lo": 20.7,
+    "hi": 23.9,
+    "se": 0.008084103487335535,
+    "deff": 3.1969906831878965,
+    "n_rows": 8474,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 19.5,
+    "lo": 16.8,
+    "hi": 22.2,
+    "se": 0.013643488609797402,
+    "deff": 10.042484971947728,
+    "n_rows": 8474,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Adequately stocked (1-2 months)",
+   "unweighted": {
+    "est": 24.6,
+    "lo": 23.4,
+    "hi": 25.7,
+    "se": 0.006076055319807337,
+    "deff": 1.6886204049134286,
+    "n_rows": 8474,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 24.2,
+    "lo": 21.7,
+    "hi": 26.7,
+    "se": 0.012595676418310742,
+    "deff": 7.331474740740811,
+    "n_rows": 8474,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Overstocked (>2 months)",
+   "unweighted": {
+    "est": 46.2,
+    "lo": 44.3,
+    "hi": 48.0,
+    "se": 0.009554603627392765,
+    "deff": 3.1125820528492927,
+    "n_rows": 8474,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 48.3,
+    "lo": 44.6,
+    "hi": 52.0,
+    "se": 0.018776025026576982,
+    "deff": 11.963644081747342,
+    "n_rows": 8474,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Inventory record accuracy (exact match)",
+   "unweighted": {
+    "est": 56.1,
+    "lo": 51.6,
+    "hi": 60.6,
+    "se": 0.023017942332974117,
+    "deff": 19.050821850901187,
+    "n_rows": 8856,
+    "n_clusters": 260
+   },
+   "weighted": {
+    "est": 46.5,
+    "lo": 36.8,
+    "hi": 56.2,
+    "se": 0.04931767978053888,
+    "deff": 86.58550070938706,
+    "n_rows": 8856,
+    "n_clusters": 260
+   }
+  },
+  {
+   "indicator": "Order fill rate (quantity)",
+   "unweighted": {
+    "est": 93.1,
+    "lo": 91.0,
+    "hi": 95.2,
+    "se": 0.010847150533631555,
+    "deff": null,
+    "n_rows": 38056292,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 93.0,
+    "lo": 91.1,
+    "hi": 94.9,
+    "se": 0.009735987104978533,
+    "deff": null,
+    "n_rows": 38056292,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "CHW product availability (managed)",
+   "unweighted": {
+    "est": 80.1,
+    "lo": 76.8,
+    "hi": 83.4,
+    "se": 0.016983190298762156,
+    "deff": 2.0740292483710165,
+    "n_rows": 1146,
+    "n_clusters": 175
+   },
+   "weighted": null
+  },
+  {
+   "indicator": "Prescriptions fully served",
+   "unweighted": {
+    "est": 98.8,
+    "lo": 98.0,
+    "hi": 99.6,
+    "se": 0.004260517562709381,
+    "deff": 9.204509810941964,
+    "n_rows": 6006,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 99.6,
+    "lo": 99.2,
+    "hi": 99.9,
+    "se": 0.0016904736047345487,
+    "deff": 3.844847258917847,
+    "n_rows": 6006,
+    "n_clusters": 266
+   }
+  },
+  {
+   "indicator": "Prescribed items unserved",
+   "unweighted": {
+    "est": 0.8,
+    "lo": 0.1,
+    "hi": 1.4,
+    "se": 0.003121367472335118,
+    "deff": 18.135638406012966,
+    "n_rows": 14059,
+    "n_clusters": 266
+   },
+   "weighted": {
+    "est": 0.3,
+    "lo": 0.0,
+    "hi": 0.5,
+    "se": 0.0012731275544832475,
+    "deff": 7.76490029240746,
+    "n_rows": 14059,
+    "n_clusters": 266
+   }
+  }
+ ],
+ "estimates_no_hp": [
+  {
+   "indicator": "Availability, expected medicines (M1)",
+   "est": 88.7,
+   "lo": 87.8,
+   "hi": 89.5
+  },
+  {
+   "indicator": "Availability, managed products (M2)",
+   "est": 93.6,
+   "lo": 92.9,
+   "hi": 94.4
+  },
+  {
+   "indicator": "Stock-out incidence, Jun-Aug",
+   "est": 10.0,
+   "lo": 8.8,
+   "hi": 11.1
+  },
+  {
+   "indicator": "Stocked out on the visit day",
+   "est": 7.0,
+   "lo": 6.1,
+   "hi": 7.9
+  },
+  {
+   "indicator": "Understocked (<1 month)",
+   "est": 22.1,
+   "lo": 20.4,
+   "hi": 23.8
+  },
+  {
+   "indicator": "Adequately stocked (1-2 months)",
+   "est": 24.3,
+   "lo": 23.1,
+   "hi": 25.6
+  },
+  {
+   "indicator": "Overstocked (>2 months)",
+   "est": 46.6,
+   "lo": 44.6,
+   "hi": 48.5
+  },
+  {
+   "indicator": "Inventory record accuracy (exact match)",
+   "est": 55.1,
+   "lo": 50.3,
+   "hi": 59.9
+  },
+  {
+   "indicator": "Order fill rate (quantity)",
+   "est": 93.0,
+   "lo": 90.9,
+   "hi": 95.0
+  }
+ ],
+ "group_ci": {
+  "M2 availability": [
+   {
+    "by": "level",
+    "group": "District hospital",
+    "est": 96.7,
+    "lo": 95.1,
+    "hi": 98.4,
+    "n": 922,
+    "fac": 24
+   },
+   {
+    "by": "level",
+    "group": "Health centre",
+    "est": 93.4,
+    "lo": 92.6,
+    "hi": 94.3,
+    "n": 6982,
+    "fac": 205
+   },
+   {
+    "by": "level",
+    "group": "Health post",
+    "est": 92.6,
+    "lo": 88.6,
+    "hi": 96.5,
+    "n": 512,
+    "fac": 25
+   },
+   {
+    "by": "level",
+    "group": "Level 2 teaching hospital",
+    "est": 91.9,
+    "lo": 88.7,
+    "hi": 95.1,
+    "n": 395,
+    "fac": 10
+   },
+   {
+    "by": "level",
+    "group": "National referral hospital",
+    "est": 93.0,
+    "lo": 92.4,
+    "hi": 93.7,
+    "n": 86,
+    "fac": 2
+   },
+   {
+    "by": "province",
+    "group": "East",
+    "est": 93.2,
+    "lo": 91.8,
+    "hi": 94.6,
+    "n": 2240,
+    "fac": 65
+   },
+   {
+    "by": "province",
+    "group": "Kigali City",
+    "est": 94.8,
+    "lo": 93.5,
+    "hi": 96.0,
+    "n": 858,
+    "fac": 26
+   },
+   {
+    "by": "province",
+    "group": "North",
+    "est": 93.1,
+    "lo": 91.1,
+    "hi": 95.0,
+    "n": 1673,
+    "fac": 50
+   },
+   {
+    "by": "province",
+    "group": "South",
+    "est": 94.9,
+    "lo": 93.6,
+    "hi": 96.2,
+    "n": 2280,
+    "fac": 71
+   },
+   {
+    "by": "province",
+    "group": "West",
+    "est": 92.7,
+    "lo": 90.8,
+    "hi": 94.6,
+    "n": 1846,
+    "fac": 54
+   },
+   {
+    "by": "management",
+    "group": "Faith based facility based",
+    "est": 95.0,
+    "lo": 93.8,
+    "hi": 96.3,
+    "n": 2410,
+    "fac": 72
+   },
+   {
+    "by": "management",
+    "group": "Government",
+    "est": 93.3,
+    "lo": 92.4,
+    "hi": 94.2,
+    "n": 5908,
+    "fac": 167
+   },
+   {
+    "by": "management",
+    "group": "PPP",
+    "est": 92.1,
+    "lo": 88.4,
+    "hi": 95.8,
+    "n": 544,
+    "fac": 26
+   },
+   {
+    "by": "hub",
+    "group": "Huye HUB",
+    "est": 95.3,
+    "lo": 93.9,
+    "hi": 96.7,
+    "n": 1945,
+    "fac": 61
+   },
+   {
+    "by": "hub",
+    "group": "Karongi HUB",
+    "est": 92.8,
+    "lo": 90.4,
+    "hi": 95.2,
+    "n": 1213,
+    "fac": 35
+   },
+   {
+    "by": "hub",
+    "group": "Kayonza HUB",
+    "est": 93.8,
+    "lo": 92.3,
+    "hi": 95.4,
+    "n": 1886,
+    "fac": 55
+   },
+   {
+    "by": "hub",
+    "group": "Kigali HUB",
+    "est": 92.4,
+    "lo": 91.0,
+    "hi": 93.7,
+    "n": 2208,
+    "fac": 66
+   },
+   {
+    "by": "hub",
+    "group": "Musanze HUB",
+    "est": 93.8,
+    "lo": 92.0,
+    "hi": 95.6,
+    "n": 1645,
+    "fac": 49
+   }
+  ],
+  "Stock-out incidence": [
+   {
+    "by": "level",
+    "group": "District hospital",
+    "est": 5.6,
+    "lo": 3.2,
+    "hi": 8.0,
+    "n": 1025,
+    "fac": 24
+   },
+   {
+    "by": "level",
+    "group": "Health centre",
+    "est": 10.3,
+    "lo": 9.0,
+    "hi": 11.6,
+    "n": 7517,
+    "fac": 205
+   },
+   {
+    "by": "level",
+    "group": "Health post",
+    "est": 8.1,
+    "lo": 3.8,
+    "hi": 12.4,
+    "n": 555,
+    "fac": 25
+   },
+   {
+    "by": "level",
+    "group": "Level 2 teaching hospital",
+    "est": 10.6,
+    "lo": 5.6,
+    "hi": 15.5,
+    "n": 445,
+    "fac": 10
+   },
+   {
+    "by": "level",
+    "group": "National referral hospital",
+    "est": 14.0,
+    "lo": -1.0,
+    "hi": 28.9,
+    "n": 86,
+    "fac": 2
+   },
+   {
+    "by": "province",
+    "group": "East",
+    "est": 11.2,
+    "lo": 8.7,
+    "hi": 13.7,
+    "n": 2424,
+    "fac": 65
+   },
+   {
+    "by": "province",
+    "group": "Kigali City",
+    "est": 7.3,
+    "lo": 5.3,
+    "hi": 9.3,
+    "n": 917,
+    "fac": 26
+   },
+   {
+    "by": "province",
+    "group": "North",
+    "est": 10.7,
+    "lo": 8.4,
+    "hi": 13.1,
+    "n": 1833,
+    "fac": 50
+   },
+   {
+    "by": "province",
+    "group": "South",
+    "est": 8.1,
+    "lo": 5.8,
+    "hi": 10.4,
+    "n": 2460,
+    "fac": 71
+   },
+   {
+    "by": "province",
+    "group": "West",
+    "est": 9.9,
+    "lo": 7.7,
+    "hi": 12.2,
+    "n": 1994,
+    "fac": 54
+   },
+   {
+    "by": "management",
+    "group": "Faith based facility based",
+    "est": 7.9,
+    "lo": 5.8,
+    "hi": 9.9,
+    "n": 2621,
+    "fac": 72
+   },
+   {
+    "by": "management",
+    "group": "Government",
+    "est": 10.4,
+    "lo": 9.0,
+    "hi": 11.8,
+    "n": 6383,
+    "fac": 167
+   },
+   {
+    "by": "management",
+    "group": "PPP",
+    "est": 8.7,
+    "lo": 4.6,
+    "hi": 12.7,
+    "n": 587,
+    "fac": 26
+   },
+   {
+    "by": "hub",
+    "group": "Huye HUB",
+    "est": 8.6,
+    "lo": 5.9,
+    "hi": 11.2,
+    "n": 2104,
+    "fac": 61
+   },
+   {
+    "by": "hub",
+    "group": "Karongi HUB",
+    "est": 9.7,
+    "lo": 6.7,
+    "hi": 12.8,
+    "n": 1314,
+    "fac": 35
+   },
+   {
+    "by": "hub",
+    "group": "Kayonza HUB",
+    "est": 10.2,
+    "lo": 7.4,
+    "hi": 12.9,
+    "n": 2045,
+    "fac": 55
+   },
+   {
+    "by": "hub",
+    "group": "Kigali HUB",
+    "est": 9.3,
+    "lo": 7.5,
+    "hi": 11.2,
+    "n": 2375,
+    "fac": 66
+   },
+   {
+    "by": "hub",
+    "group": "Musanze HUB",
+    "est": 10.9,
+    "lo": 8.6,
+    "hi": 13.2,
+    "n": 1790,
+    "fac": 49
+   }
+  ]
+ },
+ "district_ci_m2": [
+  {
+   "district": "Gicumbi",
+   "est": 87.0,
+   "lo": 84.2,
+   "hi": 89.8,
+   "fac": 10,
+   "vs_national": "below"
+  },
+  {
+   "district": "Ngoma",
+   "est": 88.7,
+   "lo": 84.2,
+   "hi": 93.1,
+   "fac": 10,
+   "vs_national": "below"
+  },
+  {
+   "district": "Gakenke",
+   "est": 89.5,
+   "lo": 85.4,
+   "hi": 93.6,
+   "fac": 10,
+   "vs_national": "below"
+  },
+  {
+   "district": "Bugesera",
+   "est": 89.8,
+   "lo": 87.1,
+   "hi": 92.6,
+   "fac": 10,
+   "vs_national": "below"
+  },
+  {
+   "district": "Rubavu",
+   "est": 89.8,
+   "lo": 86.0,
+   "hi": 93.6,
+   "fac": 10,
+   "vs_national": "below"
+  },
+  {
+   "district": "Karongi",
+   "est": 90.4,
+   "lo": 84.9,
+   "hi": 95.9,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Ngororero",
+   "est": 90.7,
+   "lo": 83.0,
+   "hi": 98.4,
+   "fac": 5,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Ruhango",
+   "est": 91.1,
+   "lo": 85.3,
+   "hi": 96.8,
+   "fac": 9,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Kamonyi",
+   "est": 92.5,
+   "lo": 88.8,
+   "hi": 96.2,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Kirehe",
+   "est": 92.7,
+   "lo": 91.7,
+   "hi": 93.8,
+   "fac": 5,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Gatsibo",
+   "est": 93.5,
+   "lo": 91.1,
+   "hi": 95.9,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Rusizi",
+   "est": 93.6,
+   "lo": 91.4,
+   "hi": 95.7,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Gasabo",
+   "est": 94.3,
+   "lo": 91.8,
+   "hi": 96.8,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Rutsiro",
+   "est": 94.5,
+   "lo": 89.3,
+   "hi": 99.7,
+   "fac": 5,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Nyarugenge",
+   "est": 94.7,
+   "lo": 93.6,
+   "hi": 95.8,
+   "fac": 11,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Rulindo",
+   "est": 94.8,
+   "lo": 91.8,
+   "hi": 97.8,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Nyagatare",
+   "est": 95.0,
+   "lo": 93.1,
+   "hi": 96.8,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Nyabihu",
+   "est": 95.3,
+   "lo": 92.5,
+   "hi": 98.1,
+   "fac": 9,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Nyaruguru",
+   "est": 95.3,
+   "lo": 92.9,
+   "hi": 97.8,
+   "fac": 9,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Kayonza",
+   "est": 95.8,
+   "lo": 92.3,
+   "hi": 99.3,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Kicukiro",
+   "est": 95.9,
+   "lo": 95.6,
+   "hi": 96.3,
+   "fac": 5,
+   "vs_national": "above"
+  },
+  {
+   "district": "Nyamagabe",
+   "est": 96.0,
+   "lo": 91.9,
+   "hi": 100.1,
+   "fac": 10,
+   "vs_national": "not different"
+  },
+  {
+   "district": "Gisagara",
+   "est": 96.1,
+   "lo": 93.7,
+   "hi": 98.5,
+   "fac": 10,
+   "vs_national": "above"
+  },
+  {
+   "district": "Nyanza",
+   "est": 96.3,
+   "lo": 94.1,
+   "hi": 98.5,
+   "fac": 9,
+   "vs_national": "above"
+  },
+  {
+   "district": "Huye",
+   "est": 96.4,
+   "lo": 94.4,
+   "hi": 98.4,
+   "fac": 9,
+   "vs_national": "above"
+  },
+  {
+   "district": "Muhanga",
+   "est": 96.8,
+   "lo": 95.3,
+   "hi": 98.4,
+   "fac": 5,
+   "vs_national": "above"
+  },
+  {
+   "district": "Nyamasheke",
+   "est": 97.0,
+   "lo": 93.8,
+   "hi": 100.1,
+   "fac": 5,
+   "vs_national": "above"
+  },
+  {
+   "district": "Musanze",
+   "est": 97.1,
+   "lo": 95.4,
+   "hi": 98.8,
+   "fac": 10,
+   "vs_national": "above"
+  },
+  {
+   "district": "Rwamagana",
+   "est": 97.1,
+   "lo": 94.9,
+   "hi": 99.3,
+   "fac": 10,
+   "vs_national": "above"
+  },
+  {
+   "district": "Burera",
+   "est": 97.5,
+   "lo": 96.4,
+   "hi": 98.6,
+   "fac": 10,
+   "vs_national": "above"
+  }
+ ],
+ "vpc_availability": {
+  "facility": {
+   "variance": 0.37,
+   "share": 9.8
+  },
+  "district": {
+   "variance": 0.125,
+   "share": 3.3
+  },
+  "residual_share": 86.9
+ },
+ "vpc_stockout": {
+  "facility": {
+   "variance": 0.414,
+   "share": 10.4
+  },
+  "district": {
+   "variance": 0.259,
+   "share": 6.5
+  },
+  "residual_share": 83.0
+ },
+ "vpc_accuracy": {
+  "facility": {
+   "variance": 6.156,
+   "share": 50.0
+  },
+  "district": {
+   "variance": 2.868,
+   "share": 23.3
+  },
+  "residual_share": 26.7
+ },
+ "gee_availability": {
+  "n": 8861,
+  "clusters": 265,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.District hospital]",
+    "OR": 3.29058386050435,
+    "lo": 1.7816581118560344,
+    "hi": 6.077452273787675,
+    "p": 0.00014180531099127183
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Health post]",
+    "OR": 1.7037790314852468,
+    "lo": 0.6988308974327452,
+    "hi": 4.153884722030589,
+    "p": 0.24124952715031578
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Referral / teaching]",
+    "OR": 1.1828052299299086,
+    "lo": 0.6634854062351736,
+    "hi": 2.1086043472878675,
+    "p": 0.569243334795575
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.Faith-based]",
+    "OR": 1.4093068755618727,
+    "lo": 1.034029564256709,
+    "hi": 1.9207824787230996,
+    "p": 0.029871914756413032
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.PPP]",
+    "OR": 0.49025834523355444,
+    "lo": 0.2388623578468408,
+    "hi": 1.0062416164595438,
+    "p": 0.052015730709128016
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.East]",
+    "OR": 0.7827581383683662,
+    "lo": 0.5508012570378125,
+    "hi": 1.1123981569632615,
+    "p": 0.17195980904971842
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.North]",
+    "OR": 0.7149229027019341,
+    "lo": 0.47753727792082423,
+    "hi": 1.0703138381848005,
+    "p": 0.10311831809912261
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.South]",
+    "OR": 0.9184572106166421,
+    "lo": 0.6012666912259518,
+    "hi": 1.402977514044093,
+    "p": 0.6939405750440071
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.West]",
+    "OR": 0.6012537662412781,
+    "lo": 0.3899213927640918,
+    "hi": 0.9271255646084493,
+    "p": 0.02131213841701879
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.ARV]",
+    "OR": 0.6655200393167051,
+    "lo": 0.5078951426019556,
+    "hi": 0.8720637107554087,
+    "p": 0.003151037513015271
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Consumables]",
+    "OR": 1.5306097037015771,
+    "lo": 1.0935231203238087,
+    "hi": 2.14240194973811,
+    "p": 0.013098631253414572
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.FP]",
+    "OR": 0.978762537010168,
+    "lo": 0.7380207776082632,
+    "hi": 1.2980340566550663,
+    "p": 0.8815318923023883
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.MCCH]",
+    "OR": 1.2417099565312497,
+    "lo": 0.8491359946453347,
+    "hi": 1.815779363814193,
+    "p": 0.26419333753084817
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Malaria]",
+    "OR": 13.889138404941775,
+    "lo": 4.422752139426003,
+    "hi": 43.617222840044725,
+    "p": 6.593699649158943e-06
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.TB]",
+    "OR": 0.8127213102583439,
+    "lo": 0.5869686112668144,
+    "hi": 1.1253002553620246,
+    "p": 0.2116806235726758
+   },
+   {
+    "term": "C(urban, Treatment(reference='rural'))[T.urban]",
+    "OR": 1.0151226940923597,
+    "lo": 0.7285463218885821,
+    "hi": 1.4144249351092362,
+    "p": 0.9293321690278
+   },
+   {
+    "term": "C(fsys, Treatment(reference='eLMIS'))[T.Medisoft]",
+    "OR": 0.8790190114894485,
+    "lo": 0.5590776816773051,
+    "hi": 1.38205199005935,
+    "p": 0.5764976422505863
+   },
+   {
+    "term": "C(fsys, Treatment(reference='eLMIS'))[T.OpenMRS]",
+    "OR": 0.5952574028973809,
+    "lo": 0.3475840143319861,
+    "hi": 1.0194121740181765,
+    "p": 0.058768609065396334
+   },
+   {
+    "term": "C(fsys, Treatment(reference='eLMIS'))[T.Other / none]",
+    "OR": 0.9080675530524077,
+    "lo": 0.538537355585746,
+    "hi": 1.5311596723122702,
+    "p": 0.7175224353129387
+   },
+   {
+    "term": "C(fsys, Treatment(reference='eLMIS'))[T.eBuzima]",
+    "OR": 1.0033497630770112,
+    "lo": 0.6939314861482884,
+    "hi": 1.4507350756693684,
+    "p": 0.98581762440662
+   },
+   {
+    "term": "fill10",
+    "OR": 0.9924906089608968,
+    "lo": 0.8778454622414124,
+    "hi": 1.1221082197776184,
+    "p": 0.9041989482834217
+   },
+   {
+    "term": "acc10",
+    "OR": 0.9737994617821314,
+    "lo": 0.9410588925911278,
+    "hi": 1.0076791147004023,
+    "p": 0.12811953649794292
+   }
+  ],
+  "formula": "available ~ C(level2, Treatment(reference='Health centre')) + C(mgmt, Treatment(reference='Government')) + C(province, Treatment(reference='Kigali City')) + C(programme, Treatment(reference='Essential Medicines')) + C(urban, Treatment(reference='rural')) + C(fsys, Treatment(reference='eLMIS')) + fill10 + acc10",
+  "note": ""
+ },
+ "gee_stockout": {
+  "n": 9590,
+  "clusters": 265,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.District hospital]",
+    "OR": 0.6405304209511586,
+    "lo": 0.38927115555914416,
+    "hi": 1.0539676888582938,
+    "p": 0.07958371563685075
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Health post]",
+    "OR": 0.5305869376114756,
+    "lo": 0.2751721992182488,
+    "hi": 1.0230775462191166,
+    "p": 0.05850983281378141
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Referral / teaching]",
+    "OR": 1.4260765811866152,
+    "lo": 0.7782304328359286,
+    "hi": 2.613229102334091,
+    "p": 0.2507321784318125
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.Faith-based]",
+    "OR": 0.7561715930077288,
+    "lo": 0.5474522579897217,
+    "hi": 1.0444663799022664,
+    "p": 0.0898928452802188
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.PPP]",
+    "OR": 1.2820561922975608,
+    "lo": 0.7985950269286889,
+    "hi": 2.058199744280768,
+    "p": 0.3035901827318458
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.East]",
+    "OR": 1.6853977514608196,
+    "lo": 1.0611672891409405,
+    "hi": 2.676831079978675,
+    "p": 0.027002205275083176
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.North]",
+    "OR": 1.535935668786397,
+    "lo": 0.9889977121412838,
+    "hi": 2.3853426046280943,
+    "p": 0.05604239648594148
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.South]",
+    "OR": 1.200297858073119,
+    "lo": 0.7130783537132444,
+    "hi": 2.0204160462768486,
+    "p": 0.49197859339964123
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.West]",
+    "OR": 1.5172700643314172,
+    "lo": 0.968470602346935,
+    "hi": 2.3770555787005487,
+    "p": 0.06874369101707714
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.ARV]",
+    "OR": 0.48702110364250456,
+    "lo": 0.38153678941054076,
+    "hi": 0.6216688979314725,
+    "p": 7.618302948646409e-09
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Consumables]",
+    "OR": 0.38053269472296214,
+    "lo": 0.2875291018335445,
+    "hi": 0.5036190452712828,
+    "p": 1.4071056712080474e-11
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.FP]",
+    "OR": 0.25725126915911184,
+    "lo": 0.19164450170186917,
+    "hi": 0.345317579665936,
+    "p": 1.587806822220073e-19
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.MCCH]",
+    "OR": 0.2512052790403564,
+    "lo": 0.18790731606928862,
+    "hi": 0.3358256268982865,
+    "p": 1.0950990361209506e-20
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Malaria]",
+    "OR": 0.06486809522938287,
+    "lo": 0.03889186240358963,
+    "hi": 0.10819409302188387,
+    "p": 1.0669617814836643e-25
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.TB]",
+    "OR": 0.3590347787013123,
+    "lo": 0.2603139604428481,
+    "hi": 0.49519423429233084,
+    "p": 4.263225018798323e-10
+   },
+   {
+    "term": "C(urban, Treatment(reference='rural'))[T.urban]",
+    "OR": 1.0547682306855852,
+    "lo": 0.742683062701717,
+    "hi": 1.4979956812485256,
+    "p": 0.7657752220781949
+   },
+   {
+    "term": "log_amc",
+    "OR": 0.7855145459013865,
+    "lo": 0.7546221269343908,
+    "hi": 0.8176716263665936,
+    "p": 4.228623734611399e-32
+   },
+   {
+    "term": "erratic",
+    "OR": 1.3261984774201052,
+    "lo": 1.1317943762544147,
+    "hi": 1.553994646387999,
+    "p": 0.000481624952036471
+   },
+   {
+    "term": "fill10",
+    "OR": 0.9757403285174027,
+    "lo": 0.8561372396209309,
+    "hi": 1.112052069031355,
+    "p": 0.7128018570797541
+   },
+   {
+    "term": "acc10",
+    "OR": 1.0063148963752744,
+    "lo": 0.9709322999438074,
+    "hi": 1.0429869010696082,
+    "p": 0.7303197523019677
+   }
+  ],
+  "formula": "anyso ~ C(level2, Treatment(reference='Health centre')) + C(mgmt, Treatment(reference='Government')) + C(province, Treatment(reference='Kigali City')) + C(programme, Treatment(reference='Essential Medicines')) + C(urban, Treatment(reference='rural')) + log_amc + erratic + fill10 + acc10",
+  "note": ""
+ },
+ "gee_accuracy": {
+  "n": 8822,
+  "clusters": 259,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(sys, Treatment(reference='eLMIS'))[T.Medisoft]",
+    "OR": 0.3550359936433496,
+    "lo": 0.15157224671630126,
+    "hi": 0.8316202966777303,
+    "p": 0.017100703862582948
+   },
+   {
+    "term": "C(sys, Treatment(reference='eLMIS'))[T.OpenMRS]",
+    "OR": 0.480989276547651,
+    "lo": 0.14994948026103153,
+    "hi": 1.5428575260887751,
+    "p": 0.21840950123347547
+   },
+   {
+    "term": "C(sys, Treatment(reference='eLMIS'))[T.Other]",
+    "OR": 0.4996484701094951,
+    "lo": 0.18626202569762337,
+    "hi": 1.340308593486667,
+    "p": 0.1681469875938013
+   },
+   {
+    "term": "C(sys, Treatment(reference='eLMIS'))[T.eBuzima]",
+    "OR": 0.25902185760653107,
+    "lo": 0.14518618042204265,
+    "hi": 0.46211232035243965,
+    "p": 4.795463940669184e-06
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.District hospital]",
+    "OR": 5.912252254019541,
+    "lo": 2.207203841774173,
+    "hi": 15.836655434172396,
+    "p": 0.000407975942770588
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Health post]",
+    "OR": 2.3610037869612936,
+    "lo": 0.4983881553307874,
+    "hi": 11.184733871425575,
+    "p": 0.2790330771015336
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Referral / teaching]",
+    "OR": 2.635147453057411,
+    "lo": 0.5855656915437389,
+    "hi": 11.858621841468114,
+    "p": 0.20673562157305203
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.Faith-based]",
+    "OR": 1.001869243280963,
+    "lo": 0.6139796249414532,
+    "hi": 1.634813175971568,
+    "p": 0.9940358465905872
+   },
+   {
+    "term": "C(mgmt, Treatment(reference='Government'))[T.PPP]",
+    "OR": 0.1613984847884733,
+    "lo": 0.03574703789413322,
+    "hi": 0.7287169070948468,
+    "p": 0.01771869818350626
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.East]",
+    "OR": 2.0032735847353362,
+    "lo": 1.08025714144263,
+    "hi": 3.71495350629116,
+    "p": 0.027456678228131463
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.North]",
+    "OR": 1.634284109709594,
+    "lo": 0.8198439768893828,
+    "hi": 3.257796149680866,
+    "p": 0.1628373278359324
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.South]",
+    "OR": 0.7377320456419035,
+    "lo": 0.3568506431721605,
+    "hi": 1.5251438706372684,
+    "p": 0.4117175992509511
+   },
+   {
+    "term": "C(province, Treatment(reference='Kigali City'))[T.West]",
+    "OR": 1.0231886103645877,
+    "lo": 0.45208595230362036,
+    "hi": 2.31574311708918,
+    "p": 0.9561330733645547
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.ARV]",
+    "OR": 1.1664052765968127,
+    "lo": 0.9631909536121979,
+    "hi": 1.4124938198087098,
+    "p": 0.11502989052528687
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Consumables]",
+    "OR": 0.8209565293751748,
+    "lo": 0.716884096444195,
+    "hi": 0.9401375012595171,
+    "p": 0.004337853661681626
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.FP]",
+    "OR": 0.8712406620579017,
+    "lo": 0.7204943848538958,
+    "hi": 1.0535270047621754,
+    "p": 0.15502139280317037
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.MCCH]",
+    "OR": 1.1329869594698452,
+    "lo": 0.9312562983923499,
+    "hi": 1.3784169326368443,
+    "p": 0.21201138647176765
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Malaria]",
+    "OR": 1.0116463458690859,
+    "lo": 0.845180266289648,
+    "hi": 1.210899461251192,
+    "p": 0.8995483865155778
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.TB]",
+    "OR": 0.9774326009529297,
+    "lo": 0.7960491447527684,
+    "hi": 1.2001451112698864,
+    "p": 0.8274689458006247
+   }
+  ],
+  "formula": "exact ~ C(sys, Treatment(reference='eLMIS')) + C(level2, Treatment(reference='Health centre')) + C(mgmt, Treatment(reference='Government')) + C(province, Treatment(reference='Kigali City')) + C(programme, Treatment(reference='Essential Medicines'))",
+  "note": ""
+ },
+ "gee_lag": {
+  "n": 19180,
+  "clusters": 265,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(order, Treatment(reference='Delivered in full'))[T.No request]",
+    "OR": 2.6438958604540805,
+    "lo": 1.9384782604314004,
+    "hi": 3.606016876026552,
+    "p": 8.246919033161472e-10
+   },
+   {
+    "term": "C(order, Treatment(reference='Delivered in full'))[T.Partly delivered]",
+    "OR": 0.5446723966057917,
+    "lo": 0.231221575114319,
+    "hi": 1.283046443557961,
+    "p": 0.16458075740771305
+   },
+   {
+    "term": "C(order, Treatment(reference='Delivered in full'))[T.Requested, nothing delivered]",
+    "OR": 7.619456311079474,
+    "lo": 4.570395426180359,
+    "hi": 12.702645846328524,
+    "p": 6.847908948323557e-15
+   },
+   {
+    "term": "C(month)[T.jul]",
+    "OR": 0.9331637182169781,
+    "lo": 0.7664215658029285,
+    "hi": 1.1361821794305365,
+    "p": 0.49097901436980096
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.District hospital]",
+    "OR": 0.6854948401776133,
+    "lo": 0.47090340790951657,
+    "hi": 0.9978759295800697,
+    "p": 0.04871667559497635
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Health post]",
+    "OR": 0.729258480137448,
+    "lo": 0.474134436621207,
+    "hi": 1.1216606299307,
+    "p": 0.150631238211079
+   },
+   {
+    "term": "C(level2, Treatment(reference='Health centre'))[T.Referral / teaching]",
+    "OR": 1.6677417468739328,
+    "lo": 1.0586721785950084,
+    "hi": 2.6272179344103823,
+    "p": 0.027393869008919065
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.ARV]",
+    "OR": 0.6766146239954581,
+    "lo": 0.497520685097262,
+    "hi": 0.9201775184784868,
+    "p": 0.012765028563201488
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Consumables]",
+    "OR": 0.5899469084043867,
+    "lo": 0.4401341122523212,
+    "hi": 0.7907529660785986,
+    "p": 0.00041452488199758276
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.FP]",
+    "OR": 0.49573451043488626,
+    "lo": 0.383132500535534,
+    "hi": 0.6414300652975373,
+    "p": 9.408108789500064e-08
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.MCCH]",
+    "OR": 0.45652136208771144,
+    "lo": 0.3433195670589052,
+    "hi": 0.60704886653507,
+    "p": 6.931418321549716e-08
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.Malaria]",
+    "OR": 0.12074165042696318,
+    "lo": 0.08451926394310337,
+    "hi": 0.1724878503158872,
+    "p": 3.368368231575728e-31
+   },
+   {
+    "term": "C(programme, Treatment(reference='Essential Medicines'))[T.TB]",
+    "OR": 0.45679648722294997,
+    "lo": 0.33656770302753547,
+    "hi": 0.6199734224711257,
+    "p": 4.962972550001643e-07
+   },
+   {
+    "term": "out_t",
+    "OR": 117.39022882281957,
+    "lo": 91.9591833436482,
+    "hi": 149.85415618119208,
+    "p": 0.0
+   },
+   {
+    "term": "log_amc",
+    "OR": 0.8923241714701444,
+    "lo": 0.8603284526698081,
+    "hi": 0.9255098149072556,
+    "p": 9.656197351850068e-10
+   }
+  ],
+  "formula": "out_t1 ~ C(order, Treatment(reference='Delivered in full')) + out_t + log_amc + C(month) + C(level2, Treatment(reference='Health centre')) + C(programme, Treatment(reference='Essential Medicines'))",
+  "note": "Outcome: any stock-out day in month t+1 (July or August)."
+ },
+ "lag_crosstab": [
+  {
+   "order": "Delivered in full",
+   "mean": 2.9,
+   "count": 6848
+  },
+  {
+   "order": "No request",
+   "mean": 7.9,
+   "count": 11669
+  },
+  {
+   "order": "Partly delivered",
+   "mean": 4.3,
+   "count": 300
+  },
+  {
+   "order": "Requested, nothing delivered",
+   "mean": 36.9,
+   "count": 363
+  }
+ ],
+ "rx_item_link": {
+  "prescriptions": 6006,
+  "linked": 6006
+ },
+ "who_indicators": [
+  {
+   "indicator": "Medicines per encounter",
+   "est": 2.25,
+   "lo": 2.14,
+   "hi": 2.36
+  },
+  {
+   "indicator": "% medicines prescribed by generic (INN) name",
+   "est": 97.2,
+   "lo": 95.3,
+   "hi": 99.1
+  },
+  {
+   "indicator": "% encounters with an antibiotic",
+   "est": 49.5,
+   "lo": 44.9,
+   "hi": 54.2
+  },
+  {
+   "indicator": "% encounters with an injection",
+   "est": 8.8,
+   "lo": 6.2,
+   "hi": 11.5
+  },
+  {
+   "indicator": "% medicines from the EML",
+   "est": 95.4,
+   "lo": 90.3,
+   "hi": 100.4
+  }
+ ],
+ "who_by_level": [
+  {
+   "level": "District hospital",
+   "n": 739,
+   "meds": 2.52,
+   "abx": 36.9,
+   "inj": 30.0
+  },
+  {
+   "level": "Health centre",
+   "n": 4384,
+   "meds": 2.3,
+   "abx": 50.5,
+   "inj": 9.2
+  },
+  {
+   "level": "Health post",
+   "n": 495,
+   "meds": 2.2,
+   "abx": 50.1,
+   "inj": 7.3
+  },
+  {
+   "level": "Level 2 teaching hospital",
+   "n": 318,
+   "meds": 2.46,
+   "abx": 34.3,
+   "inj": 31.4
+  },
+  {
+   "level": "National referral hospital",
+   "n": 70,
+   "meds": 3.76,
+   "abx": 15.7,
+   "inj": 25.7
+  }
+ ],
+ "who_by_prescriber": [
+  {
+   "prescriber": "Allied Health Professional",
+   "n": 81,
+   "meds": 1.8,
+   "abx": 27.2,
+   "inj": 11.1,
+   "unserved": 3.7
+  },
+  {
+   "prescriber": "Dental Surgeon",
+   "n": 36,
+   "meds": 2.17,
+   "abx": 61.1,
+   "inj": 27.8,
+   "unserved": 2.8
+  },
+  {
+   "prescriber": "General Practioner",
+   "n": 830,
+   "meds": 2.6,
+   "abx": 40.0,
+   "inj": 31.9,
+   "unserved": 1.2
+  },
+  {
+   "prescriber": "Midwife",
+   "n": 36,
+   "meds": 2.44,
+   "abx": 50.0,
+   "inj": 19.4,
+   "unserved": 0.0
+  },
+  {
+   "prescriber": "Nurse",
+   "n": 4884,
+   "meds": 2.29,
+   "abx": 49.7,
+   "inj": 9.1,
+   "unserved": 0.7
+  },
+  {
+   "prescriber": "Specialist",
+   "n": 139,
+   "meds": 3.0,
+   "abx": 25.9,
+   "inj": 33.8,
+   "unserved": 15.8
+  }
+ ],
+ "gee_rx": {
+  "n": 6006,
+  "clusters": 266,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.General practitioner]",
+    "OR": 0.9848567045185094,
+    "lo": 0.19885763013057497,
+    "hi": 4.877573607802575,
+    "p": 0.9850858749917019
+   },
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.Other]",
+    "OR": 3.2306026981501295,
+    "lo": 0.9718490816677144,
+    "hi": 10.73910959033385,
+    "p": 0.05570032925357671
+   },
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.Specialist]",
+    "OR": 10.155483485455843,
+    "lo": 1.3334988293972376,
+    "hi": 77.34078392103613,
+    "p": 0.025233298162146728
+   },
+   {
+    "term": "C(level2, Treatment(reference='Primary care (HC/HP)'))[T.District hospital]",
+    "OR": 1.1039966534515497,
+    "lo": 0.2609966090101533,
+    "hi": 4.6698254642258865,
+    "p": 0.8930406881647647
+   },
+   {
+    "term": "C(level2, Treatment(reference='Primary care (HC/HP)'))[T.Referral / teaching]",
+    "OR": 2.1395878653212663,
+    "lo": 0.3839543182695676,
+    "hi": 11.922866902661049,
+    "p": 0.3854946813261829
+   },
+   {
+    "term": "n_med",
+    "OR": 1.3381239658785897,
+    "lo": 1.1517515755545547,
+    "hi": 1.5546544811076157,
+    "p": 0.00014110246684249375
+   }
+  ],
+  "formula": "any_unserved ~ C(prescriber, Treatment(reference='Nurse')) + n_med + C(level2, Treatment(reference='Primary care (HC/HP)'))",
+  "note": ""
+ },
+ "gee_abx": {
+  "n": 6006,
+  "clusters": 266,
+  "exch_corr": null,
+  "terms": [
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.General practitioner]",
+    "OR": 2.179203567632453,
+    "lo": 1.2745650724941666,
+    "hi": 3.725920544714868,
+    "p": 0.004420285699239688
+   },
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.Other]",
+    "OR": 1.6262148685618927,
+    "lo": 0.990691970415505,
+    "hi": 2.6694218563441225,
+    "p": 0.05448239068476007
+   },
+   {
+    "term": "C(prescriber, Treatment(reference='Nurse'))[T.Specialist]",
+    "OR": 0.7993458120364462,
+    "lo": 0.2764536611686006,
+    "hi": 2.3112507337369905,
+    "p": 0.6792935128815486
+   },
+   {
+    "term": "C(level2, Treatment(reference='Primary care (HC/HP)'))[T.District hospital]",
+    "OR": 0.24636847873076959,
+    "lo": 0.14921938818704353,
+    "hi": 0.40676635958345203,
+    "p": 4.348438403226954e-08
+   },
+   {
+    "term": "C(level2, Treatment(reference='Primary care (HC/HP)'))[T.Referral / teaching]",
+    "OR": 0.1798274884471137,
+    "lo": 0.09545023820970802,
+    "hi": 0.3387935557599038,
+    "p": 1.1009539810955284e-07
+   },
+   {
+    "term": "n_med",
+    "OR": 2.0839742253565356,
+    "lo": 1.8780209871755322,
+    "hi": 2.312513332708806,
+    "p": 1.6732406461337636e-43
+   }
+  ],
+  "formula": "abx ~ C(prescriber, Treatment(reference='Nurse')) + n_med + C(level2, Treatment(reference='Primary care (HC/HP)'))",
+  "note": ""
+ },
+ "iccm_ready": [
+  {
+   "condition": "Malaria (RDT + an ACT)",
+   "est": 84.6,
+   "lo": 79.3,
+   "hi": 89.9
+  },
+  {
+   "condition": "Malaria (RDT + every managed ACT)",
+   "est": 68.0,
+   "lo": 61.0,
+   "hi": 75.0
+  },
+  {
+   "condition": "Diarrhoea (ORS + zinc)",
+   "est": 55.4,
+   "lo": 48.1,
+   "hi": 62.8
+  },
+  {
+   "condition": "Pneumonia (amoxicillin)",
+   "est": 69.1,
+   "lo": 62.2,
+   "hi": 76.1
+  },
+  {
+   "condition": "All three conditions",
+   "est": 39.4,
+   "lo": 32.1,
+   "hi": 46.7
+  }
+ ],
+ "iccm_by_province": [
+  {
+   "province": "East",
+   "malaria": 87.0,
+   "diarrhoea": 45.7,
+   "pneumonia": 73.9,
+   "iccm": 34.8
+  },
+  {
+   "province": "Kigali City",
+   "malaria": 86.7,
+   "diarrhoea": 40.0,
+   "pneumonia": 33.3,
+   "iccm": 13.3
+  },
+  {
+   "province": "North",
+   "malaria": 67.6,
+   "diarrhoea": 50.0,
+   "pneumonia": 64.7,
+   "iccm": 26.5
+  },
+  {
+   "province": "South",
+   "malaria": 93.9,
+   "diarrhoea": 61.2,
+   "pneumonia": 75.5,
+   "iccm": 51.0
+  },
+  {
+   "province": "West",
+   "malaria": 83.9,
+   "diarrhoea": 74.2,
+   "pneumonia": 74.2,
+   "iccm": 54.8
+  }
+ ],
+ "paired_chw_hc": [
+  {
+   "molecule": "arte all strengths",
+   "pairs": 52,
+   "chw": 98.1,
+   "hc": 100.0,
+   "chw_only": 0,
+   "hc_only": 1,
+   "both_out": 0,
+   "mcnemar_p": 1.0
+  },
+  {
+   "molecule": "dihydroartemisinin piperaquine all strengths",
+   "pairs": 57,
+   "chw": 87.7,
+   "hc": 100.0,
+   "chw_only": 0,
+   "hc_only": 7,
+   "both_out": 0,
+   "mcnemar_p": 0.015625
+  },
+  {
+   "molecule": "malaria rapid diagnostics ag p f pan t",
+   "pairs": 170,
+   "chw": 94.1,
+   "hc": 100.0,
+   "chw_only": 0,
+   "hc_only": 10,
+   "both_out": 0,
+   "mcnemar_p": 0.001953125
+  },
+  {
+   "molecule": "pyronaridine artesunate all strengths",
+   "pairs": 56,
+   "chw": 89.3,
+   "hc": 100.0,
+   "chw_only": 0,
+   "hc_only": 6,
+   "both_out": 0,
+   "mcnemar_p": 0.03125
+  }
+ ],
+ "paired_total": {
+  "pairs": 335,
+  "chw_only": 0,
+  "hc_only": 24,
+  "p": 1.1920928955078125e-07
+ },
+ "chw_given_hc": [
+  {
+   "hc_out": 0,
+   "mean": 7.2,
+   "count": 335
+  }
+ ],
+ "moran": {
+  "M2 availability": {
+   "I": -0.092,
+   "expected": -0.034,
+   "p": 0.6679,
+   "n": 30
+  },
+  "M1 availability": {
+   "I": -0.078,
+   "expected": -0.034,
+   "p": 0.633,
+   "n": 30
+  },
+  "Stock-out incidence": {
+   "I": -0.179,
+   "expected": -0.034,
+   "p": 0.9243,
+   "n": 30
+  },
+  "Record accuracy": {
+   "I": -0.072,
+   "expected": -0.034,
+   "p": 0.5963,
+   "n": 30
+  },
+  "CHW availability": {
+   "I": 0.152,
+   "expected": -0.036,
+   "p": 0.0504,
+   "n": 29
+  }
+ },
+ "typology": {
+  "silhouette": {
+   "3": 0.198,
+   "4": 0.211,
+   "5": 0.203,
+   "6": 0.183
+  },
+  "k": 4,
+  "profiles": [
+   {
+    "cluster": 0,
+    "availability": 96.8,
+    "stockout": 5.7,
+    "accuracy": 55.6,
+    "fill": 96.1,
+    "overstock": 62.4,
+    "understock": 10.1,
+    "facilities": 92
+   },
+   {
+    "cluster": 1,
+    "availability": 93.0,
+    "stockout": 10.3,
+    "accuracy": 40.4,
+    "fill": 77.1,
+    "overstock": 46.8,
+    "understock": 22.8,
+    "facilities": 35
+   },
+   {
+    "cluster": 2,
+    "availability": 85.6,
+    "stockout": 21.9,
+    "accuracy": 59.9,
+    "fill": 96.5,
+    "overstock": 34.8,
+    "understock": 25.7,
+    "facilities": 54
+   },
+   {
+    "cluster": 3,
+    "availability": 95.9,
+    "stockout": 5.5,
+    "accuracy": 55.2,
+    "fill": 97.1,
+    "overstock": 37.0,
+    "understock": 31.8,
+    "facilities": 85
+   }
+  ],
+  "by_level": {
+   "District hospital": {
+    "0": 9,
+    "1": 2,
+    "2": 2,
+    "3": 11
+   },
+   "Health centre": {
+    "0": 73,
+    "1": 24,
+    "2": 44,
+    "3": 64
+   },
+   "Health post": {
+    "0": 9,
+    "1": 6,
+    "2": 5,
+    "3": 5
+   },
+   "Level 2 teaching hospital": {
+    "0": 0,
+    "1": 2,
+    "2": 3,
+    "3": 5
+   },
+   "National referral hospital": {
+    "0": 1,
+    "1": 1,
+    "2": 0,
+    "3": 0
+   }
+  },
+  "by_province": {
+   "East": {
+    "0": 18,
+    "1": 7,
+    "2": 18,
+    "3": 22
+   },
+   "Kigali City": {
+    "0": 7,
+    "1": 8,
+    "2": 1,
+    "3": 10
+   },
+   "North": {
+    "0": 20,
+    "1": 7,
+    "2": 10,
+    "3": 13
+   },
+   "South": {
+    "0": 27,
+    "1": 6,
+    "2": 11,
+    "3": 27
+   },
+   "West": {
+    "0": 20,
+    "1": 7,
+    "2": 14,
+    "3": 13
+   }
+  }
+ },
+ "pred_august": {
+  "target": "Prediction A. Stock-out in August from June-July data",
+  "n": 9590,
+  "prevalence": 6.9,
+  "facilities": 265,
+  "models": [
+   {
+    "model": "Logistic regression",
+    "auc": 0.901,
+    "auc_lo": 0.884,
+    "auc_hi": 0.917,
+    "ap": 0.67,
+    "brier": 0.0324
+   },
+   {
+    "model": "Random forest",
+    "auc": 0.904,
+    "auc_lo": 0.888,
+    "auc_hi": 0.92,
+    "ap": 0.724,
+    "brier": 0.0311
+   },
+   {
+    "model": "Gradient boosting",
+    "auc": 0.905,
+    "auc_lo": 0.887,
+    "auc_hi": 0.92,
+    "ap": 0.702,
+    "brier": 0.0323
+   }
+  ],
+  "best": "Random forest",
+  "top10": {
+   "threshold": 0.102,
+   "precision": 51.1,
+   "recall": 74.1,
+   "lift": 7.41
+  },
+  "rule_baseline": {
+   "rule": "stocked out in July",
+   "precision": 72.8,
+   "recall": 66.7,
+   "flagged": 6.3
+  },
+  "model_same_rate": {
+   "flagged": 6.3,
+   "precision": 71.6,
+   "recall": 65.7
+  },
+  "new_stockouts": {
+   "n": 8984,
+   "events": 220,
+   "auc": 0.73
+  },
+  "calibration": [
+   {
+    "q": 0,
+    "pred": 0.5,
+    "obs": 0.7
+   },
+   {
+    "q": 1,
+    "pred": 1.0,
+    "obs": 0.4
+   },
+   {
+    "q": 2,
+    "pred": 1.4,
+    "obs": 0.9
+   },
+   {
+    "q": 3,
+    "pred": 1.9,
+    "obs": 1.6
+   },
+   {
+    "q": 4,
+    "pred": 2.4,
+    "obs": 1.9
+   },
+   {
+    "q": 5,
+    "pred": 2.9,
+    "obs": 1.9
+   },
+   {
+    "q": 6,
+    "pred": 3.7,
+    "obs": 2.6
+   },
+   {
+    "q": 7,
+    "pred": 4.9,
+    "obs": 2.9
+   },
+   {
+    "q": 8,
+    "pred": 7.3,
+    "obs": 4.9
+   },
+   {
+    "q": 9,
+    "pred": 43.8,
+    "obs": 51.1
+   }
+  ],
+  "importance": [
+   {
+    "feature": "so_jul",
+    "auc_drop": 0.2087
+   },
+   {
+    "feature": "molecule",
+    "auc_drop": 0.052
+   },
+   {
+    "feature": "fill10",
+    "auc_drop": 0.0084
+   },
+   {
+    "feature": "lcons_jul",
+    "auc_drop": 0.0059
+   },
+   {
+    "feature": "acc10",
+    "auc_drop": 0.0059
+   },
+   {
+    "feature": "lreq_jul",
+    "auc_drop": 0.0054
+   },
+   {
+    "feature": "level2",
+    "auc_drop": 0.0035
+   },
+   {
+    "feature": "so_jun",
+    "auc_drop": 0.0034
+   },
+   {
+    "feature": "province",
+    "auc_drop": 0.0033
+   },
+   {
+    "feature": "ldel_jul",
+    "auc_drop": 0.0019
+   },
+   {
+    "feature": "lreq_jun",
+    "auc_drop": 0.0008
+   },
+   {
+    "feature": "fsys",
+    "auc_drop": 0.0008
+   }
+  ]
+ },
+ "pred_visit": {
+  "target": "Prediction B. Unavailable on the visit day (September) from June-August data",
+  "n": 9590,
+  "prevalence": 6.1,
+  "facilities": 265,
+  "models": [
+   {
+    "model": "Logistic regression",
+    "auc": 0.878,
+    "auc_lo": 0.848,
+    "auc_hi": 0.904,
+    "ap": 0.622,
+    "brier": 0.0318
+   },
+   {
+    "model": "Random forest",
+    "auc": 0.896,
+    "auc_lo": 0.875,
+    "auc_hi": 0.921,
+    "ap": 0.674,
+    "brier": 0.0307
+   },
+   {
+    "model": "Gradient boosting",
+    "auc": 0.887,
+    "auc_lo": 0.869,
+    "auc_hi": 0.905,
+    "ap": 0.65,
+    "brier": 0.0313
+   }
+  ],
+  "best": "Random forest",
+  "top10": {
+   "threshold": 0.097,
+   "precision": 44.7,
+   "recall": 73.1,
+   "lift": 7.31
+  },
+  "rule_baseline": {
+   "rule": "stocked out in July",
+   "precision": 49.2,
+   "recall": 50.8,
+   "flagged": 6.3
+  },
+  "model_same_rate": {
+   "flagged": 6.3,
+   "precision": 65.5,
+   "recall": 67.6
+  },
+  "new_stockouts": {
+   "n": 8984,
+   "events": 289,
+   "auc": 0.814
+  },
+  "calibration": [
+   {
+    "q": 0,
+    "pred": 0.4,
+    "obs": 0.3
+   },
+   {
+    "q": 1,
+    "pred": 0.8,
+    "obs": 1.0
+   },
+   {
+    "q": 2,
+    "pred": 1.2,
+    "obs": 1.0
+   },
+   {
+    "q": 3,
+    "pred": 1.6,
+    "obs": 1.4
+   },
+   {
+    "q": 4,
+    "pred": 2.1,
+    "obs": 1.1
+   },
+   {
+    "q": 5,
+    "pred": 2.6,
+    "obs": 2.2
+   },
+   {
+    "q": 6,
+    "pred": 3.3,
+    "obs": 1.9
+   },
+   {
+    "q": 7,
+    "pred": 4.5,
+    "obs": 3.5
+   },
+   {
+    "q": 8,
+    "pred": 6.9,
+    "obs": 4.0
+   },
+   {
+    "q": 9,
+    "pred": 38.8,
+    "obs": 44.7
+   }
+  ],
+  "importance": [
+   {
+    "feature": "so_aug",
+    "auc_drop": 0.0998
+   },
+   {
+    "feature": "molecule",
+    "auc_drop": 0.0387
+   },
+   {
+    "feature": "province",
+    "auc_drop": 0.0065
+   },
+   {
+    "feature": "ldel_aug",
+    "auc_drop": 0.0061
+   },
+   {
+    "feature": "lreq_jun",
+    "auc_drop": 0.0042
+   },
+   {
+    "feature": "lcons_jul",
+    "auc_drop": 0.0033
+   },
+   {
+    "feature": "mgmt",
+    "auc_drop": 0.0024
+   },
+   {
+    "feature": "so_jul",
+    "auc_drop": 0.0023
+   },
+   {
+    "feature": "level2",
+    "auc_drop": 0.0011
+   },
+   {
+    "feature": "so_jun",
+    "auc_drop": 0.0007
+   },
+   {
+    "feature": "lcons_aug",
+    "auc_drop": 0.0006
+   },
+   {
+    "feature": "fr_jul",
+    "auc_drop": 0.0005
+   }
+  ]
+ }
+}

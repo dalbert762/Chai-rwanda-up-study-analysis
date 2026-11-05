@@ -1,21 +1,20 @@
-# Deny everything by default; this folder holds a lot of unrelated personal/
-# project files (Word docs, pptx, other data extracts) that should stay local.
-# Only the dashboard code + the two pilot data files it reads are tracked.
-*
+# Private repository: data, analysis and reports are all tracked.
+# Only local clutter is left out.
+.DS_Store
+__pycache__/
+*.pyc
+streamlit.log
+~$*
+.~lock*
+.claude/settings.local.json
+# LaTeX build files (the .tex and .pdf are kept)
+*.aux
+*.log
+*.toc
+*.lot
+*.lof
+*.out
 
-!.gitignore
-!README.md
-!requirements.txt
-
-!Stock_availability.py
-!theme.py
-!analyze_pilot_stock.py
-
-!pages/
-!pages/*.py
-
-!.streamlit/
-!.streamlit/config.toml
-
-!Pilot_stcok availability.xlsx
-!Pilot_prescription.xlsx
+# Mapbox token, loaded by the dashboard at run time - never committed
+analytics/mapbox_token.js
+analytics/mapbox_token.txt

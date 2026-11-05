@@ -48,3 +48,17 @@ share/ranking as illustrative signal, not a powered estimate:
   are free text with visible data-entry inconsistencies (drug class casing,
   a medicine name typed into the Patient/Prescription ID field on one row) —
   flagged in-app under each page's "Data notes" expander.
+
+## QMIA 2026 national assessment (added November 2026)
+
+| Folder / file | What it is |
+|---|---|
+| `fetch_kobo_export.py`, `analyze_*.py` | Fetch the Kobo exports from both servers and load the stock, prescription and CHW data (cleaning rules applied on import) |
+| `Data cleaning/` | Cleaning pipeline (rules S1-S11), cleaning log and dated cleaned datasets |
+| `analytics/` | Indicator dashboard (`Full_indicator_report.py` -> `Indicator_dashboard.html`), page filters, maps, deck figures, slide decks and extracts |
+| `Inferential analysis/` | Design-based estimates, regression models, prediction (`run_inferential_analysis.py`) and the inferential report |
+| `Full report/` | Full national report (LaTeX -> PDF, and Word) built by `build_full_report.py` |
+| `Further analysis plan/` | Plan of further analyses (Word and LaTeX) |
+
+Rebuild order: `analytics/Full_indicator_report.py` -> `Data cleaning/Data_cleaning_pipeline.py` -> `Inferential analysis/extract_analysis_data.py`, `run_inferential_analysis.py`, `build_report.py` -> `Full report/descriptive_figures.py`, `build_full_report.py`.
+LaTeX: TinyTeX at `~/Library/TinyTeX/bin/universal-darwin/pdflatex`.

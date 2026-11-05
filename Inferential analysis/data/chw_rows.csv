@@ -1,0 +1,1989 @@
+facility,district,province,chw,product,family,managed,answered,available,qty
+Bethsaida CS,Kicukiro,Kigali City,ed,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Bethsaida CS,Kicukiro,Kigali City,ed,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bethsaida CS,Kicukiro,Kigali City,ed,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bethsaida CS,Kicukiro,Kigali City,ed,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Bethsaida CS,Kicukiro,Kigali City,ed,DHAP 20/160,DHAP,1,1,1,25.0
+Bethsaida CS,Kicukiro,Kigali City,ed,DHAP 30/240,DHAP,1,1,1,25.0
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,ALu 1x6,ACT / ALu,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,ALu 2x6,ACT / ALu,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,ALu 3x6,ACT / ALu,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,ALu 4x6,ACT / ALu,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,DHAP 20/160,DHAP,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,DHAP 30/240,DHAP,1,1,1,3.0
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,DHAP 80/640,DHAP,1,1,1,30.0
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Muyumbu CS,Rwamagana,East,Marie Chantal UWERA,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,ALu 1x6,ACT / ALu,1,1,1,3.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,ALu 2x6,ACT / ALu,1,1,1,3.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,ALu 3x6,ACT / ALu,1,1,1,3.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,ALu 4x6,ACT / ALu,1,1,1,4.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,18.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,DHAP 20/160,DHAP,0,0,0,
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,DHAP 30/240,DHAP,0,0,0,
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,DHAP 80/640,DHAP,0,0,0,
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyarusange (muhanga) CS,Muhanga,South,MUKAREMERA Anastasie,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,ALu 1x6,ACT / ALu,1,1,1,3.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,ALu 2x6,ACT / ALu,1,1,1,3.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,ALu 3x6,ACT / ALu,1,1,1,5.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,ALu 4x6,ACT / ALu,1,1,1,1.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gihara CS,Kamonyi,South,HABINEZA EVARISTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,ALu 1x6,ACT / ALu,0,0,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,ALu 2x6,ACT / ALu,1,1,1,2.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,ALu 3x6,ACT / ALu,1,1,1,1.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,ALu 4x6,ACT / ALu,1,1,1,1.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Save CS,Gisagara,South,KANTARAMA CONCESSA,DHAP 20/160,DHAP,0,0,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,DHAP 30/240,DHAP,0,0,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,DHAP 80/640,DHAP,0,0,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Save CS,Gisagara,South,KANTARAMA CONCESSA,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,ALu 1x6,ACT / ALu,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,ALu 2x6,ACT / ALu,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,ALu 3x6,ACT / ALu,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,ALu 4x6,ACT / ALu,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,39.0
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,DHAP 20/160,DHAP,1,1,1,8.0
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,DHAP 30/240,DHAP,1,1,1,28.0
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,DHAP 80/640,DHAP,1,1,1,25.0
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kagugu CS,Gasabo,Kigali City,UGIRASE Adelaide,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,ALu 1x6,ACT / ALu,1,1,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,ALu 2x6,ACT / ALu,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,ALu 3x6,ACT / ALu,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,ALu 4x6,ACT / ALu,1,1,1,0.0
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,DHAP 20/160,DHAP,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,DHAP 30/240,DHAP,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,DHAP 80/640,DHAP,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kigeme Refugee Camp CS,Nyamagabe,South,UWIMANA JEAN BAPTISTE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,ALu 1x6,ACT / ALu,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,ALu 2x6,ACT / ALu,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,ALu 3x6,ACT / ALu,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,ALu 4x6,ACT / ALu,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Gituza CS,Gatsibo,East,Gituza HC,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gituza CS,Gatsibo,East,Gituza HC,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Gituza CS,Gatsibo,East,Gituza HC,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gituza CS,Gatsibo,East,Gituza HC,DHAP 20/160,DHAP,1,1,1,2.0
+Gituza CS,Gatsibo,East,Gituza HC,DHAP 30/240,DHAP,1,1,1,0.0
+Gituza CS,Gatsibo,East,Gituza HC,DHAP 80/640,DHAP,1,1,1,1.0
+Gituza CS,Gatsibo,East,Gituza HC,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gituza CS,Gatsibo,East,Gituza HC,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,DHAP 20/160,DHAP,0,0,0,
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,DHAP 30/240,DHAP,1,1,1,25.0
+Karangazi CS,Nyagatare,East,MUSANABERA JOSEPHINE,DHAP 80/640,DHAP,1,1,1,25.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,3.0
+Kirinda CS,Karongi,West,MUTARAMBIRWA Emmanuel,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,10.0
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,DHAP 20/160,DHAP,1,1,0,
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,DHAP 30/240,DHAP,0,0,0,
+Byumba CS,Gicumbi,North,NIYONZIMA Martin,DHAP 80/640,DHAP,1,1,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,ALu 1x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,ALu 2x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,ALu 3x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,ALu 4x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,DHAP 20/160,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,DHAP 30/240,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,DHAP 80/640,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKAHEMA M.CHANTAL,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,15.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,ALu 1x6,ACT / ALu,1,1,1,6.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,ALu 2x6,ACT / ALu,1,1,1,6.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,ALu 3x6,ACT / ALu,1,1,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,ALu 4x6,ACT / ALu,1,1,1,5.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,DHAP 20/160,DHAP,0,0,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,DHAP 30/240,DHAP,0,0,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,DHAP 80/640,DHAP,0,0,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kabarore CS,Gatsibo,East,NYIRAMBUGA Boniface,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,ALu 1x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,ALu 2x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,ALu 3x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,ALu 4x6,ACT / ALu,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,DHAP 20/160,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,DHAP 30/240,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,DHAP 80/640,DHAP,0,0,0,
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,0.0
+Gisakura CS,Nyamasheke,West,MUKASHEMA M.CHANTAL,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,15.0
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,ALu 1x6,ACT / ALu,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,ALu 2x6,ACT / ALu,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,ALu 3x6,ACT / ALu,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,ALu 4x6,ACT / ALu,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,DHAP 20/160,DHAP,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,DHAP 30/240,DHAP,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,DHAP 80/640,DHAP,0,0,0,
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+Muhororo CS,Ngororero,West,UGIRUMURENGERA Frodouard,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,12.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,DHAP 20/160,DHAP,1,1,1,3.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,DHAP 30/240,DHAP,1,1,1,3.0
+Masaka CS,Kicukiro,Kigali City,MUKANYANDWI VENERANDA,DHAP 80/640,DHAP,1,1,1,5.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,DHAP 20/160,DHAP,1,1,1,1.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,DHAP 30/240,DHAP,1,1,1,1.0
+Muhondo (kageyo) CS,Gicumbi,North,MUTIYIMANA Philomene,DHAP 80/640,DHAP,1,1,1,4.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,ALu 1x6,ACT / ALu,1,1,1,4.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,ALu 2x6,ACT / ALu,1,1,1,4.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,ALu 3x6,ACT / ALu,1,1,1,1.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,ALu 4x6,ACT / ALu,1,1,1,4.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,DHAP 20/160,DHAP,1,1,0,
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,DHAP 30/240,DHAP,1,1,0,
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,DHAP 80/640,DHAP,1,1,1,1.0
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kirwa CS,Ngoma,East,NSABIMANA JEAN DAMASCENE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,ALu 1x6,ACT / ALu,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,ALu 2x6,ACT / ALu,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,ALu 3x6,ACT / ALu,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,ALu 4x6,ACT / ALu,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,22.0
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,DHAP 20/160,DHAP,1,1,1,33.0
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,DHAP 30/240,DHAP,1,1,1,21.0
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,DHAP 80/640,DHAP,1,1,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gishari(Police) CS,Rwamagana,East,INGABIRE Lea,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,ALu 1x6,ACT / ALu,1,1,1,3.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,ALu 2x6,ACT / ALu,1,1,1,4.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,ALu 3x6,ACT / ALu,1,1,1,3.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,ALu 4x6,ACT / ALu,1,1,1,4.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,9.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,DHAP 20/160,DHAP,0,0,0,
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,DHAP 30/240,DHAP,0,0,0,
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,DHAP 80/640,DHAP,0,0,0,
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gisagara CS,Gisagara,South,MUKARUTESI Josephine,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,ALu 1x6,ACT / ALu,1,1,1,3.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,ALu 2x6,ACT / ALu,1,1,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,ALu 3x6,ACT / ALu,1,1,1,10.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,ALu 4x6,ACT / ALu,1,1,1,10.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,33.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,28.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,220.0
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,DHAP 20/160,DHAP,0,0,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,DHAP 30/240,DHAP,0,0,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,DHAP 80/640,DHAP,0,0,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Matyazo CS,Huye,South,Mukarugwiza Mediatrice,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,ALu 1x6,ACT / ALu,1,1,1,2.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,ALu 2x6,ACT / ALu,1,1,1,3.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,ALu 3x6,ACT / ALu,1,1,1,3.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,ALu 4x6,ACT / ALu,1,1,1,4.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,DHAP 20/160,DHAP,0,0,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,DHAP 30/240,DHAP,0,0,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,DHAP 80/640,DHAP,0,0,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Sovu (Huye) CS,Huye,South,KAYIHURA Athanase,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,22.0
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,240.0
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,36.0
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,140.0
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,27.0
+Islamic (Bugarama) CS,Rusizi,West,HABIMANA LEANDRE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,27.0
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,ALu 1x6,ACT / ALu,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,ALu 2x6,ACT / ALu,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,ALu 3x6,ACT / ALu,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,ALu 4x6,ACT / ALu,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,DHAP 20/160,DHAP,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,DHAP 30/240,DHAP,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,DHAP 80/640,DHAP,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Shyorongi CS,Rulindo,North,MUKAMANA Beatrice,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,17.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,DHAP 20/160,DHAP,1,1,1,1.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,DHAP 30/240,DHAP,1,1,1,23.0
+Kairos CS,Kicukiro,Kigali City,Gergoire Imurorera,DHAP 80/640,DHAP,0,0,0,
+Mubuga CS,Karongi,West,MUKANDORI Monique,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,322.0
+Mubuga CS,Karongi,West,MUKANDORI Monique,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,850.0
+Mubuga CS,Karongi,West,MUKANDORI Monique,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,75.0
+Mubuga CS,Karongi,West,MUKANDORI Monique,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,230.0
+Mubuga CS,Karongi,West,MUKANDORI Monique,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,1272.0
+Mubuga CS,Karongi,West,MUKANDORI Monique,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,1294.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,ALu 1x6,ACT / ALu,1,1,1,2.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,ALu 2x6,ACT / ALu,1,1,1,2.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,ALu 3x6,ACT / ALu,0,0,0,
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,ALu 4x6,ACT / ALu,1,1,1,4.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,DHAP 20/160,DHAP,1,1,0,
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,DHAP 30/240,DHAP,1,1,0,
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,DHAP 80/640,DHAP,1,1,1,3.0
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rukumberi CS,Ngoma,East,NTAGANZWA CELESTIN,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,ALu 1x6,ACT / ALu,1,1,1,3.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,ALu 2x6,ACT / ALu,1,1,1,2.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,ALu 3x6,ACT / ALu,1,1,1,6.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,ALu 4x6,ACT / ALu,1,1,1,8.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,150.0
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,DHAP 20/160,DHAP,0,0,0,
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,DHAP 30/240,DHAP,0,0,0,
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,DHAP 80/640,DHAP,0,0,0,
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kayenzi CS,Kamonyi,South,Ndayambaje Sylvere,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,ALu 2x6,ACT / ALu,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,ALu 3x6,ACT / ALu,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,ALu 4x6,ACT / ALu,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,DHAP 20/160,DHAP,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,DHAP 30/240,DHAP,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,DHAP 80/640,DHAP,0,0,0,
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,12.0
+Nemba CS,Gakenke,North,BARIBWANUWE Jean d' Amour,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,ALu 1x6,ACT / ALu,0,0,0,
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,ALu 2x6,ACT / ALu,0,0,0,
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,ALu 3x6,ACT / ALu,0,0,0,
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,ALu 4x6,ACT / ALu,0,0,0,
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,22.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,DHAP 20/160,DHAP,1,1,1,24.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,DHAP 30/240,DHAP,1,1,1,12.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,DHAP 80/640,DHAP,1,1,1,12.0
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Munyaga CS,Rwamagana,East,MWUMVANEZA Emmanuel,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ruramira CS,Kayonza,East,Marcelline,ALu 1x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,Marcelline,ALu 2x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,Marcelline,ALu 3x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,Marcelline,ALu 4x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,Marcelline,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Ruramira CS,Kayonza,East,Marcelline,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,ALu 1x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,ALu 2x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,ALu 3x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,ALu 4x6,ACT / ALu,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,DHAP 20/160,DHAP,1,1,1,1.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,DHAP 30/240,DHAP,1,1,1,2.0
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,DHAP 80/640,DHAP,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ruramira CS,Kayonza,East,MUKANDIRIMA Angeline Marcelline,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,ALu 1x6,ACT / ALu,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,ALu 2x6,ACT / ALu,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,ALu 3x6,ACT / ALu,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,ALu 4x6,ACT / ALu,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,17.0
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,DHAP 20/160,DHAP,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,DHAP 30/240,DHAP,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,DHAP 80/640,DHAP,0,0,0,
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,0.0
+Muhoza (Ruhengeri) CS,Musanze,North,MASENGESHO Clarisse,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,ALu 1x6,ACT / ALu,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,ALu 2x6,ACT / ALu,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,ALu 3x6,ACT / ALu,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,ALu 4x6,ACT / ALu,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,DHAP 20/160,DHAP,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,DHAP 30/240,DHAP,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,DHAP 80/640,DHAP,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Remera-mbogo CS,Rulindo,North,UWINGENEYE Judith,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,6.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,ALu 1x6,ACT / ALu,1,1,1,30.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,ALu 2x6,ACT / ALu,1,1,1,17.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,36.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,120.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,DHAP 20/160,DHAP,0,0,0,
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,DHAP 30/240,DHAP,1,1,1,25.0
+Gahanga CS,Kicukiro,Kigali City,MUHAYIRWOHA JOLYNE,DHAP 80/640,DHAP,1,1,1,1.0
+Birambo CS,Karongi,West,REKERAHO Joseph,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Birambo CS,Karongi,West,REKERAHO Joseph,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Birambo CS,Karongi,West,REKERAHO Joseph,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Birambo CS,Karongi,West,REKERAHO Joseph,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Birambo CS,Karongi,West,REKERAHO Joseph,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,12.0
+Birambo CS,Karongi,West,REKERAHO Joseph,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,33.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,ALu 1x6,ACT / ALu,1,1,1,9.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,ALu 2x6,ACT / ALu,1,1,1,1.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,ALu 3x6,ACT / ALu,1,1,1,4.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,ALu 4x6,ACT / ALu,1,1,1,3.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,DHAP 20/160,DHAP,0,0,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,DHAP 30/240,DHAP,0,0,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,DHAP 80/640,DHAP,0,0,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Shyogwe CS,Muhanga,South,MUJAWIMANA Secondine,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,ALu 1x6,ACT / ALu,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,ALu 2x6,ACT / ALu,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,ALu 3x6,ACT / ALu,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,ALu 4x6,ACT / ALu,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,140.0
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,DHAP 20/160,DHAP,1,1,1,10.0
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,DHAP 30/240,DHAP,1,1,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,DHAP 80/640,DHAP,1,1,1,2.0
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rubona (ngoma) CS,Ngoma,East,Mukandagije Grace,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,ALu 1x6,ACT / ALu,1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,ALu 2x6,ACT / ALu,1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,ALu 3x6,ACT / ALu,1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,ALu 4x6,ACT / ALu,1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,DHAP 20/160,DHAP,0,0,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,DHAP 30/240,DHAP,0,0,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,DHAP 80/640,DHAP,0,0,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mbuga CS,Nyamagabe,South,NTAWUKURIRYAYO EDUARD,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,ALu 1x6,ACT / ALu,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,ALu 2x6,ACT / ALu,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,ALu 3x6,ACT / ALu,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,ALu 4x6,ACT / ALu,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,DHAP 20/160,DHAP,1,1,1,1.0
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,DHAP 30/240,DHAP,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,DHAP 80/640,DHAP,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Cyabayaga CS,Nyagatare,East,MUTABAZI Jean Damascene,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,ALu 1x6,ACT / ALu,1,1,1,2.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,ALu 2x6,ACT / ALu,1,1,1,1.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,ALu 3x6,ACT / ALu,1,1,1,1.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,ALu 4x6,ACT / ALu,1,1,1,1.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Hanika I (NYANZA) CS,Nyanza,South,NYIRAHAVUGIMANA AISHA,DHAP 20/160,DHAP,0,0,0,
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,ALu 1x6,ACT / ALu,1,1,1,4.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,ALu 2x6,ACT / ALu,1,1,1,4.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,ALu 3x6,ACT / ALu,1,1,1,1.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,ALu 4x6,ACT / ALu,1,1,1,6.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,29.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,DHAP 20/160,DHAP,0,0,0,
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,DHAP 30/240,DHAP,0,0,0,
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,DHAP 80/640,DHAP,0,0,0,
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Karama (Kamonyi) CS,Kamonyi,South,MUSABYEMARIYA Beatrice,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,ALu 1x6,ACT / ALu,1,1,1,2.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,ALu 2x6,ACT / ALu,1,1,1,3.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,ALu 3x6,ACT / ALu,1,1,1,2.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,ALu 4x6,ACT / ALu,1,1,1,3.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,DHAP 20/160,DHAP,0,0,0,
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,DHAP 30/240,DHAP,0,0,0,
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,DHAP 80/640,DHAP,0,0,0,
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kibilizi (gisagara) CS,Gisagara,South,Josephine,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,DHAP 20/160,DHAP,1,1,0,
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,DHAP 30/240,DHAP,1,1,0,
+Mwogo CS,Bugesera,East,MUKARWEGO Drocella,DHAP 80/640,DHAP,1,1,0,
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,21.0
+Nyundo (rubavu) CS,Rubavu,West,Genesia NYIRAKAMANUTSI,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,ALu 1x6,ACT / ALu,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,ALu 2x6,ACT / ALu,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,ALu 3x6,ACT / ALu,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,ALu 4x6,ACT / ALu,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,DHAP 20/160,DHAP,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,DHAP 30/240,DHAP,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,DHAP 80/640,DHAP,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kiziguro (gatsibo) CS,Gatsibo,East,RURANGWA Epimaque,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,19.0
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,4.0
+Mont Cyangugu CS,Rusizi,West,ICYIMANIMPAYE CHRISTINE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,21.0
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,ALu 1x6,ACT / ALu,1,1,0,
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,ALu 2x6,ACT / ALu,1,1,0,
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,ALu 3x6,ACT / ALu,1,1,0,
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,ALu 4x6,ACT / ALu,1,1,1,1.0
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,47.0
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Kabilizi CS,Nyaruguru,South,MUKABAGORORA Agnes,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,ALu 1x6,ACT / ALu,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,ALu 2x6,ACT / ALu,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,ALu 3x6,ACT / ALu,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,ALu 4x6,ACT / ALu,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Gacaca CS,Musanze,North,NDIBWAMI Martin,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,110.0
+Gacaca CS,Musanze,North,NDIBWAMI Martin,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Gacaca CS,Musanze,North,NDIBWAMI Martin,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Gacaca CS,Musanze,North,NDIBWAMI Martin,DHAP 20/160,DHAP,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,DHAP 30/240,DHAP,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,DHAP 80/640,DHAP,0,0,0,
+Gacaca CS,Musanze,North,NDIBWAMI Martin,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,102.0
+Gacaca CS,Musanze,North,NDIBWAMI Martin,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,33.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,ALu 1x6,ACT / ALu,1,1,1,3.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,ALu 2x6,ACT / ALu,1,1,1,5.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,ALu 3x6,ACT / ALu,1,1,1,2.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,ALu 4x6,ACT / ALu,1,1,1,5.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,19.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,DHAP 20/160,DHAP,0,0,0,
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,DHAP 30/240,DHAP,0,0,0,
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,DHAP 80/640,DHAP,0,0,0,
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gitarama CS,Muhanga,South,NYIRINKINDI Antoine,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,ALu 1x6,ACT / ALu,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,ALu 2x6,ACT / ALu,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,ALu 3x6,ACT / ALu,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,ALu 4x6,ACT / ALu,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,DHAP 20/160,DHAP,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,DHAP 30/240,DHAP,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,DHAP 80/640,DHAP,0,0,0,
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+Kabaya CS,Ngororero,West,NYIRANSENGIMANA EUGENIE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,ALu 1x6,ACT / ALu,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,ALu 2x6,ACT / ALu,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,ALu 3x6,ACT / ALu,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,ALu 4x6,ACT / ALu,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,118.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,DHAP 20/160,DHAP,1,1,1,18.0
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,DHAP 30/240,DHAP,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,DHAP 80/640,DHAP,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Munyiginya CS,Rwamagana,East,Mukashema Marie Chantal,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Nkanka CS,Rusizi,West,MBASHIRIKEBA ANTOINE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,ALu 1x6,ACT / ALu,0,0,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,ALu 2x6,ACT / ALu,0,0,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,ALu 3x6,ACT / ALu,0,0,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,ALu 4x6,ACT / ALu,0,0,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,DHAP 20/160,DHAP,1,1,1,1.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,DHAP 30/240,DHAP,1,1,1,1.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,DHAP 80/640,DHAP,1,1,1,1.0
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kabarondo (kayonza) CS,Kayonza,East,MUDAHOGORA SLYVIE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,ALu 1x6,ACT / ALu,1,1,1,3.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,ALu 2x6,ACT / ALu,1,1,1,2.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,ALu 3x6,ACT / ALu,0,0,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,ALu 4x6,ACT / ALu,0,0,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,31.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,DHAP 20/160,DHAP,1,1,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,DHAP 30/240,DHAP,1,1,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,DHAP 80/640,DHAP,1,1,1,4.0
+Sangaza CS,Ngoma,East,Gahongayire Ancille,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Sangaza CS,Ngoma,East,Gahongayire Ancille,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,ALu 1x6,ACT / ALu,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,ALu 2x6,ACT / ALu,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,ALu 3x6,ACT / ALu,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,ALu 4x6,ACT / ALu,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,DHAP 20/160,DHAP,1,1,1,2.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,DHAP 30/240,DHAP,1,1,1,12.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,DHAP 80/640,DHAP,1,1,1,3.0
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rurenge CS,Nyagatare,East,BATAMURIZA JANE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,ALu 1x6,ACT / ALu,1,1,1,5.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,ALu 2x6,ACT / ALu,1,1,1,1.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,ALu 3x6,ACT / ALu,1,1,1,1.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,ALu 4x6,ACT / ALu,1,1,1,5.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,98.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,DHAP 20/160,DHAP,0,0,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,DHAP 30/240,DHAP,0,0,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,DHAP 80/640,DHAP,0,0,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyamagabe CS,Nyamagabe,South,ALPHONSINE CYEMAYIRE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,ALu 1x6,ACT / ALu,1,1,1,4.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,ALu 2x6,ACT / ALu,1,1,1,1.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,ALu 3x6,ACT / ALu,1,1,1,4.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,ALu 4x6,ACT / ALu,1,1,1,3.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Rango CS,Huye,South,UKEYE ALICE SHADIA,DHAP 20/160,DHAP,0,0,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,DHAP 30/240,DHAP,0,0,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,DHAP 80/640,DHAP,0,0,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rango CS,Huye,South,UKEYE ALICE SHADIA,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,ALu 1x6,ACT / ALu,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,ALu 2x6,ACT / ALu,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,ALu 3x6,ACT / ALu,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,ALu 4x6,ACT / ALu,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,DHAP 20/160,DHAP,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,DHAP 30/240,DHAP,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,DHAP 80/640,DHAP,0,0,0,
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,0.0
+Nyamasheke CS,Nyamasheke,West,UWIMANA Floride,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,ALu 1x6,ACT / ALu,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,ALu 2x6,ACT / ALu,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,ALu 3x6,ACT / ALu,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,ALu 4x6,ACT / ALu,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,DHAP 20/160,DHAP,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,DHAP 30/240,DHAP,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,DHAP 80/640,DHAP,0,0,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Rususa CS,Ngororero,West,UWAMAHORO APPOLINARIE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,ALu 1x6,ACT / ALu,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,ALu 2x6,ACT / ALu,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,ALu 3x6,ACT / ALu,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,ALu 4x6,ACT / ALu,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,DHAP 20/160,DHAP,1,1,1,6.0
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,DHAP 30/240,DHAP,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,DHAP 80/640,DHAP,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mimuri CS,Nyagatare,East,UWIMANA ANGELE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,ALu 1x6,ACT / ALu,1,1,1,1.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,ALu 2x6,ACT / ALu,1,1,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,ALu 3x6,ACT / ALu,1,1,1,1.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,ALu 4x6,ACT / ALu,1,1,1,1.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,DHAP 20/160,DHAP,0,0,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,DHAP 30/240,DHAP,0,0,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,DHAP 80/640,DHAP,0,0,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+CUSP Butare CS,Huye,South,NTAHAVUKIYE Immaculee,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,ALu 1x6,ACT / ALu,1,1,1,6.0
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,ALu 2x6,ACT / ALu,1,1,1,2.0
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,ALu 3x6,ACT / ALu,1,1,0,
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,ALu 4x6,ACT / ALu,1,1,1,2.0
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngoma CS,Nyaruguru,South,UWIZEYIMANA Faustin,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,ALu 1x6,ACT / ALu,0,0,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,ALu 2x6,ACT / ALu,0,0,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,ALu 3x6,ACT / ALu,0,0,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,ALu 4x6,ACT / ALu,0,0,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,DHAP 20/160,DHAP,1,1,1,3.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,DHAP 30/240,DHAP,1,1,1,1.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,DHAP 80/640,DHAP,1,1,1,2.0
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyamirama CS,Kayonza,East,MWAMBARI Leonidas,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,18.0
+Byahi (rubavu) CS,Rubavu,West,UHAWIMPUNDU REHEMA,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,33.0
+Rubengera CS,Karongi,West,UWURUKUNDO Jean de La Paix,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Rubengera CS,Karongi,West,UWURUKUNDO Jean de La Paix,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Rubengera CS,Karongi,West,UWURUKUNDO Jean de La Paix,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Rubengera CS,Karongi,West,UWURUKUNDO Jean de La Paix,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,12.0
+Rubengera CS,Karongi,West,UWURUKUNDO Jean de La Paix,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,24.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,ALu 1x6,ACT / ALu,0,0,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,ALu 2x6,ACT / ALu,0,0,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,ALu 3x6,ACT / ALu,0,0,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,ALu 4x6,ACT / ALu,0,0,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,DHAP 20/160,DHAP,1,1,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,DHAP 30/240,DHAP,1,1,1,81.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,DHAP 80/640,DHAP,1,1,1,12.0
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyakaliro CS,Rwamagana,East,NYANDWI Leopold,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,ALu 1x6,ACT / ALu,1,1,1,3.0
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,ALu 2x6,ACT / ALu,1,1,1,2.0
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,ALu 3x6,ACT / ALu,1,1,1,2.0
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,ALu 4x6,ACT / ALu,1,1,1,2.0
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,33.0
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,ORS,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,DHAP 20/160,DHAP,0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,DHAP 30/240,DHAP,0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,DHAP 80/640,DHAP,0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mututu CS,Nyanza,South,MUKESHIMANA Yvonne,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,ALu 1x6,ACT / ALu,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,ALu 2x6,ACT / ALu,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,ALu 3x6,ACT / ALu,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,ALu 4x6,ACT / ALu,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,DHAP 20/160,DHAP,1,1,1,1.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,DHAP 30/240,DHAP,1,1,1,4.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,DHAP 80/640,DHAP,1,1,1,3.0
+Kibungo CS,Ngoma,East,MUKANEZA kevine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kibungo CS,Ngoma,East,MUKANEZA kevine,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,ALu 1x6,ACT / ALu,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,ALu 2x6,ACT / ALu,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,ALu 3x6,ACT / ALu,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,ALu 4x6,ACT / ALu,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,DHAP 20/160,DHAP,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,DHAP 30/240,DHAP,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,DHAP 80/640,DHAP,0,0,0,
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,15.0
+Kibogora CS,Nyamasheke,West,NDIZIHIWE VENUSTE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,81.0
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),ALu 1x6,ACT / ALu,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),ALu 2x6,ACT / ALu,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),ALu 3x6,ACT / ALu,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),ALu 4x6,ACT / ALu,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),DHAP 20/160,DHAP,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),DHAP 30/240,DHAP,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),DHAP 80/640,DHAP,0,0,0,
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,3.0
+Rulindo CS,Rulindo,North,MUKAMANA Clementine (0782921244),Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,90.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,ALu 1x6,ACT / ALu,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,ALu 2x6,ACT / ALu,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,ALu 3x6,ACT / ALu,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,ALu 4x6,ACT / ALu,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,DHAP 20/160,DHAP,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,DHAP 30/240,DHAP,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,DHAP 80/640,DHAP,0,0,0,
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,1.0
+Tare CS,Rulindo,North,NTAWIRINDARUBANDA Gervais,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,36.0
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,180.0
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,DHAP 20/160,DHAP,1,1,0,
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,DHAP 30/240,DHAP,1,1,0,
+Ruhenda CS,Gicumbi,North,NTAHONTUYE Cyriaque,DHAP 80/640,DHAP,1,1,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,ALu 1x6,ACT / ALu,1,1,1,1.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,ALu 2x6,ACT / ALu,1,1,1,2.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,ALu 3x6,ACT / ALu,1,1,1,3.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,ALu 4x6,ACT / ALu,1,1,1,3.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,DHAP 20/160,DHAP,0,0,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,DHAP 30/240,DHAP,0,0,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,DHAP 80/640,DHAP,0,0,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyarusiza CS,Nyamagabe,South,NTAHONDEREYE JOHN,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,ALu 1x6,ACT / ALu,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,ALu 2x6,ACT / ALu,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,ALu 3x6,ACT / ALu,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,ALu 4x6,ACT / ALu,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,38.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,DHAP 20/160,DHAP,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,DHAP 30/240,DHAP,1,1,1,6.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,DHAP 80/640,DHAP,1,1,1,6.0
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rwinkwavu CS,Kayonza,East,BAYAVUGE Dancile,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,ALu 1x6,ACT / ALu,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,ALu 2x6,ACT / ALu,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,ALu 3x6,ACT / ALu,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,ALu 4x6,ACT / ALu,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,DHAP 20/160,DHAP,1,1,1,18.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,DHAP 30/240,DHAP,1,1,1,7.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,DHAP 80/640,DHAP,1,1,1,4.0
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Butamwa CS,Nyarugenge,Kigali City,HAVUGIMANA Innocent,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,ALu 1x6,ACT / ALu,1,1,1,0.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,ALu 2x6,ACT / ALu,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,ALu 3x6,ACT / ALu,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,ALu 4x6,ACT / ALu,1,1,1,0.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,DHAP 20/160,DHAP,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,DHAP 30/240,DHAP,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,DHAP 80/640,DHAP,0,0,0,
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,0.0
+Muhondo (gakenke) CS,Gakenke,North,Byukusenge Beatrice,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,ALu 1x6,ACT / ALu,1,1,1,10.0
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,ALu 2x6,ACT / ALu,1,1,1,10.0
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,ALu 3x6,ACT / ALu,1,1,1,13.0
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,ALu 4x6,ACT / ALu,1,1,1,0.0
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,DHAP 20/160,DHAP,0,0,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,DHAP 30/240,DHAP,0,0,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,DHAP 80/640,DHAP,0,0,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gishubi CS,Gisagara,South,KARAMBIZI VEDASTE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,ALu 1x6,ACT / ALu,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,ALu 2x6,ACT / ALu,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,ALu 3x6,ACT / ALu,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,ALu 4x6,ACT / ALu,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,DHAP 20/160,DHAP,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,DHAP 30/240,DHAP,1,1,1,7.0
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,DHAP 80/640,DHAP,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ngarama CS,Gatsibo,East,TWAHIRWA ALFRED,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,ALu 1x6,ACT / ALu,1,1,1,2.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,ALu 2x6,ACT / ALu,1,1,1,1.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,ALu 3x6,ACT / ALu,1,1,1,1.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,ALu 4x6,ACT / ALu,1,1,1,1.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,90.0
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,DHAP 20/160,DHAP,0,0,0,
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,DHAP 30/240,DHAP,0,0,0,
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,DHAP 80/640,DHAP,0,0,0,
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rusatira-kinazi CS,Huye,South,MUKAMUDENGE Janviere,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,ALu 1x6,ACT / ALu,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,ALu 2x6,ACT / ALu,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,ALu 3x6,ACT / ALu,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,ALu 4x6,ACT / ALu,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,DHAP 20/160,DHAP,1,1,1,12.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,DHAP 30/240,DHAP,1,1,1,36.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,DHAP 80/640,DHAP,1,1,1,12.0
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyagasambu CS,Rwamagana,East,Mukabagire Deborah,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Karambo (rubavu) CS,Rubavu,West,HITIMANA Paul,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,ALu 1x6,ACT / ALu,1,1,1,5.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,ALu 2x6,ACT / ALu,1,1,1,3.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,ALu 3x6,ACT / ALu,1,1,1,4.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,ALu 4x6,ACT / ALu,1,1,1,1.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,DHAP 20/160,DHAP,0,0,0,
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,DHAP 30/240,DHAP,0,0,0,
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,DHAP 80/640,DHAP,0,0,0,
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kigese CS,Kamonyi,South,UWAMUNGU JEAN MARIE VIANNEY,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,ALu 1x6,ACT / ALu,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,ALu 2x6,ACT / ALu,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,ALu 3x6,ACT / ALu,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,ALu 4x6,ACT / ALu,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,90.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,DHAP 20/160,DHAP,1,1,1,6.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,DHAP 30/240,DHAP,1,1,1,9.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,DHAP 80/640,DHAP,1,1,1,12.0
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kamabuye CS,Bugesera,East,Nimuyisenge Brigitte,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,DHAP 20/160,DHAP,0,0,0,
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,DHAP 30/240,DHAP,1,1,1,5.0
+Mwendo (nyarugenge) CS,Nyarugenge,Kigali City,TWAGIRAYEZU Venuste,DHAP 80/640,DHAP,1,1,1,8.0
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,DHAP 20/160,DHAP,0,0,0,
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,DHAP 30/240,DHAP,0,0,0,
+Nyarurenzi MHC,Nyarugenge,Kigali City,Dativa MUSABYIMA,DHAP 80/640,DHAP,1,1,1,24.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,ALu 1x6,ACT / ALu,1,1,1,1.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,ALu 2x6,ACT / ALu,1,1,1,2.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,ALu 3x6,ACT / ALu,1,1,1,1.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,ALu 4x6,ACT / ALu,1,1,1,2.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,DHAP 20/160,DHAP,0,0,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,DHAP 30/240,DHAP,0,0,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,DHAP 80/640,DHAP,0,0,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gahombo CS,Nyanza,South,MAZIMPAKA Sprien,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,DHAP 20/160,DHAP,1,1,1,21.0
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,DHAP 30/240,DHAP,1,1,0,
+Mulindi (gicumbi) CS,Gicumbi,North,BARAYAGWIZA Jean de Dieu,DHAP 80/640,DHAP,1,1,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,ALu 1x6,ACT / ALu,1,1,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,ALu 2x6,ACT / ALu,1,1,1,4.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,ALu 3x6,ACT / ALu,1,1,1,2.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,ALu 4x6,ACT / ALu,1,1,1,2.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,DHAP 20/160,DHAP,0,0,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,DHAP 30/240,DHAP,0,0,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,DHAP 80/640,DHAP,0,0,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Cyanika (nyamagabe) CS,Nyamagabe,South,NYIRAHABIMANA Patricie,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,ALu 1x6,ACT / ALu,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,ALu 2x6,ACT / ALu,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,ALu 3x6,ACT / ALu,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,ALu 4x6,ACT / ALu,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,DHAP 20/160,DHAP,1,1,1,17.0
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,DHAP 30/240,DHAP,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,DHAP 80/640,DHAP,1,1,1,25.0
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rwempasha CS,Nyagatare,East,HIGIRO Michel,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,ALu 1x6,ACT / ALu,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,ALu 2x6,ACT / ALu,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,ALu 3x6,ACT / ALu,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,ALu 4x6,ACT / ALu,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,DHAP 20/160,DHAP,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,DHAP 30/240,DHAP,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,DHAP 80/640,DHAP,0,0,0,
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,200.0
+Kibingo (rutsiro) CS,Rutsiro,West,MINANI Desire,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,93.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,ALu 1x6,ACT / ALu,1,1,1,5.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,ALu 2x6,ACT / ALu,1,1,1,1.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,ALu 3x6,ACT / ALu,1,1,1,4.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,ALu 4x6,ACT / ALu,1,1,1,1.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Maraba (nyaruguru) CS,Nyaruguru,South,Kampogo Cansilde,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,ALu 1x6,ACT / ALu,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,ALu 2x6,ACT / ALu,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,ALu 3x6,ACT / ALu,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,ALu 4x6,ACT / ALu,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,DHAP 20/160,DHAP,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,DHAP 30/240,DHAP,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,DHAP 80/640,DHAP,0,0,0,
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,31.0
+Mukungu CS,Karongi,West,MUKAMUGEMA Alphonsine,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,19.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,ALu 1x6,ACT / ALu,1,1,1,1.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,ALu 2x6,ACT / ALu,1,1,1,1.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,ALu 3x6,ACT / ALu,1,1,1,1.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,ALu 4x6,ACT / ALu,1,1,1,2.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,DHAP 20/160,DHAP,0,0,0,
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,DHAP 30/240,DHAP,0,0,0,
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,DHAP 80/640,DHAP,0,0,0,
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gitwe CS,Ruhango,South,NYIRAHABIMANA MARTHE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,44.0
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,600.0
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Gataraga (MUSANZE) CS,Musanze,North,NIKIZANYE Albertine,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,126.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,ALu 1x6,ACT / ALu,1,1,1,2.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,ALu 2x6,ACT / ALu,1,1,1,2.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,ALu 3x6,ACT / ALu,1,1,1,3.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,ALu 4x6,ACT / ALu,1,1,1,4.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,DHAP 20/160,DHAP,0,0,0,
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,DHAP 30/240,DHAP,0,0,0,
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,DHAP 80/640,DHAP,0,0,0,
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mugina CS,Kamonyi,South,BAGARAGAZA JEAN BAPTISE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,ALu 1x6,ACT / ALu,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,ALu 2x6,ACT / ALu,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,ALu 3x6,ACT / ALu,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,ALu 4x6,ACT / ALu,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Ntarama CS,Bugesera,East,Mukayisine Olive,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Ntarama CS,Bugesera,East,Mukayisine Olive,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Ntarama CS,Bugesera,East,Mukayisine Olive,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,DHAP 20/160,DHAP,1,1,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,DHAP 30/240,DHAP,1,1,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,DHAP 80/640,DHAP,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ntarama CS,Bugesera,East,Mukayisine Olive,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,3.0
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,ALu 1x6,ACT / ALu,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,ALu 2x6,ACT / ALu,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,ALu 3x6,ACT / ALu,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,ALu 4x6,ACT / ALu,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,DHAP 20/160,DHAP,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,DHAP 30/240,DHAP,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,DHAP 80/640,DHAP,0,0,0,
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+Bigogwe MHC,Nyabihu,West,NIZEYIMANA Valens,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,45.0
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,DHAP 20/160,DHAP,1,1,0,
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,DHAP 30/240,DHAP,1,1,0,
+Rubaya (gicumbi) CS,Gicumbi,North,MUTUYIMANA Immaculee,DHAP 80/640,DHAP,1,1,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,ALu 1x6,ACT / ALu,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,ALu 2x6,ACT / ALu,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,ALu 3x6,ACT / ALu,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,ALu 4x6,ACT / ALu,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,18.0
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,ORS,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,DHAP 20/160,DHAP,1,1,1,25.0
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,DHAP 30/240,DHAP,1,1,1,13.0
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,DHAP 80/640,DHAP,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rugarama (nyarugenge) CS,Nyarugenge,Kigali City,HABIMANA Jean Bosco,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+Bugarama (rusizi) CS,Rusizi,West,BYUKUSENGE THEOPISTE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,12.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,ALu 1x6,ACT / ALu,1,1,1,3.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,ALu 2x6,ACT / ALu,1,1,1,3.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,ALu 3x6,ACT / ALu,1,1,1,2.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,ALu 4x6,ACT / ALu,1,1,1,3.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,9.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Ruhango CS,Ruhango,South,MWITENEZA Maria,DHAP 20/160,DHAP,0,0,0,
+Ruhango CS,Ruhango,South,MWITENEZA Maria,DHAP 30/240,DHAP,0,0,0,
+Ruhango CS,Ruhango,South,MWITENEZA Maria,DHAP 80/640,DHAP,0,0,0,
+Ruhango CS,Ruhango,South,MWITENEZA Maria,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ruhango CS,Ruhango,South,MWITENEZA Maria,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,ALu 1x6,ACT / ALu,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,ALu 2x6,ACT / ALu,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,ALu 3x6,ACT / ALu,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,ALu 4x6,ACT / ALu,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,24.0
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,DHAP 20/160,DHAP,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,DHAP 30/240,DHAP,1,1,1,12.0
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,DHAP 80/640,DHAP,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gitoki CS,Gatsibo,East,NTIBISHIMIRWA Jean d'Amour,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,3.0
+Kinigi CS,Musanze,North,NKIRANUYE Jean de la Croix,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,ALu 1x6,ACT / ALu,1,1,1,1.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,ALu 2x6,ACT / ALu,1,1,1,1.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,ALu 3x6,ACT / ALu,1,1,1,1.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,ALu 4x6,ACT / ALu,1,1,1,1.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,DHAP 20/160,DHAP,0,0,0,
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,DHAP 30/240,DHAP,0,0,0,
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,DHAP 80/640,DHAP,0,0,0,
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gatagara (Nyanza) CS,Nyanza,South,MUKAMURARA Sarah,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,ALu 1x6,ACT / ALu,1,1,1,4.0
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,ALu 2x6,ACT / ALu,1,1,1,5.0
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,ALu 3x6,ACT / ALu,1,1,1,5.0
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,ALu 4x6,ACT / ALu,1,1,1,0.0
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,DHAP 20/160,DHAP,0,0,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,DHAP 30/240,DHAP,0,0,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,DHAP 80/640,DHAP,0,0,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Musha (gisagara) CS,Gisagara,South,GAKURU VINCENT,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,ALu 1x6,ACT / ALu,1,1,1,1.0
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,ALu 2x6,ACT / ALu,1,1,1,3.0
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,ALu 3x6,ACT / ALu,1,1,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,ALu 4x6,ACT / ALu,1,1,1,1.0
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,DHAP 20/160,DHAP,0,0,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,DHAP 30/240,DHAP,0,0,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,DHAP 80/640,DHAP,0,0,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ngara CS,Nyamagabe,South,NIYOTWAGIRA MARIE ROSE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,ALu 1x6,ACT / ALu,1,1,1,1.0
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,ALu 2x6,ACT / ALu,1,1,1,0.0
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,ALu 3x6,ACT / ALu,1,1,1,2.0
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,ALu 4x6,ACT / ALu,1,1,1,2.0
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyahinda CS,Nyaruguru,South,Zaninka Valentine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,ALu 1x6,ACT / ALu,1,1,1,2.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,ALu 2x6,ACT / ALu,1,1,1,7.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,ALu 3x6,ACT / ALu,0,0,0,
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,ALu 4x6,ACT / ALu,0,0,0,
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,DHAP 20/160,DHAP,0,0,0,
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,DHAP 30/240,DHAP,0,0,0,
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,DHAP 80/640,DHAP,1,1,1,1.0
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rukoma Sake CS,Ngoma,East,MUKAKABANDA  SHAFIA,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,ALu 1x6,ACT / ALu,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,ALu 2x6,ACT / ALu,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,ALu 3x6,ACT / ALu,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,ALu 4x6,ACT / ALu,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,78.0
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,9.0
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,300.0
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,DHAP 20/160,DHAP,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,DHAP 30/240,DHAP,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,DHAP 80/640,DHAP,0,0,0,
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,19.0
+Mushubati CS,Rutsiro,West,Emmanuel NIYONSENGA,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,63.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,ALu 1x6,ACT / ALu,1,1,1,4.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,ALu 2x6,ACT / ALu,1,1,1,3.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,ALu 3x6,ACT / ALu,1,1,1,2.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,ALu 4x6,ACT / ALu,1,1,1,2.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,9.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,DHAP 20/160,DHAP,0,0,0,
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,DHAP 30/240,DHAP,0,0,0,
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,DHAP 80/640,DHAP,0,0,0,
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyamiyaga (Kamonyi) CS,Kamonyi,South,HAKIZAMUNGU Emmanuel,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,ALu 3x6,ACT / ALu,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,ALu 4x6,ACT / ALu,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Gahunga CS,Burera,North,MUHIRE JMV,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Gahunga CS,Burera,North,MUHIRE JMV,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Gahunga CS,Burera,North,MUHIRE JMV,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahunga CS,Burera,North,MUHIRE JMV,DHAP 20/160,DHAP,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,DHAP 30/240,DHAP,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,DHAP 80/640,DHAP,0,0,0,
+Gahunga CS,Burera,North,MUHIRE JMV,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,10.0
+Gahunga CS,Burera,North,MUHIRE JMV,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,27.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,ALu 1x6,ACT / ALu,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,ALu 2x6,ACT / ALu,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,ALu 3x6,ACT / ALu,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,ALu 4x6,ACT / ALu,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,18.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,DHAP 20/160,DHAP,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,DHAP 30/240,DHAP,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,DHAP 80/640,DHAP,0,0,0,
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,4.0
+Mugonero CS,Karongi,West,NYIRANDIKUBWIMANA Perusi,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,5.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,ALu 1x6,ACT / ALu,1,1,1,1.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,ALu 2x6,ACT / ALu,1,1,1,1.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,ALu 3x6,ACT / ALu,1,1,1,1.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,ALu 4x6,ACT / ALu,1,1,1,0.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,DHAP 20/160,DHAP,0,0,0,
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,DHAP 30/240,DHAP,0,0,0,
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,DHAP 80/640,DHAP,0,0,0,
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mbuye CS,Ruhango,South,NDAHIMANA CYPRIEN,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),ALu 1x6,ACT / ALu,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),ALu 2x6,ACT / ALu,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),ALu 3x6,ACT / ALu,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),ALu 4x6,ACT / ALu,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),DHAP 20/160,DHAP,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),DHAP 30/240,DHAP,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),DHAP 80/640,DHAP,0,0,0,
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+Kajevuba CS,Rulindo,North,KAMALI Leonard (0782920246),Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,160.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,28.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,DHAP 20/160,DHAP,1,1,1,6.0
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,DHAP 30/240,DHAP,1,1,0,
+Gisiza CS,Gicumbi,North,MUKARUKUNDO Belancilla,DHAP 80/640,DHAP,1,1,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,ALu 1x6,ACT / ALu,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,ALu 2x6,ACT / ALu,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,ALu 3x6,ACT / ALu,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,ALu 4x6,ACT / ALu,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,DHAP 20/160,DHAP,1,1,1,1.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,DHAP 30/240,DHAP,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,DHAP 80/640,DHAP,1,1,1,6.0
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rukomo CS,Nyagatare,East,YANKURIJE JEANNE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,ALu 1x6,ACT / ALu,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,ALu 2x6,ACT / ALu,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,ALu 3x6,ACT / ALu,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,ALu 4x6,ACT / ALu,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,DHAP 20/160,DHAP,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,DHAP 30/240,DHAP,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,DHAP 80/640,DHAP,0,0,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Nyamugali CS,Burera,North,NTAMPAKA Innocent,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,ALu 1x6,ACT / ALu,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,ALu 2x6,ACT / ALu,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,ALu 3x6,ACT / ALu,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,ALu 4x6,ACT / ALu,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Gitare CS,Burera,North,NZITA LEONARD,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gitare CS,Burera,North,NZITA LEONARD,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Gitare CS,Burera,North,NZITA LEONARD,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Gitare CS,Burera,North,NZITA LEONARD,DHAP 20/160,DHAP,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,DHAP 30/240,DHAP,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,DHAP 80/640,DHAP,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gitare CS,Burera,North,NZITA LEONARD,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,ALu 1x6,ACT / ALu,1,1,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,ALu 2x6,ACT / ALu,1,1,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,ALu 3x6,ACT / ALu,1,1,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,ALu 4x6,ACT / ALu,1,1,1,1.0
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,DHAP 20/160,DHAP,0,0,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,DHAP 30/240,DHAP,0,0,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,DHAP 80/640,DHAP,0,0,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kigeme CS,Nyamagabe,South,SEZIBERA Isaac,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,ALu 1x6,ACT / ALu,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,ALu 2x6,ACT / ALu,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,ALu 3x6,ACT / ALu,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,ALu 4x6,ACT / ALu,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,17.0
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,DHAP 20/160,DHAP,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,DHAP 30/240,DHAP,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,DHAP 80/640,DHAP,0,0,0,
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,24.0
+Kareba CS,Nyabihu,West,NIREMBERE Samuel,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,99.0
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,ALu 1x6,ACT / ALu,0,0,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,ALu 2x6,ACT / ALu,0,0,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,ALu 3x6,ACT / ALu,0,0,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,ALu 4x6,ACT / ALu,0,0,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,DHAP 20/160,DHAP,1,1,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,DHAP 30/240,DHAP,1,1,1,3.0
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,DHAP 80/640,DHAP,1,1,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rubona (rwamagana) CS,Rwamagana,East,Nkandiye Faustin,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,ALu 1x6,ACT / ALu,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,ALu 2x6,ACT / ALu,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,ALu 3x6,ACT / ALu,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,ALu 4x6,ACT / ALu,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,DHAP 20/160,DHAP,1,1,1,0.0
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,DHAP 30/240,DHAP,1,1,1,10.0
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,DHAP 80/640,DHAP,1,1,1,1.0
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gahini CS,Kayonza,East,UWAMAHORO Claudette,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,ALu 1x6,ACT / ALu,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,ALu 2x6,ACT / ALu,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,ALu 3x6,ACT / ALu,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,ALu 4x6,ACT / ALu,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,12.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,DHAP 20/160,DHAP,1,1,1,0.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,DHAP 30/240,DHAP,1,1,1,5.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,DHAP 80/640,DHAP,1,1,1,1.0
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mayange (bugesera) CS,Bugesera,East,Niyonsaba Alexia,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,ALu 1x6,ACT / ALu,1,1,1,3.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,ALu 2x6,ACT / ALu,1,1,1,3.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,ALu 3x6,ACT / ALu,1,1,1,4.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,ALu 4x6,ACT / ALu,1,1,1,4.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,DHAP 20/160,DHAP,0,0,0,
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,DHAP 30/240,DHAP,0,0,0,
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,DHAP 80/640,DHAP,0,0,0,
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Agahabwa CS,Gisagara,South,HABYARIMANA Felicien,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,ALu 1x6,ACT / ALu,1,1,1,6.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,ALu 2x6,ACT / ALu,1,1,1,3.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,ALu 3x6,ACT / ALu,1,1,1,3.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,ALu 4x6,ACT / ALu,1,1,1,3.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,DHAP 20/160,DHAP,0,0,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,DHAP 30/240,DHAP,0,0,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,DHAP 80/640,DHAP,0,0,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ntyazo CS,Nyanza,South,NDAHIMANA Fabien,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,ALu 1x6,ACT / ALu,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,ALu 2x6,ACT / ALu,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,ALu 3x6,ACT / ALu,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,ALu 4x6,ACT / ALu,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,23.0
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,DHAP 20/160,DHAP,1,1,1,1.0
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,DHAP 30/240,DHAP,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,DHAP 80/640,DHAP,1,1,1,17.0
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kanyinya MHC,Nyarugenge,Kigali City,Uwamahoro Clarisse,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Nyange (Musanze) CS,Musanze,North,UWIMANA Dancille,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,DHAP 20/160,DHAP,0,0,0,
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,DHAP 30/240,DHAP,1,1,1,6.0
+Cor-unum CS,Nyarugenge,Kigali City,Vestine Kayigire,DHAP 80/640,DHAP,1,1,1,2.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,ALu 1x6,ACT / ALu,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,ALu 2x6,ACT / ALu,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,ALu 3x6,ACT / ALu,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,ALu 4x6,ACT / ALu,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,DHAP 20/160,DHAP,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,DHAP 30/240,DHAP,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,DHAP 80/640,DHAP,0,0,0,
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,15.0
+Kirambo (burera) CS,Burera,North,Mukarubayiza Annonciatha,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,4.0
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,ALu 1x6,ACT / ALu,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,ALu 2x6,ACT / ALu,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,ALu 3x6,ACT / ALu,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,ALu 4x6,ACT / ALu,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,DHAP 20/160,DHAP,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,DHAP 30/240,DHAP,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,DHAP 80/640,DHAP,0,0,0,
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,8.0
+Busengo CS,Gakenke,North,Bazavuriki Suzanne,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,ALu 1x6,ACT / ALu,1,1,1,2.0
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,ALu 2x6,ACT / ALu,1,1,1,5.0
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,ALu 3x6,ACT / ALu,1,1,1,3.0
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,ALu 4x6,ACT / ALu,1,1,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,34.0
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,DHAP 20/160,DHAP,0,0,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,DHAP 30/240,DHAP,0,0,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,DHAP 80/640,DHAP,0,0,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kansi CS,Gisagara,South,NYANDWI EMMANUEL,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,ALu 1x6,ACT / ALu,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,ALu 2x6,ACT / ALu,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,ALu 3x6,ACT / ALu,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,ALu 4x6,ACT / ALu,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,DHAP 20/160,DHAP,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,DHAP 30/240,DHAP,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,DHAP 80/640,DHAP,0,0,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Butaro CS,Burera,North,Bosco NTAWUGIRUWE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,6.0
+Karwasa CS,Musanze,North,MUKASHYAKA Jacqueline,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,ALu 1x6,ACT / ALu,0,0,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,ALu 2x6,ACT / ALu,0,0,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,ALu 3x6,ACT / ALu,0,0,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,ALu 4x6,ACT / ALu,0,0,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,DHAP 20/160,DHAP,1,1,1,4.0
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,DHAP 30/240,DHAP,1,1,1,4.0
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,DHAP 80/640,DHAP,1,1,1,3.0
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rugarama (gatsibo) CS,Gatsibo,East,NGARAMBE Gratien,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,ALu 1x6,ACT / ALu,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,ALu 2x6,ACT / ALu,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,ALu 3x6,ACT / ALu,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,ALu 4x6,ACT / ALu,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,DHAP 20/160,DHAP,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,DHAP 30/240,DHAP,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,DHAP 80/640,DHAP,0,0,0,
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,10.0
+Kirambo (gitesi) CS,Karongi,West,NSABIMANA Fulgence,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,17.0
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,ALu 1x6,ACT / ALu,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,ALu 2x6,ACT / ALu,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,ALu 3x6,ACT / ALu,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,ALu 4x6,ACT / ALu,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,150.0
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,DHAP 20/160,DHAP,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,DHAP 30/240,DHAP,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,DHAP 80/640,DHAP,0,0,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Ndongozi CS,Burera,North,UWIHIRWE GAUDANCE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,0.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,ALu 1x6,ACT / ALu,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,ALu 2x6,ACT / ALu,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,ALu 3x6,ACT / ALu,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,ALu 4x6,ACT / ALu,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,DHAP 20/160,DHAP,1,1,1,1.0
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,DHAP 30/240,DHAP,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,DHAP 80/640,DHAP,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyagahanga CS,Gatsibo,East,MWISENEZA JEANNE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,18.0
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,6.0
+Mushaka CS,Rusizi,West,NGENDAHAYO Placide,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,30.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,ALu 1x6,ACT / ALu,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,ALu 2x6,ACT / ALu,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,ALu 3x6,ACT / ALu,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,ALu 4x6,ACT / ALu,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,150.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,DHAP 20/160,DHAP,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,DHAP 30/240,DHAP,1,1,1,10.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,DHAP 80/640,DHAP,1,1,1,3.0
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Tabagwe CS,Nyagatare,East,MUKARUSINE JACQUELINE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,ALu 1x6,ACT / ALu,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,ALu 2x6,ACT / ALu,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,ALu 3x6,ACT / ALu,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,ALu 4x6,ACT / ALu,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,210.0
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,DHAP 20/160,DHAP,1,1,1,4.0
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,DHAP 30/240,DHAP,1,1,1,5.0
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,DHAP 80/640,DHAP,1,1,1,2.0
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gakenke CS,Gatsibo,East,BAZATSINDA Christophe,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,ALu 1x6,ACT / ALu,1,1,1,11.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,ALu 2x6,ACT / ALu,1,1,1,9.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,ALu 3x6,ACT / ALu,1,1,1,3.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,ALu 4x6,ACT / ALu,1,1,1,3.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Coko CS,Nyaruguru,South,NYIRANEZA Francine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,200.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,ALu 1x6,ACT / ALu,1,1,1,2.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,ALu 2x6,ACT / ALu,1,1,1,1.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,ALu 3x6,ACT / ALu,1,1,1,1.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,ALu 4x6,ACT / ALu,1,1,1,3.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,24.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,DHAP 20/160,DHAP,0,0,0,
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,DHAP 30/240,DHAP,0,0,0,
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,DHAP 80/640,DHAP,0,0,0,
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rubona (huye) CS,Huye,South,RUTAYISIRE Jean Marie Vianney,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,ALu 1x6,ACT / ALu,1,1,1,2.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,ALu 2x6,ACT / ALu,1,1,1,1.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,ALu 3x6,ACT / ALu,1,1,1,0.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,ALu 4x6,ACT / ALu,1,1,1,1.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,DHAP 20/160,DHAP,0,0,0,
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,DHAP 30/240,DHAP,0,0,0,
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,DHAP 80/640,DHAP,0,0,0,
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Musambira CS,Kamonyi,South,TUYIZERE Marie Chantal,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,ALu 1x6,ACT / ALu,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,ALu 2x6,ACT / ALu,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,ALu 3x6,ACT / ALu,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,ALu 4x6,ACT / ALu,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,DHAP 20/160,DHAP,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,DHAP 30/240,DHAP,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,DHAP 80/640,DHAP,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Mukarange CS,Kayonza,East,NYIRAMUGWERA Ancile,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,ALu 1x6,ACT / ALu,1,1,1,2.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,ALu 2x6,ACT / ALu,1,1,1,2.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,ALu 3x6,ACT / ALu,1,1,1,2.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,ALu 4x6,ACT / ALu,1,1,1,2.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,DHAP 20/160,DHAP,0,0,0,
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,DHAP 30/240,DHAP,0,0,0,
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,DHAP 80/640,DHAP,0,0,0,
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Busoro CS,Nyanza,South,HAKIZIMANA Jean Damascene,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,DHAP 20/160,DHAP,1,1,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,DHAP 30/240,DHAP,1,1,0,
+Rutare (Gicumbi) MHC,Gicumbi,North,GATSINZI DAMIEN,DHAP 80/640,DHAP,1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,ALu 1x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,ALu 2x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,ALu 3x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,ALu 4x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,DHAP 20/160,DHAP,1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,DHAP 30/240,DHAP,1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,DHAP 80/640,DHAP,1,1,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ruhunda CS,Rwamagana,East,Mukamwezi Esperance,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,ALu 1x6,ACT / ALu,1,1,1,3.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,ALu 2x6,ACT / ALu,1,1,1,4.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,ALu 3x6,ACT / ALu,1,1,1,9.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,ALu 4x6,ACT / ALu,1,1,1,8.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,42.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,DHAP 20/160,DHAP,0,0,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,DHAP 30/240,DHAP,0,0,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,DHAP 80/640,DHAP,0,0,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gikore CS,Gisagara,South,SEKIMONYO EMMANUEL,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,ALu 1x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,ALu 2x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,ALu 3x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,ALu 4x6,ACT / ALu,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,90.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,21.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,DHAP 20/160,DHAP,1,1,1,21.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,DHAP 30/240,DHAP,1,1,1,45.0
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,DHAP 80/640,DHAP,1,1,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Ruhunda CS,Rwamagana,East,Umurungi Jacqueline,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,ALu 1x6,ACT / ALu,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,ALu 2x6,ACT / ALu,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,ALu 3x6,ACT / ALu,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,ALu 4x6,ACT / ALu,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,53.0
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,ORS,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,DHAP 20/160,DHAP,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,DHAP 30/240,DHAP,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,DHAP 80/640,DHAP,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Muhima CS,Nyarugenge,Kigali City,Mukarukundo Letitia,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,ALu 1x6,ACT / ALu,1,1,1,3.0
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,ALu 2x6,ACT / ALu,1,1,1,6.0
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,ALu 3x6,ACT / ALu,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,ALu 4x6,ACT / ALu,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,DHAP 20/160,DHAP,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,DHAP 30/240,DHAP,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,DHAP 80/640,DHAP,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gashanda CS,Ngoma,East,RUKERATABARO Alosy,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,ALu 1x6,ACT / ALu,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,ALu 2x6,ACT / ALu,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,ALu 3x6,ACT / ALu,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,ALu 4x6,ACT / ALu,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,90.0
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,DHAP 20/160,DHAP,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,DHAP 30/240,DHAP,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,DHAP 80/640,DHAP,0,0,0,
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,6.0
+Kayove CS,Rutsiro,West,NYIRAMASENGESHO Jeannette,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,ALu 1x6,ACT / ALu,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,ALu 2x6,ACT / ALu,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,ALu 3x6,ACT / ALu,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,ALu 4x6,ACT / ALu,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,DHAP 20/160,DHAP,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,DHAP 30/240,DHAP,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Bumbogo (ex-Gikomero I) CS,Gasabo,Kigali City,Uwiringiyimana Ladislas,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Bisate CS,Musanze,North,GAHUNGU Anastase,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bisate CS,Musanze,North,GAHUNGU Anastase,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Bisate CS,Musanze,North,GAHUNGU Anastase,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Bisate CS,Musanze,North,GAHUNGU Anastase,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,100.0
+Bisate CS,Musanze,North,GAHUNGU Anastase,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Bisate CS,Musanze,North,GAHUNGU Anastase,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,ALu 1x6,ACT / ALu,1,1,1,3.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,ALu 2x6,ACT / ALu,1,1,1,4.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,ALu 3x6,ACT / ALu,1,1,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,ALu 4x6,ACT / ALu,1,1,1,4.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,7.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,50.0
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,DHAP 20/160,DHAP,0,0,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,DHAP 30/240,DHAP,0,0,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,DHAP 80/640,DHAP,0,0,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kibirizi (Nyamagabe) CS,Nyamagabe,South,USANASE CLAUDETTE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,ALu 1x6,ACT / ALu,1,1,1,7.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,ALu 2x6,ACT / ALu,1,1,1,5.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,ALu 3x6,ACT / ALu,1,1,1,0.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,ALu 4x6,ACT / ALu,1,1,1,2.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,15.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,0.0
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,DHAP 20/160,DHAP,0,0,0,
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,DHAP 30/240,DHAP,0,0,0,
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,DHAP 80/640,DHAP,0,0,0,
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kamonyi (gacurabwenge) CS,Kamonyi,South,NISHYIRAMBERE Ancille,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,ALu 1x6,ACT / ALu,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,ALu 2x6,ACT / ALu,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,ALu 3x6,ACT / ALu,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,ALu 4x6,ACT / ALu,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,DHAP 20/160,DHAP,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,DHAP 30/240,DHAP,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,DHAP 80/640,DHAP,0,0,0,
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,0.0
+Kiyanza CS,Rulindo,North,MUKAZI Xaverine,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,ALu 1x6,ACT / ALu,1,1,1,2.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,ALu 2x6,ACT / ALu,1,1,1,2.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,ALu 3x6,ACT / ALu,0,0,0,
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,ALu 4x6,ACT / ALu,0,0,0,
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,14.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,DHAP 20/160,DHAP,1,1,1,2.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,DHAP 30/240,DHAP,1,1,1,3.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,DHAP 80/640,DHAP,1,1,1,2.0
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Remera (Ngoma) CS,Ngoma,East,UWINEZA Dative,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,ALu 1x6,ACT / ALu,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,ALu 2x6,ACT / ALu,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,ALu 3x6,ACT / ALu,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,ALu 4x6,ACT / ALu,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,DHAP 20/160,DHAP,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,DHAP 30/240,DHAP,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,DHAP 80/640,DHAP,0,0,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Cyanika (burera) CS,Burera,North,NKURUNZIZA SILILO,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,12.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,ALu 1x6,ACT / ALu,1,1,1,1.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,ALu 2x6,ACT / ALu,1,1,1,1.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,ALu 3x6,ACT / ALu,1,1,1,1.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,ALu 4x6,ACT / ALu,1,1,1,1.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,2.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,DHAP 20/160,DHAP,0,0,0,
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,DHAP 30/240,DHAP,0,0,0,
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,DHAP 80/640,DHAP,0,0,0,
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyarurama CS,Ruhango,South,HAKIZIMANA GAD,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,ALu 1x6,ACT / ALu,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,ALu 2x6,ACT / ALu,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,ALu 3x6,ACT / ALu,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,ALu 4x6,ACT / ALu,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,90.0
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,DHAP 20/160,DHAP,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,DHAP 30/240,DHAP,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,DHAP 80/640,DHAP,0,0,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,0,
+Kinoni CS,Burera,North,BIGIRIMANA Phocas,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,18.0
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,ALu 1x6,ACT / ALu,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,ALu 2x6,ACT / ALu,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,ALu 3x6,ACT / ALu,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,ALu 4x6,ACT / ALu,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,28.0
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,70.0
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,DHAP 20/160,DHAP,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,DHAP 30/240,DHAP,1,1,1,13.0
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,DHAP 80/640,DHAP,1,1,1,2.0
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rwanda Women's Network CS,Gasabo,Kigali City,Uwiringiyimana Rehema,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,ALu 1x6,ACT / ALu,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,ALu 2x6,ACT / ALu,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,ALu 3x6,ACT / ALu,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,ALu 4x6,ACT / ALu,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibuye CS,Karongi,West,DUSABIMANA Odile,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Kibuye CS,Karongi,West,DUSABIMANA Odile,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Kibuye CS,Karongi,West,DUSABIMANA Odile,DHAP 20/160,DHAP,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,DHAP 30/240,DHAP,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,DHAP 80/640,DHAP,0,0,0,
+Kibuye CS,Karongi,West,DUSABIMANA Odile,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,24.0
+Kibuye CS,Karongi,West,DUSABIMANA Odile,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,27.0
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,24.0
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,DHAP 20/160,DHAP,1,1,0,
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,DHAP 30/240,DHAP,1,1,1,9.0
+Tanda CS,Gicumbi,North,NDAYISHIMIYE GRATIEN,DHAP 80/640,DHAP,1,1,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,ALu 1x6,ACT / ALu,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,ALu 2x6,ACT / ALu,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,ALu 3x6,ACT / ALu,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,ALu 4x6,ACT / ALu,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,96.0
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,460.0
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,16.0
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,DHAP 20/160,DHAP,1,1,1,9.0
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,DHAP 30/240,DHAP,1,1,1,36.0
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,DHAP 80/640,DHAP,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gatsata CS,Gasabo,Kigali City,Felicite Kamariza,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,28.0
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,30.0
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,9.0
+St. Francois Rusizi CS,Rusizi,West,MUKARUKAZA ANTOINETTE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,6.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,ALu 1x6,ACT / ALu,1,1,1,1.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,ALu 2x6,ACT / ALu,1,1,1,6.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,ALu 3x6,ACT / ALu,1,1,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,ALu 4x6,ACT / ALu,1,1,1,4.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,60.0
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,DHAP 20/160,DHAP,0,0,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,DHAP 30/240,DHAP,0,0,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,DHAP 80/640,DHAP,0,0,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Kitabi CS,Nyamagabe,South,RUSANGANWA PASCAL,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),0,0,0,
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,11.0
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,12.0
+Gacuba Ii CS,Rubavu,West,UWIZERA BEATRICE,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,ALu 1x6,ACT / ALu,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,ALu 2x6,ACT / ALu,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,ALu 3x6,ACT / ALu,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,ALu 4x6,ACT / ALu,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,13.0
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,DHAP 20/160,DHAP,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,DHAP 30/240,DHAP,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,DHAP 80/640,DHAP,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nyagahita CS,Nyagatare,East,TUGIRAMAHAORO Denis,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,4.0
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,5.0
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,6.0
+Gihundwe CS,Rusizi,West,NYIRAZANINKA THERESE,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,12.0
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,ALu 1x6,ACT / ALu,0,0,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,ALu 2x6,ACT / ALu,1,1,1,1.0
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,ALu 3x6,ACT / ALu,0,0,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,ALu 4x6,ACT / ALu,0,0,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,10.0
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,8.0
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,DHAP 20/160,DHAP,1,1,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,DHAP 30/240,DHAP,1,1,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,DHAP 80/640,DHAP,1,1,1,1.0
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Nzangwa CS,Bugesera,East,Nkundabanyanga Patrice,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,ALu 1x6,ACT / ALu,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,ALu 2x6,ACT / ALu,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,ALu 3x6,ACT / ALu,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,ALu 4x6,ACT / ALu,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,17.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,40.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,6.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,80.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,DHAP 20/160,DHAP,1,1,1,9.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,DHAP 30/240,DHAP,1,1,1,6.0
+Gashora CS,Bugesera,East,Ayingeneye Rose,DHAP 80/640,DHAP,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Gashora CS,Bugesera,East,Ayingeneye Rose,Pyr/Art 180/60,Pyronaridine/Artesunate,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,ALu 1x6,ACT / ALu,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,ALu 2x6,ACT / ALu,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,ALu 3x6,ACT / ALu,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,ALu 4x6,ACT / ALu,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,25.0
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,DHAP 20/160,DHAP,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,DHAP 30/240,DHAP,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,DHAP 80/640,DHAP,0,0,0,
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,Pyr/Art 60/20,Pyronaridine/Artesunate,1,1,1,12.0
+Cyinzuzi CS,Rulindo,North,Uwimana Claudine,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,22.0
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,ALu 1x6,ACT / ALu,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,ALu 2x6,ACT / ALu,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,ALu 3x6,ACT / ALu,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,ALu 4x6,ACT / ALu,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,Malaria RDT,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,1.0
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,Zinc 10mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,20.0
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,ORS,Non-malaria (RDT / Zinc / ORS / Amox),1,1,1,3.0
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,Amox 125mg,Non-malaria (RDT / Zinc / ORS / Amox),1,1,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,DHAP 20/160,DHAP,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,DHAP 30/240,DHAP,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,DHAP 80/640,DHAP,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,Pyr/Art 60/20,Pyronaridine/Artesunate,0,0,0,
+Rutonde CS,Rulindo,North,MUJAWAYEZU Alphonsine,Pyr/Art 180/60,Pyronaridine/Artesunate,1,1,1,9.0

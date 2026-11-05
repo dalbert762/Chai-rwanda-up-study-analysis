@@ -1,0 +1,538 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{booktabs,longtable,array,xcolor,colortbl,enumitem,titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{navy}{HTML}{1F3A68}
+\definecolor{band}{HTML}{EEF2F7}
+\titleformat{\section}{\large\bfseries\color{navy}}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{navy}}{}{0pt}{}
+\titleformat{\subsubsection}{\small\bfseries\color{navy}}{}{0pt}{}
+\setlist{nosep,leftmargin=1.2em}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\newcommand{\field}[2]{\par\hangindent=1em\textbf{#1.} #2}
+\begin{document}
+\begin{titlepage}\vspace*{3cm}
+{\Huge\bfseries\color{navy} Medicine Stock and Prescription Assessment 2026\par}\vspace{8pt}
+{\Large\color{navy} Further analysis plan: what else the final dataset can tell us\par}\vspace{14pt}
+{\small\color{gray} QMIA 2026 (MoH, RMS, RSSB, CHAI) \textperiodcentered{} Prepared by the CHAI Rwanda analytics team \textperiodcentered{} 5 November 2026 \textperiodcentered{} Draft for discussion\par}
+\end{titlepage}
+\tableofcontents\newpage
+
+\section{Purpose of this document}
+The QMIA 2026 assessment collected three linked datasets across 266 health facilities, 175 community health workers (CHWs) and 6,006 prescriptions in all 30 districts. The indicator dashboard (Indicator\_dashboard.html) and the preliminary-findings deck answer the eight objectives of the concept note at headline level. This document maps what the final, cleaned dataset can still answer, and proposes a set of further analyses, each tied to a concept-note objective, to the variables that support it, and to what the dashboard already shows.
+
+Each proposal states the question, why it matters for quality improvement, the variables used, the method, the output, the caveats, and a priority and effort rating. Section 6 ranks them into two phases: analyses that strengthen the national report before it is finalised, and deeper analyses for publication and for the next QMIA round.
+
+\textbf{Reference data.} All figures quoted come from the cleaned dataset of 5 November 2026 (Data cleaning/Cleaned dataset 2026-11-05), after cleaning rules S1 to S11 described in 00\_Cleaning\_log.
+
+\section{The data available}
+\subsection{2.1 Datasets and units of analysis}
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.208\linewidth}>{\raggedright\arraybackslash}p{0.150\linewidth}>{\raggedright\arraybackslash}p{0.196\linewidth}>{\raggedright\arraybackslash}p{0.427\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Dataset} & \textbf{\color{white}Unit of analysis} & \textbf{\color{white}Records} & \textbf{\color{white}Main content} \\
+\endhead
+Stock assessment: submissions & Facility visit & 454 visits, 266 facilities & Location, level, management, medicines assessed, GPS (129 facilities), visit time stamps, data collector, general feedback (301 comments) \\
+\rowcolor{band}Stock assessment: medicine rows & Facility x medicine & 14,378 rows, 80 products (70 molecules) & EML applicability, managed, reason not managed, available on visit day, physical and system quantity, digital system, monthly consumption and stock-out days (Jun-Aug), current stock-out days, RMS Central/Regional availability, monthly requested and delivered quantities, tariff price, RSSB billed quantity and prescriptions/year \\
+Prescription: prescriptions & Prescription & 6,006 prescriptions & Date of prescription, prescriber category, number of medicines, items available and unavailable, feedback (1,024 comments) \\
+\rowcolor{band}Prescription: medicine items & Prescribed item & 14,059 items, 514 medicine names & Medicine, EML status, drug class, INN or brand, quantity prescribed, available at facility, ordered, supplied fully/partially/not, unit price, RMS availability, distribution vs nationwide classification \\
+CHW assessment: submissions & CHW visit & 175 CHWs, 172 health centres & Supervising health centre, district, products assessed \\
+\rowcolor{band}CHW assessment: product rows & CHW x product & 1,988 rows, 13 products & Managed, available, quantity, monthly consumption, months of stock, feedback (1,015 comments) \\
+\end{longtable}}
+\subsection{2.2 External files that can be linked}
+\begin{itemize}\item \textbf{Sampling frame} (Facilities.xlsx): 577 facilities by province, district and sector. This is the basis for sampling weights.
+\item \textbf{Facility GIS} (Facility GIS\_.xlsx): coordinates for health centres, health posts, district and referral hospitals; an urban/rural setting field; and district-hospital referral links (''Refer to'').
+\item \textbf{RMS hub lookup} (analytics/rms\_hubs.py): each district mapped to one of five RMS hubs (Musanze, Kayonza, Kigali, Karongi, Huye).
+\item \textbf{National EML} (Final EML list.csv): authorised level of care per product, already used for the expected-medicine denominator.
+\item \textbf{MFT zoning} (analytics/mft\_zoning.py): the first-line antimalarial per district (9 official, 21 inferred until the official list is received).
+\end{itemize}
+\subsection{2.3 Linkage keys}
+The datasets join on facility name (harmonised and reattributed during cleaning), on medicine through the molecule key that combines strengths, on district for RMS hub and GIS, and on supervising health centre for CHWs. 168 of the 172 health centres supervising an assessed CHW were also assessed in the stock form, which allows paired CHW and facility analysis. Prescription medicine names use a different coding (e.g. ibuprofen\_tab\_200\_mg) and need a crosswalk to the 70 tracer molecules before facility x medicine linkage.
+
+\subsection{2.4 Completeness of the key fields}
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.357\linewidth}>{\raggedright\arraybackslash}p{0.208\linewidth}>{\raggedright\arraybackslash}p{0.415\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Field} & \textbf{\color{white}Filled} & \textbf{\color{white}Implication} \\
+\endhead
+Available on visit day / consumption / stock-out days & 9,628 managed rows & Complete for all managed rows; the core analyses are well powered. \\
+\rowcolor{band}Physical and system quantity & 9,162 rows & Inventory accuracy on 8,856 records naming a digital system. \\
+Current stock-out days & 460 rows & Only for rows out on the visit day; supports a duration analysis. \\
+\rowcolor{band}RMS Central / Regional availability & about 465 rows & Only for unavailable rows, as designed. \\
+RSSB billed quantity, prescriptions per year & 1,005 rows, 215 facilities & Partial; mostly health centres (838 rows). Usable for triangulation. \\
+\rowcolor{band}March-May stock-out and order fields & 0 rows & Empty on both servers: the window is three months, not six. \\
+Facility GPS from the form & 129 of 266 facilities & Use the GIS file instead for distance analyses. \\
+\rowcolor{band}Outpatient / inpatient flag on prescriptions & not collected & Objective 4 cannot be split by service as the concept note intended. \\
+\end{longtable}}
+\section{What the dashboard already covers}
+The dashboard has eight pages that recompute in the browser for any province, district, RMS hub, level, programme, facility or medicine selection. The table below maps each concept-note objective to what is shown, the current headline value, and the main gap that a further analysis would close.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.173\linewidth}>{\raggedright\arraybackslash}p{0.311\linewidth}>{\raggedright\arraybackslash}p{0.196\linewidth}>{\raggedright\arraybackslash}p{0.300\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Objective} & \textbf{\color{white}Dashboard coverage} & \textbf{\color{white}Headline (5 Nov)} & \textbf{\color{white}Main gap} \\
+\endhead
+1. Tracer availability & Page 1: maps 1-2, FIG 1-6, least available medicines, weakest facilities, reasons not managed & 87.8\% expected; 93.7\% managed & No confidence intervals or weights; no explanation of why facilities differ \\
+\rowcolor{band}2. Stock accuracy & Page 2: FIG 2.5-2.9 (exact match, quantity accuracy) & 56.1\% exact match & Direction and value of discrepancies (plan 2.5/2.6) not shown \\
+2B. Stock adequacy and consumption & Page 2: FIG 2.1-2.4, tables 2A-2B; Page 3: AMC tables & 24.0\% adequate; 46.7\% overstocked & Trend, non-moving stock, ABC value analysis (plan C4, C6, C9) not shown \\
+\rowcolor{band}3. Stock-outs & Page 4: FIG 4.1-4.6, burden table & 9.7\% incidence; 7.0\% out on visit day & Current-duration distribution (plan 3.5), medicine x district heatmap (3.6), causes \\
+4. Unserved prescriptions & Page 5: FIG 5.1-5.6, tables 5.1-5.5 & 98.8\% complete; 0.8\% items unserved & Rate understated by design; prescriber effects; rational-use indicators \\
+\rowcolor{band}5. Supply chain attribution & Page 1: FIG 7-10; table of nationwide stock-outs & 85.7\% of gaps had stock at RMS & No RMS hub comparison; medicine-level escalation list \\
+6. Requisition and fill & Page 6: FIG 6.1-6.10, table 6.1 & 93.1\% quantity fill rate & Link from under-delivery to later stock-out not tested \\
+\rowcolor{band}7. Financial value & Page 7: Pareto, value by level/class, lost sales & 834,418 RWF unserved (observed) & Not combined with overstock and discrepancy value; not annualised \\
+8. Community level & Page 8: FIG 8.1-8.2, CHW vs facility & 80.1\% CHW availability & Condition-level readiness, CHW stock adequacy, paired CHW-HC analysis \\
+\end{longtable}}
+\section{Proposed further analyses}
+Analyses are grouped in twelve themes (A to L). Codes are used in the prioritisation table (Section 6). Priority: \textbf{High} = needed for a robust national report; \textbf{Medium} = strengthens interpretation; \textbf{Low} = research or methodological interest. Effort: \textbf{L} under two days, \textbf{M} two to five days, \textbf{H} more than five days.
+
+\subsection{Theme A. Making the estimates representative}
+\subsubsection*{A1. Design-based national estimates with 95\% confidence intervals}
+{\footnotesize\color{gray} Objective All \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{What is the national value of each headline indicator, and how precise is it?}
+\field{Why it matters}{The dashboard reports pooled point estimates. Health posts were added on top of the proportional sample (one per district) and hospitals are over-represented relative to the frame, so pooled rates are not self-weighting. The analysis plan itself asks for ''KPI tile + 95\% CI''.}
+\field{Variables}{Sampling frame (577 facilities by level and district); facility level, district, province; every headline indicator at facility x medicine level.}
+\field{Method}{Construct inverse-probability weights per level x district stratum; treat the facility as the primary sampling unit; estimate ratios with Taylor-linearised standard errors (survey package in R or statsmodels/samplics in Python). Report design effects and the intra-facility correlation.}
+\field{Output}{Table of weighted vs unweighted headline indicators with 95\% CI; footnote for the report and deck.}
+\field{Caveats}{Requires agreement on the frame (577 vs 583 in the concept note). Weights change little for health-centre-dominated indicators, more for referral-level ones.}
+\subsubsection*{A2. Reliability of district estimates}
+{\footnotesize\color{gray} Objective 1, 3, 6, 8 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which district values on the maps are precise enough to rank districts?}
+\field{Why it matters}{District maps drive targeting, but some districts rest on 5 facilities.}
+\field{Variables}{District, facility, indicator numerators and denominators.}
+\field{Method}{Cluster-robust CI per district; flag districts whose CI crosses the national value; optionally small-area (empirical Bayes) shrinkage of district rates.}
+\field{Output}{District table with CI and a reliability flag; map legend note.}
+\field{Caveats}{With 5 to 11 facilities per district, many differences will not be significant; this is itself a useful message for targeting.}
+\subsection{Theme B. Explaining availability}
+\subsubsection*{B1. Drivers of medicine availability (multilevel model)}
+{\footnotesize\color{gray} Objective 1 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{Which facility and medicine characteristics predict that a managed medicine is on the shelf?}
+\field{Why it matters}{Descriptive breakdowns show differences by level, management and province one at a time; a joint model separates them and quantifies how much variation sits at facility versus district versus medicine level.}
+\field{Variables}{Available on visit day (outcome); level, management type, province/RMS hub, programme, digital system, record accuracy, fill rate and requisition for that medicine, AMC, distance to RMS hub (GIS), urban/rural setting.}
+\field{Method}{Mixed-effects logistic regression with random intercepts for facility and district (and a crossed effect for medicine); report odds ratios and the variance partition coefficient.}
+\field{Output}{Forest plot of adjusted odds ratios; share of variance at each level.}
+\field{Caveats}{Cross-sectional: associations, not causes. Fill rate and availability are measured over overlapping periods.}
+\subsubsection*{B2. Facility performance typology for QI targeting}
+{\footnotesize\color{gray} Objective 1, 2, 3, 6 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{Which facilities combine several weaknesses, and do they form recognisable groups?}
+\field{Why it matters}{QMIA mentorship needs a short, defensible list of facilities to visit first.}
+\field{Variables}{Per facility: availability (managed), record accuracy, stock-out incidence, fill rate, share overstocked/understocked, prescription completeness.}
+\field{Method}{Standardise each indicator; build a composite index (equal weights and a sensitivity variant); cluster with k-means or latent profile analysis; test rank stability by bootstrap.}
+\field{Output}{Ranked facility list with profile labels (e.g. poor records, poor resupply, overstocked); map of profiles.}
+\field{Caveats}{Indicators rest on different numbers of medicines per facility; use shrinkage for small denominators.}
+\subsubsection*{B3. Geography and access: distance, remoteness and spatial clustering}
+{\footnotesize\color{gray} Objective 1, 5 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{Are remote facilities less well supplied, and do weak facilities cluster in space?}
+\field{Why it matters}{Distribution gaps (85.7\% of missing items had RMS stock) point to last-mile delivery, which distance should capture.}
+\field{Variables}{Facility GIS coordinates and setting; RMS hub locations; district hospital referral links; availability, stock-outs and fill rate per facility.}
+\field{Method}{Straight-line or road distance to the RMS branch and to the district hospital; regression of indicators on distance; Moran's I and Getis-Ord hot-spot analysis on facility rates.}
+\field{Output}{Scatter of availability against distance; hot-spot map.}
+\field{Caveats}{Name matching between GIS and assessment lists is needed; road distance requires an OpenStreetMap routing step.}
+\subsubsection*{B4. EML compliance: authorised but not managed}
+{\footnotesize\color{gray} Objective 1 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which EML-authorised medicines are not stocked, where, and for what stated reason?}
+\field{Why it matters}{The 5.9-point gap between expected (87.8\%) and managed (93.7\%) availability is medicines facilities are authorised for but do not stock; part of it is policy (MFT zoning, faith-based FP), part is a service gap.}
+\field{Variables}{EML applicability, managed, coded reason not managed (table 1.4), medicine, level, management type.}
+\field{Method}{Classify each not-managed pair as policy (zoning, faith-based FP, strength substitution) or service gap (no demand, rejected by RSSB, not introduced); rate by medicine and level.}
+\field{Output}{Table of service-gap medicines by level; list for the EML/RSSB reimbursement dialogue.}
+\field{Caveats}{Reasons are free text coded into 11 categories; about 15\% remain uncodable.}
+\field{Already done}{Reasons are coded on page 1 (table 1.4); this adds the policy vs service split.}
+\subsection{Theme C. Stock-outs: dynamics and causes}
+\subsubsection*{C1. Does under-delivery lead to a stock-out the following month?}
+{\footnotesize\color{gray} Objective 3, 6 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{When RMS delivers less than requested in June or July, is the medicine more likely to be out in the next month?}
+\field{Why it matters}{This is the most direct test of whether order fulfilment drives stock-outs, and the data hold three monthly observations per pair.}
+\field{Variables}{Monthly requested and delivered quantity and monthly stock-out days for June, July and August; AMC; facility and medicine.}
+\field{Method}{Panel of facility x medicine x month; logistic model of any stock-out in month t+1 on fill ratio in month t, with facility-medicine fixed effects or random effects; sensitivity with stock-out days as count outcome.}
+\field{Output}{Odds ratio of a next-month stock-out after a partial or nil delivery.}
+\field{Caveats}{Only two lagged transitions; reporting of monthly days may be approximate.}
+\subsubsection*{C2. Current stock-out duration}
+{\footnotesize\color{gray} Objective 3 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{How long have current stock-outs lasted, and which medicines stay out longest?}
+\field{Why it matters}{Plan indicator 3.5 (histogram with 30/60/90-day markers) is not on the dashboard.}
+\field{Variables}{Current stock-out days (460 rows), medicine, programme, level, RMS availability.}
+\field{Method}{Distribution with 30/60/90-day markers; treat ongoing spells as right-censored and compare medicines with Kaplan-Meier curves.}
+\field{Output}{Histogram and table of medicines out more than 60 days now.}
+\field{Caveats}{Recorded only for rows out on the visit day.}
+\subsubsection*{C3. Stock-out days ratio by medicine and district}
+{\footnotesize\color{gray} Objective 3 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Where are stock-out days concentrated?}
+\field{Why it matters}{Plan indicator 3.6 asks for a medicine x district heatmap; the dashboard has the burden table only.}
+\field{Variables}{Monthly stock-out days, managed pairs, medicine, district.}
+\field{Method}{Days out / (pairs x 92) per cell; suppress cells under 5 pairs.}
+\field{Output}{Heatmap for the report annex.}
+\field{Caveats}{Sparse cells; use molecule level.}
+\subsubsection*{C4. Combined stock-out indicator: visit day or past three months}
+{\footnotesize\color{gray} Objective 3 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{What share of managed pairs were out at any point, including the visit day?}
+\field{Why it matters}{Some pairs were empty on the visit day but recorded no stock-out days in June-August (a check on 3 November found about 180), so the 9.7\% incidence misses them.}
+\field{Variables}{Available on visit day, monthly stock-out days.}
+\field{Method}{Pair counted if out on the visit day or with any stock-out day; three-part breakdown (both, period only and recovered, visit day only).}
+\field{Output}{Revised FIG 4.1 option; a short note on recording completeness.}
+\field{Caveats}{Label must read ''June-August or on the visit day''.}
+\subsubsection*{C5. Root-cause attribution of each stock-out}
+{\footnotesize\color{gray} Objective 3, 5, 6 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{For each stocked-out pair, where did the chain break?}
+\field{Why it matters}{Quality improvement needs a cause per event, not separate rates.}
+\field{Variables}{Requested quantity, delivered quantity, RMS Central/Regional availability, distribution vs nationwide classification, AMC vs request.}
+\field{Method}{Decision tree: not requested; requested but under-quantified relative to AMC; requested and not delivered although RMS had stock (distribution); nationwide stock-out; delivered in full but consumed faster than planned.}
+\field{Output}{Waterfall chart of stock-outs by cause, by level and programme.}
+\field{Caveats}{RMS fields are answered by the facility team, not verified against RMS records; ''Don't know'' answers form their own category.}
+\subsection{Theme D. Inventory management and quantification}
+\subsubsection*{D1. Direction and value of record discrepancies}
+{\footnotesize\color{gray} Objective 2 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{When physical and system counts differ, which way, by how much, and at what value?}
+\field{Why it matters}{Plan indicators 2.5 and 2.6. Physical above system suggests unrecorded receipts; below suggests unrecorded dispensing, losses or leakage. The dashboard shows only exact match and quantity accuracy.}
+\field{Variables}{Physical quantity, system quantity, digital system, tariff price, level, medicine.}
+\field{Method}{Signed discrepancy and percentage variance; value at tariff; top 15 medicines by absolute and net value; distribution by system and level.}
+\field{Output}{Diverging bar chart; value table.}
+\field{Caveats}{Large variances where the system count is near zero; cap or use log ratios.}
+\subsubsection*{D2. Record accuracy by digital system}
+{\footnotesize\color{gray} Objective 2 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Do some systems (eLMIS, eBuzima, OpenMRS, Medisoft, OpenClinic, IMARA) keep more accurate records once level and programme are accounted for?}
+\field{Why it matters}{Informs the eBuzima roll-out and refresher-training priorities raised in the feedback.}
+\field{Variables}{Recording system (15 cleaned names), exact match, quantity accuracy, level, programme, province.}
+\field{Method}{Multilevel logistic model of exact match with system as fixed effect and facility random effect.}
+\field{Output}{Adjusted accuracy by system.}
+\field{Caveats}{System is confounded with level (hospitals use different systems).}
+\subsubsection*{D3. Do poor records lead to poor ordering?}
+{\footnotesize\color{gray} Objective 2, 3, 6 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Are facilities with inaccurate records more often stocked out or overstocked?}
+\field{Why it matters}{Links objective 2 to objectives 3 and 6 and justifies reconciliation as a QI action.}
+\field{Variables}{Facility-level accuracy; stock-out incidence; adequacy mix; request vs AMC.}
+\field{Method}{Facility-level correlation and regression controlling for level and province.}
+\field{Output}{Scatter and adjusted coefficients.}
+\field{Caveats}{Ecological at facility level.}
+\subsubsection*{D4. Ordering behaviour against a min-max rule}
+{\footnotesize\color{gray} Objective 6 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{How far do actual requests depart from what a min-max rule would order?}
+\field{Why it matters}{FIG 6.9/6.10 show request vs AMC; a min-max comparison tells facilities what they should have ordered.}
+\field{Variables}{AMC, stock on hand, monthly requests; band rule (1-2 months; 1-3 at CHUK/CHUB).}
+\field{Method}{Ideal order = max level x AMC minus stock on hand; classify each request as under, in line or over; value the excess at tariff.}
+\field{Output}{Share of requests over/under the rule by level and programme; value of over-ordering.}
+\field{Caveats}{Stock on hand is observed on the visit day, not at each order date; use as an approximation.}
+\subsubsection*{D5. Value of overstock and expiry risk}
+{\footnotesize\color{gray} Objective 2B, 7 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{How much capital is tied up above the maximum stock level?}
+\field{Why it matters}{46.7\% of stocked rows are overstocked, 80\% for malaria; the value makes the case for redistribution.}
+\field{Variables}{Stock on hand, AMC, tariff price, programme, medicine, months of stock.}
+\field{Method}{Excess = stock above max level; value at tariff; rank medicines and facilities; flag rows above 6 and 12 months of stock.}
+\field{Output}{Value table and a redistribution candidate list.}
+\field{Caveats}{No expiry dates were collected; risk is inferred from months of stock.}
+\subsubsection*{D6. Emergency order list}
+{\footnotesize\color{gray} Objective 2B \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which facility x medicine pairs need resupply now?}
+\field{Why it matters}{928 understocked items sit at or below 0.5 months, the emergency order point.}
+\field{Variables}{Months of stock, medicine, facility, district, RMS hub.}
+\field{Method}{Operational extract sorted by hub and district.}
+\field{Output}{Excel list for RMS branches.}
+\field{Caveats}{Snapshot at the visit date; needs a refresh before use.}
+\subsection{Theme E. Consumption and value}
+\subsubsection*{E1. Consumption trend (August against June)}
+{\footnotesize\color{gray} Objective 2B \textperiodcentered{} Priority \textbf{Low} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Is demand rising or falling between June and August?}
+\field{Why it matters}{Plan indicator C4, not on the dashboard.}
+\field{Variables}{Monthly consumption, medicine, class, level.}
+\field{Method}{Trend ratio Aug/Jun with median and interquartile range per class; flag outliers.}
+\field{Output}{Small multiples by therapeutic class.}
+\field{Caveats}{Three months only; seasonality cannot be separated.}
+\subsubsection*{E2. Non-moving and slow-moving medicines}
+{\footnotesize\color{gray} Objective 2B \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which medicines sit on shelves with no consumption?}
+\field{Why it matters}{Plan indicator C6; dead stock is wasted capital and expiry risk.}
+\field{Variables}{Monthly consumption, stock on hand, EML applicability, tariff price.}
+\field{Method}{Pairs with zero consumption in all three months and stock above zero; value at tariff.}
+\field{Output}{Bar chart by level and a medicine list.}
+\field{Caveats}{Some zero-consumption rows may be recording gaps rather than no use.}
+\subsubsection*{E3. ABC analysis by consumption value (and ABC-VEN)}
+{\footnotesize\color{gray} Objective 2B, 7 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which few medicines account for most of the value consumed?}
+\field{Why it matters}{Plan indicator C9; focuses supervision on high-value items.}
+\field{Variables}{Monthly consumption, tariff price, medicine; VEN class from the EML if available.}
+\field{Method}{Pareto of consumption value; A/B/C classes at 80/15/5\%; cross with VEN to build the ABC-VEN matrix.}
+\field{Output}{Pareto chart and ABC-VEN matrix.}
+\field{Caveats}{VEN classification needs to be sourced.}
+\subsubsection*{E4. Triangulating facility consumption with RSSB billing}
+{\footnotesize\color{gray} Objective 4, 7 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{Does what facilities report consuming match what is billed to RSSB?}
+\field{Why it matters}{A large gap signals unbilled dispensing (revenue loss) or over-reported consumption (quantification error).}
+\field{Variables}{Total quantity billed and prescriptions per year (RSSB), monthly consumption, quantity per prescription; 1,005 rows at 215 facilities.}
+\field{Method}{Ratio of billed to consumed quantity over the same period; distribution by medicine and level; outlier review.}
+\field{Output}{Billing completeness ratio by medicine and level.}
+\field{Caveats}{Billing period must be aligned with June-August; programme products are often not billed to RSSB.}
+\subsection{Theme F. Prescriptions and rational use}
+\subsubsection*{F1. WHO/INRUD prescribing indicators}
+{\footnotesize\color{gray} Objective 4 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{How does prescribing compare with WHO reference values?}
+\field{Why it matters}{The prescription data contain everything needed for the standard core indicators, which the dashboard does not report.}
+\field{Variables}{Number of medicines per prescription (mean 2.34), name type (96.2\% INN), drug class (antibacterials), injection forms, EML status, level, prescriber category, district.}
+\field{Method}{Average medicines per encounter; \% generic; \% encounters with an antibiotic; \% with an injection; \% from the EML; by level and prescriber category, against WHO reference values (e.g. 1.6-1.8 medicines, under 30\% antibiotics, under 20\% injections).}
+\field{Output}{Indicator table by level and prescriber; antibiotic-use map.}
+\field{Caveats}{Inpatient prescriptions inflate injections; no service flag was collected. Drug-class coding needs a review (870 items coded as peritoneal dialysis solutions look misclassified).}
+\subsubsection*{F2. Prescriber category and unserved items}
+{\footnotesize\color{gray} Objective 4 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Are specialists' or general practitioners' prescriptions more often unserved than nurses'?}
+\field{Why it matters}{Points to where prescribing and stocking lists diverge (e.g. referral hospitals, 32.9\% of prescriptions with a gap).}
+\field{Variables}{Prescriber category (nurse 4,884; GP 830; specialist 139; others), unserved items, level, number of medicines.}
+\field{Method}{Logistic model of a prescription with any unserved item on prescriber category, controlling for level and number of items, facility random effect.}
+\field{Output}{Adjusted odds ratios.}
+\field{Caveats}{Few unserved events (107 items), so wide intervals.}
+\subsubsection*{F3. Concordance between prescription and stock availability}
+{\footnotesize\color{gray} Objective 4 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{When the stock form says a medicine was unavailable, were prescriptions for it still written and recorded as served?}
+\field{Why it matters}{Quantifies the design artefact behind the 0.8\% unserved rate (prescribers write what the pharmacy holds) and estimates hidden demand.}
+\field{Variables}{Prescription items (medicine, availability, date) and stock rows (medicine, availability, stock-out days) for the same facility.}
+\field{Method}{Crosswalk prescription names to the 70 tracer molecules; compare item availability with stock-form availability and stock-out days in the prescription window.}
+\field{Output}{Concordance table and a statement of how understated the unserved rate is.}
+\field{Caveats}{Requires a name crosswalk; prescription dates span 74 days.}
+\subsubsection*{F4. Latent unmet demand from stock-outs}
+{\footnotesize\color{gray} Objective 4, 7 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{How many prescriptions would have gone unserved during recorded stock-outs?}
+\field{Why it matters}{Gives a realistic counterpart to the observed 0.8\%.}
+\field{Variables}{RSSB prescriptions per year, quantity per prescription, stock-out days, AMC (fields prescriptions\_missed\_stockout, est\_qty\_unfilled\_stockout).}
+\field{Method}{Prescriptions per day x stock-out days per pair; sum and value at tariff; compare with observed unserved items.}
+\field{Output}{Estimated missed prescriptions and value, by level and medicine.}
+\field{Caveats}{Relies on RSSB data for 215 facilities; extrapolate with weights (A1).}
+\subsubsection*{F5. Visit-day against preceding-day prescriptions}
+{\footnotesize\color{gray} Objective 4 \textperiodcentered{} Priority \textbf{Low} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Do prescriptions from the visit day differ from those sampled from registers for earlier days?}
+\field{Why it matters}{Checks for selection and recording bias in the prescription sample.}
+\field{Variables}{Date of prescription, visit date, availability, number of items.}
+\field{Method}{Compare unserved rates and items per prescription by day offset.}
+\field{Output}{Short methods note.}
+\field{Caveats}{Offsets depend on register quality.}
+\subsubsection*{F6. Brand-name prescribing}
+{\footnotesize\color{gray} Objective 4 \textperiodcentered{} Priority \textbf{Low} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which medicines and prescribers use brand names, and at what cost difference?}
+\field{Why it matters}{Brand names and abbreviations were raised in data-collector feedback; brands can block dispensing of an available generic.}
+\field{Variables}{Name type (540 brand items), medicine, prescriber category, level.}
+\field{Method}{Rate by prescriber and level; list of brand-prescribed molecules.}
+\field{Output}{Short table for the rational-use section.}
+\field{Caveats}{Brand vs INN was judged by the collector.}
+\subsection{Theme G. Supply chain attribution and RMS performance}
+\subsubsection*{G1. RMS hub scorecard}
+{\footnotesize\color{gray} Objective 5, 6 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{How do the five RMS hubs compare on fill rate, distribution gaps and stock-outs?}
+\field{Why it matters}{The dashboard offers an RMS hub filter but no side-by-side comparison; hubs are the accountable unit for resupply.}
+\field{Variables}{District to hub lookup; fill rate, partial/non-fulfilment, delivered without request, distribution vs nationwide, stock-out incidence.}
+\field{Method}{One row per hub with CI (A1); funnel plot against the national value.}
+\field{Output}{Hub scorecard table and funnel plot.}
+\field{Caveats}{Hub is assigned by district, not by actual supplying branch.}
+\subsubsection*{G2. Medicine-level escalation list}
+{\footnotesize\color{gray} Objective 5 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Which medicines are nationwide stock-outs rather than distribution problems?}
+\field{Why it matters}{ARV gaps are half nationwide stock-outs; HIV Determine kits, insulin, thiamine and paediatric RHZ were out at RMS too.}
+\field{Variables}{RMS Central and Regional availability, distribution classification, programme, medicine; prescription-level RMS fields.}
+\field{Method}{Combine stock-form and prescription attribution; rank medicines by facilities affected and nationwide share; include ''Don't know'' rates as a data gap.}
+\field{Output}{Escalation table for programmes and central procurement.}
+\field{Caveats}{Facility-reported RMS status; validate against RMS warehouse records if they can be obtained.}
+\subsubsection*{G3. Validation against RMS warehouse data}
+{\footnotesize\color{gray} Objective 5 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{Do facility-reported RMS stock statuses match RMS records on the same dates?}
+\field{Why it matters}{The concept note planned RMS warehouse data as a source; this has not been linked.}
+\field{Variables}{RMS stock and delivery records (to request); stock-form RMS fields.}
+\field{Method}{Match by medicine, branch and date; agreement statistics (kappa).}
+\field{Output}{Validation note; corrected attribution if needed.}
+\field{Caveats}{Depends on data access from RMS.}
+\subsection{Theme H. Financial value}
+\subsubsection*{H1. One table of the cost of supply chain gaps}
+{\footnotesize\color{gray} Objective 7 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{What is the combined value of unserved prescriptions, lost sales from stock-outs, overstock and record discrepancies?}
+\field{Why it matters}{Each value is computed separately today; decision-makers need one number with clear components.}
+\field{Variables}{Unserved value (834,418 RWF observed), lost sales (page 7), overstock value (D5), discrepancy value (D1), tariff prices.}
+\field{Method}{Harmonise to the same period and prices; annualise and extrapolate to the 577 facilities with weights (A1); show ranges.}
+\field{Output}{Summary table and waterfall chart for the executive summary.}
+\field{Caveats}{Components are not additive in every case (lost sales and unserved value overlap); present them side by side, not summed.}
+\subsection{Theme I. Community level}
+\subsubsection*{I1. Condition-level treatment readiness of CHWs}
+{\footnotesize\color{gray} Objective 8 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{What share of CHWs can treat each iCCM condition on the visit day?}
+\field{Why it matters}{Product availability (80.1\%) hides whether a CHW can complete a treatment: malaria needs an RDT and an age-appropriate ACT; diarrhoea needs ORS and zinc; pneumonia needs amoxicillin.}
+\field{Variables}{CHW product rows: RDT, AL presentations, DHAP, pyronaridine/artesunate, ORS, zinc, amoxicillin 125 mg; district zone.}
+\field{Method}{Per CHW, ready for a condition if every required product is managed and available (zone-appropriate ACT); rate by district.}
+\field{Output}{Readiness by condition and district.}
+\field{Caveats}{CHW cadre (binome/ASM) was not recorded, so plan indicator 8.3 by cadre is not possible.}
+\subsubsection*{I2. CHW stock adequacy}
+{\footnotesize\color{gray} Objective 8 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Are CHWs over- or under-stocked relative to their consumption?}
+\field{Why it matters}{Stock adequacy is reported for facilities but not for CHWs.}
+\field{Variables}{Months of stock (703 rows), quantity, monthly consumption.}
+\field{Method}{Same bands as facilities; by product and district.}
+\field{Output}{Adequacy mix for CHWs.}
+\field{Caveats}{Small quantities make months of stock unstable.}
+\subsubsection*{I3. Test-and-treat proxy}
+{\footnotesize\color{gray} Objective 8 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Do CHWs dispense ACTs in proportion to RDTs used?}
+\field{Why it matters}{A high ACT to RDT ratio suggests treatment without testing.}
+\field{Variables}{Monthly consumption of RDTs and of all ACT presentations per CHW.}
+\field{Method}{Ratio of ACT courses to RDTs per CHW and district.}
+\field{Output}{Distribution and district map.}
+\field{Caveats}{Positivity varies by area; ratio is a screening signal, not proof.}
+\subsubsection*{I4. Paired CHW and supervising health centre}
+{\footnotesize\color{gray} Objective 8 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{When the health centre is stocked out, is its CHW too? Does the health centre hold stock its CHW lacks?}
+\field{Why it matters}{Tests the resupply link from health centre to community (168 linked pairs).}
+\field{Variables}{CHW product availability and quantity; same product at the supervising health centre (availability, months of stock).}
+\field{Method}{Paired cross-tabulation and McNemar test per product; list of health centres overstocked while their CHW is out.}
+\field{Output}{Paired table; redistribution list.}
+\field{Caveats}{Only eight products overlap between the two forms.}
+\field{Already done}{Page 8 compares CHW and facility availability in aggregate; this pairs them.}
+\subsection{Theme J. Qualitative feedback}
+\subsubsection*{J1. Thematic analysis of the remaining free text}
+{\footnotesize\color{gray} Objective All \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{M}}
+\field{Question}{What do facility teams and CHWs say about supply problems?}
+\field{Why it matters}{Prescription-form feedback is coded (table 5.5); the stock-form (301) and CHW (1,015) comments are not.}
+\field{Variables}{Feedback fields on the three forms; facility, level, district.}
+\field{Method}{Code a frame from the existing prescription themes; double-code a 20\% sample for agreement; link themes to quantitative outcomes (e.g. facilities citing late deliveries vs their fill rate).}
+\field{Output}{Theme frequency table with illustrative quotes; joint display with indicators.}
+\field{Caveats}{Many CHW comments are short (''few patients''); some are in Kinyarwanda.}
+\subsection{Theme K. Data quality and process}
+\subsubsection*{K1. Data-collector and device effects}
+{\footnotesize\color{gray} Objective Methods \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Do indicators vary with the data collector more than expected?}
+\field{Why it matters}{45 collectors on 78 devices; collector effects would bias district comparisons.}
+\field{Variables}{Collector, device, form version (14), interview start/end (median 154 minutes), indicators.}
+\field{Method}{Intra-collector correlation from a cross-classified model; interview duration against completeness; digit preference in counts.}
+\field{Output}{Methods annex table.}
+\field{Caveats}{Collectors and districts are partly confounded by team assignment.}
+\subsubsection*{K2. Cleaning and consistency report}
+{\footnotesize\color{gray} Objective Methods \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{How much did each cleaning rule change, and what remains uncertain?}
+\field{Why it matters}{Rules S1-S11 changed availability, management and consumption fields; reviewers will ask.}
+\field{Variables}{Cleaning log, before/after fields (available, managed, applicable).}
+\field{Method}{Table of rule, rows affected, effect on headline indicators.}
+\field{Output}{Methods annex.}
+\field{Caveats}{None.}
+\field{Already done}{The cleaning log exists; this turns it into a reportable annex.}
+\subsection{Theme L. Policy questions already flagged}
+\subsubsection*{L1. MFT zoning compliance}
+{\footnotesize\color{gray} Objective 1, 8 \textperiodcentered{} Priority \textbf{High} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Do facilities and CHWs hold the antimalarial of their zone?}
+\field{Why it matters}{Out-of-zone products were recoded (S10); compliance is a programme indicator.}
+\field{Variables}{Antimalarial rows, district, mft\_zoning lookup.}
+\field{Method}{Final once the official list for all 30 districts is received.}
+\field{Output}{Compliance by district; flag list (Antimalarial\_zoning\_flags).}
+\field{Caveats}{21 districts' zones are inferred from the data.}
+\field{Already done}{Flag workbook produced; awaiting the official list.}
+\subsubsection*{L2. Strength substitution}
+{\footnotesize\color{gray} Objective 1 \textperiodcentered{} Priority \textbf{Medium} \textperiodcentered{} Effort \textbf{L}}
+\field{Question}{Where is one strength stocked out while another is available?}
+\field{Why it matters}{154 cases at 101 facilities (91 out for more than 60 days, DHAP and AL excluded); informs which strengths each level should hold.}
+\field{Variables}{Strength-level rows, molecule key, stock-out days.}
+\field{Method}{Already extracted; add a policy recommendation per molecule.}
+\field{Output}{Strength\_mismatch\_extract and Strength\_flags\_over60.}
+\field{Caveats}{None.}
+\field{Already done}{Extracts produced (S9).}
+\section{Suggested analytical approach}
+\subsection{5.1 Software and reproducibility}
+\begin{itemize}\item Keep the existing Python pipeline (analyze\_* loaders, Data\_cleaning\_pipeline.py) as the single source of cleaned data; every new analysis reads the dated cleaned files, never the raw exports.
+\item Survey estimation (A1, A2, G1) in R (survey, srvyr) or Python (samplics); mixed models (B1, C1, D2, F2) in R (lme4, glmmTMB) or Python (statsmodels).
+\item Spatial work (B3) in R (sf, spdep) or Python (geopandas, libpysal).
+\item Add new outputs as dashboard pages only where they will be monitored; one-off analyses go to the report annex.
+\end{itemize}
+\subsection{5.2 Conventions to keep}
+\begin{itemize}\item Availability uses two tracks: Essential Medicines on the EML denominator, programme products on managed rows only.
+\item CHW availability is computed over managed rows only (not managed is MFT zoning).
+\item Average stock-out days use total\_stockout\_days; incidence and lost sales use the monthly fields.
+\item Prescription unserved rates are understated by design and should never be read as a supply rate on their own.
+\item Report counts beside every percentage and suppress groups under 30 observations.
+\end{itemize}
+\section{Prioritisation}
+Phase 1 analyses strengthen the national report and the dissemination; Phase 2 analyses support publication, the QI plan and the next round.
+
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.077\linewidth}>{\raggedright\arraybackslash}p{0.484\linewidth}>{\raggedright\arraybackslash}p{0.130\linewidth}>{\raggedright\arraybackslash}p{0.112\linewidth}>{\raggedright\arraybackslash}p{0.089\linewidth}>{\raggedright\arraybackslash}p{0.089\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Code} & \textbf{\color{white}Analysis} & \textbf{\color{white}Objective} & \textbf{\color{white}Priority} & \textbf{\color{white}Effort} & \textbf{\color{white}Phase} \\
+\endhead
+A1 & Design-based national estimates with 95\% confidence intervals & All & High & M & 1 \\
+\rowcolor{band}A2 & Reliability of district estimates & 1, 3, 6, 8 & High & L & 1 \\
+B1 & Drivers of medicine availability (multilevel model) & 1 & Medium & M & 2 \\
+\rowcolor{band}B2 & Facility performance typology for QI targeting & 1, 2, 3, 6 & High & M & 1 \\
+B3 & Geography and access: distance, remoteness and spatial clustering & 1, 5 & Medium & M & 2 \\
+\rowcolor{band}B4 & EML compliance: authorised but not managed & 1 & Medium & L & 2 \\
+C1 & Does under-delivery lead to a stock-out the following month? & 3, 6 & High & M & 1 \\
+\rowcolor{band}C2 & Current stock-out duration & 3 & Medium & L & 2 \\
+C3 & Stock-out days ratio by medicine and district & 3 & Medium & L & 2 \\
+\rowcolor{band}C4 & Combined stock-out indicator: visit day or past three months & 3 & Medium & L & 2 \\
+C5 & Root-cause attribution of each stock-out & 3, 5, 6 & High & M & 1 \\
+\rowcolor{band}D1 & Direction and value of record discrepancies & 2 & High & L & 1 \\
+D2 & Record accuracy by digital system & 2 & Medium & L & 2 \\
+\rowcolor{band}D3 & Do poor records lead to poor ordering? & 2, 3, 6 & Medium & L & 2 \\
+D4 & Ordering behaviour against a min-max rule & 6 & Medium & M & 2 \\
+\rowcolor{band}D5 & Value of overstock and expiry risk & 2B, 7 & High & L & 1 \\
+D6 & Emergency order list & 2B & High & L & 1 \\
+\rowcolor{band}E1 & Consumption trend (August against June) & 2B & Low & L & 2 \\
+E2 & Non-moving and slow-moving medicines & 2B & Medium & L & 2 \\
+\rowcolor{band}E3 & ABC analysis by consumption value (and ABC-VEN) & 2B, 7 & Medium & L & 2 \\
+E4 & Triangulating facility consumption with RSSB billing & 4, 7 & Medium & M & 2 \\
+\rowcolor{band}F1 & WHO/INRUD prescribing indicators & 4 & High & M & 1 \\
+F2 & Prescriber category and unserved items & 4 & Medium & L & 2 \\
+\rowcolor{band}F3 & Concordance between prescription and stock availability & 4 & High & M & 1 \\
+F4 & Latent unmet demand from stock-outs & 4, 7 & Medium & M & 2 \\
+\rowcolor{band}F5 & Visit-day against preceding-day prescriptions & 4 & Low & L & 2 \\
+F6 & Brand-name prescribing & 4 & Low & L & 2 \\
+\rowcolor{band}G1 & RMS hub scorecard & 5, 6 & High & L & 1 \\
+G2 & Medicine-level escalation list & 5 & High & L & 1 \\
+\rowcolor{band}G3 & Validation against RMS warehouse data & 5 & Medium & M & 2 \\
+H1 & One table of the cost of supply chain gaps & 7 & High & M & 1 \\
+\rowcolor{band}I1 & Condition-level treatment readiness of CHWs & 8 & High & L & 1 \\
+I2 & CHW stock adequacy & 8 & Medium & L & 2 \\
+\rowcolor{band}I3 & Test-and-treat proxy & 8 & Medium & L & 2 \\
+I4 & Paired CHW and supervising health centre & 8 & High & L & 1 \\
+\rowcolor{band}J1 & Thematic analysis of the remaining free text & All & Medium & M & 2 \\
+K1 & Data-collector and device effects & Methods & Medium & L & 2 \\
+\rowcolor{band}K2 & Cleaning and consistency report & Methods & High & L & 1 \\
+L1 & MFT zoning compliance & 1, 8 & High & L & 1 \\
+\rowcolor{band}L2 & Strength substitution & 1 & Medium & L & 2 \\
+\end{longtable}}
+\section{Limitations of the dataset}
+\begin{itemize}\item \textbf{Three-month window.} March-May fields are empty, so frequency and trends rest on June-August only.
+\item \textbf{No service flag.} Prescriptions cannot be split into outpatient and inpatient, as objective 4 intended.
+\item \textbf{Prescription design.} Prescribers tend to write what the pharmacy holds; unserved rates understate unmet need (see F3, F4).
+\item \textbf{Facility-reported RMS status.} RMS availability is reported at the facility and not yet verified against RMS warehouse records (G3).
+\item \textbf{Partial RSSB data.} RSSB fields cover 215 facilities, mostly health centres.
+\item \textbf{Zoning.} 21 of 30 districts' antimalarial zones are inferred until the official list is received; S10 results may change.
+\item \textbf{CHW sample.} 175 CHWs against 237 planned, no cadre field, and 29 districts (Kirehe has no CHW data).
+\item \textbf{Representativeness.} Pooled estimates are unweighted until A1 is done.
+\end{itemize}
+\section{Next steps}
+\begin{itemize}\item Agree the Phase 1 list and owners at the dissemination workshop.
+\item Confirm the sampling frame and compute weights (A1) first, since several analyses reuse them.
+\item Request the official MFT zoning list and RMS warehouse extracts (L1, G3).
+\item Build the prescription-to-tracer name crosswalk (F3), which unlocks several prescription analyses.
+\item Produce Phase 1 outputs as a report annex, and add the RMS hub scorecard and the CHW readiness indicators to the dashboard if they will be monitored.
+\end{itemize}
+\section{Annex A. Dashboard index}
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.317\linewidth}>{\raggedright\arraybackslash}p{0.663\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Page} & \textbf{\color{white}Figures and tables} \\
+\endhead
+1. Tracer medicine availability & MAP 1-2; FIG 1-10; all medicines by availability; least available medicines; weakest facilities; nationwide stock-outs; reasons not managed \\
+\rowcolor{band}2. Stock adequacy and inventory accuracy & FIG 2.1-2.9; tables 2A, 2B \\
+3. Medicine consumption & Tables 3.1-3.4 (AMC highest, lowest, every medicine, by programme) \\
+\rowcolor{band}4. Stock-out frequency and duration & FIG 4.1-4.6; requested or not; stock-out burden by medicine \\
+5. Prescription fulfilment & FIG 5.1-5.6; table 5A; tables 5.1-5.5 (incl. feedback themes) \\
+\rowcolor{band}6. Requisition and order fulfilment & FIG 6.1-6.10; table 6A; most under-supplied medicines \\
+7. Financial value & Pareto of unserved value; value by level, province, class; lost sales (7.4-7.9) \\
+\rowcolor{band}8. Community level & FIG 8.1-8.2; CHW against facility on shared products \\
+\end{longtable}}
+\section{Annex B. Key variables by dataset}
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.184\linewidth}>{\raggedright\arraybackslash}p{0.565\linewidth}>{\raggedright\arraybackslash}p{0.231\linewidth}}
+\rowcolor{navy}\textbf{\color{white}Dataset} & \textbf{\color{white}Variable (cleaned name or form question)} & \textbf{\color{white}Use} \\
+\endhead
+Stock rows & Is ... applicable as per EML / managed / available on visit day & Availability tracks \\
+\rowcolor{band}Stock rows & Quantity available; quantity in the system; recording\_system\_clean & Accuracy \\
+Stock rows & June/July/August consumption; avg\_monthly\_consumption; stock\_level\_months & Adequacy, ABC, trend \\
+\rowcolor{band}Stock rows & June/July/August stock-out days; total\_stockout\_days; current stock-out days & Stock-outs \\
+Stock rows & Available at RMS Central / Regional; distribution\_nationwide & Attribution \\
+\rowcolor{band}Stock rows & June/July/August requested and delivered; total\_requested\_qty; total\_delivered\_qty & Fill rate, ordering \\
+Stock rows & unit\_tariff\_price; financial\_loss; Total Quantity Billed; Prescriptions/year (RSSB) & Value, triangulation \\
+\rowcolor{band}Stock rows & Why ... not managed; molecule\_key; eml\_levels & EML compliance, strengths \\
+Stock submissions & Facility, level, management, district, start/end, collector, deviceid, GPS, feedback & Design, quality, geography \\
+\rowcolor{band}Prescriptions & Date; prescriber category; number of medicines; n\_items\_unavailable & Fulfilment, rational use \\
+Prescription items & Medicine; on\_eml; drug\_class\_cleaned; Name type; Qty prescribed; availability & Rational use, concordance \\
+\rowcolor{band}Prescription items & Ordered; supplied fully/partially/not; unit price; RMS availability & Attribution, value \\
+CHW rows & Managed; available; quantity; monthly consumption; stock\_level\_months; feedback & Readiness, adequacy \\
+\end{longtable}}
+\end{document}
